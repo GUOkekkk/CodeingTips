@@ -13,3 +13,12 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ### LaTex语法Tips
 #### 如何打欧元符号
 引用\usepackage{textcomp} 使用\texteuro
+
+#### 不对称分段
+引用\usepackage{paracol} 使用
+\columnratio{0.3}
+\begin{paracol}{2}
+
+\switchcolumn
+
+\end{paracol}
