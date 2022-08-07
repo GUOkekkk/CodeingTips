@@ -9,6 +9,9 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 #### 如何在Github的md文件里面使用LaTex
 在Chrome浏览器上使用MathJax插件。
+
+#### 如何换行
+在`.md`文件中换行需要使用两次空格加回车
 ## Leetcode Tips
 #### 线段树(Segment Tree)
 
@@ -37,5 +40,8 @@ a_2b_1 & a_2b_2 & a_2b_3 \end{bmatrix}$$
 
 
 也可以推广到矩阵形式，从外积推广到克罗内克积。  
-如果$A$是一个$m \times n$的矩阵
+如果$A$是一个$m \times n$的矩阵， 而$B$是一个$p \times q$的矩阵，则$ A \otimes B$是一个$mp \times nq$的分块矩阵
+$$ A \otimes B = \begin{bmatrix} a_{11}B & \cdots & a_{1n}B \\ 
+\vdots & \ddots & \vdots \\
+\a_{m1}B & \cdots & \a_{mn}B\end{bmatrix}$$ $$
 #### 叉乘矩阵
