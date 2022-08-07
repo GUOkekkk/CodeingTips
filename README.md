@@ -31,7 +31,7 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 ## 数学
 真的感觉数学太重要了，好多代数的知识都还给老师了。。。
-#### 克罗内克积（张量积 or 外积）
+#### 克罗内克积（张量积/直积 or 外积）(Kronecker Product)
 首先是简单的向量的外积, ex：
 
 $$ a = [a_1\ \  a_2]^T \ \ \ \ b = [b_1\  b_2 \ b_3] $$
@@ -46,4 +46,12 @@ $$ A \otimes B = \begin{bmatrix} a_{11}B & \cdots & a_{1n}B \\
 \vdots & \ddots & \vdots \\
 a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 
+#### 哈达玛积(Hadamard product)
+
+#### 矩阵乘法
+
 #### 叉乘矩阵
+
+## 算法知识
+最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
+#### 本质矩阵(Essential Matrix)
