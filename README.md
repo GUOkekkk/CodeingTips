@@ -43,5 +43,5 @@ a_2b_1 & a_2b_2 & a_2b_3 \end{bmatrix}$$
 如果$A$是一个$m \times n$的矩阵， 而$B$是一个$p \times q$的矩阵，则$ A \otimes B$是一个$mp \times nq$的分块矩阵
 $$ A \otimes B = \begin{bmatrix} a_{11}B & \cdots & a_{1n}B \\ 
 \vdots & \ddots & \vdots \\
-\a_{m1}B & \cdots & \a_{mn}B \end{bmatrix} $$
+a_{m1}B & \cdots & \a_{mn}B \end{bmatrix} $$
 #### 叉乘矩阵
