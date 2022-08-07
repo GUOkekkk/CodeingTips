@@ -28,6 +28,6 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 真的感觉数学太重要了，好多代数的知识都还给老师了。。。
 #### 克罗内克积（张量积 or 外积）
 $$ a = [a_1\ \  a_2]^T \ \ \ \ b = [b_1\  b_2 \ b_3] $$
-$$a \otimes b = \begin{bmatrix} a_1b_1 & a_1b_2 & a_1b_3 // a_2b_1 & a_2b_2 & a_2b_3 \end{bmatrix}$$
+$$a \otimes b = \begin{bmatrix} a_1b_1 & a_1b_2 & a_1b_3 \\ a_2b_1 & a_2b_2 & a_2b_3 \end{bmatrix}$$
  
 #### 叉乘矩阵
