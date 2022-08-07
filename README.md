@@ -17,7 +17,7 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 引用\usepackage{textcomp} 使用\texteuro
 
 #### 不对称分段
-引用\usepackage{paracol} 使用
+引用\usepackage{paracol} 使用  
 \columnratio{0.3}
 \begin{paracol}{2}
 
@@ -36,6 +36,6 @@ $$a \otimes b = \begin{bmatrix} a_1b_1 & a_1b_2 & a_1b_3 \\
 a_2b_1 & a_2b_2 & a_2b_3 \end{bmatrix}$$
 
 
-也可以推广到矩阵形式，从外积推广到克罗内克积。 
+也可以推广到矩阵形式，从外积推广到克罗内克积。  
 如果$A$是一个$m \times n$的矩阵
 #### 叉乘矩阵
