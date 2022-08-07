@@ -28,6 +28,23 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 \end{paracol}
 
+#### 矩阵
+$$
+\begin{gathered}
+\begin{matrix} 0 & 1 \\ 1 & 0 \end{matrix}
+\quad
+\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
+\quad
+\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
+\quad
+\begin{Bmatrix} 1 & 0 \\ 0 & -1 \end{Bmatrix}
+\quad
+\begin{vmatrix} a & b \\ c & d \end{vmatrix}
+\quad
+\begin{Vmatrix} i & 0 \\ 0 & -i \end{Vmatrix}
+\end{gathered}
+$$
+
 
 ## 数学
 真的感觉数学太重要了，好多代数的知识都还给老师了。。。
