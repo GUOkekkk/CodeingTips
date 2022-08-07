@@ -8,7 +8,7 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 使用 `` 反引号 ex：`.md`
 
 #### 如何在Github的md文件里面使用LaTex
-在Chrome浏览器上使用MathJax插件。
+在Chrome浏览器上使用MathJax插件。而且使用独立公式时需要和上下文各分开一行。
 
 #### 如何换行
 在`.md`文件中换行需要使用两次空格加回车
