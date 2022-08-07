@@ -26,8 +26,8 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 ## 数学
 真的感觉数学太重要了，好多代数的知识都还给老师了。。。
-#### 克罗内克积
-$$ a = [a_1, a_2, a_3]^T b = [b_1, b_2, b_3]^T $$
-$$a \otimes b =$$
+#### 克罗内克积（张量积or外积）
+$$ a = [a_1 a_2]^T     b = [b_1 b_2 b_3] $$
+$$a \otimes b = $$
 
 #### 叉乘矩阵
