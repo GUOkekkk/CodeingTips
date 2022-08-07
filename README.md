@@ -8,7 +8,7 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 使用 `` 反引号 ex：`.md`
 
 #### 如何在Github的md文件里面使用LaTex
-在Chrome浏览器上使用MathJax插件。而且使用独立公式时需要和上下文各分开一行。
+在Chrome浏览器上使用MathJax插件。而且使用独立公式时需要和上下文各分开一行。使用换行符的时候也需要换行。
 
 #### 如何换行
 在`.md`文件中换行需要使用两次空格加回车
@@ -57,17 +57,23 @@ $$
 
 $$
 \begin{gathered}
-\begin{matrix} 0 & 1 \\ 1 & 0 \end{matrix}
+\begin{matrix} 0 & 1 \\ 
+1 & 0 \end{matrix}
 \quad
-\begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix}
+\begin{pmatrix} 0 & -i \\ 
+i & 0 \end{pmatrix}
 \quad
-\begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
+\begin{bmatrix} 0 & -1 \\ 
+1 & 0 \end{bmatrix}
 \quad
-\begin{Bmatrix} 1 & 0 \\ 0 & -1 \end{Bmatrix}
+\begin{Bmatrix} 1 & 0 \\
+0 & -1 \end{Bmatrix}
 \quad
-\begin{vmatrix} a & b \\ c & d \end{vmatrix}
+\begin{vmatrix} a & b \\
+c & d \end{vmatrix}
 \quad
-\begin{Vmatrix} i & 0 \\ 0 & -i \end{Vmatrix}
+\begin{Vmatrix} i & 0 \\
+0 & -i \end{Vmatrix}
 \end{gathered}
 $$
 
