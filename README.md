@@ -1,5 +1,3 @@
-[toc]
-
 # CodeingTips
 This `.md` file is created to record some tips I met during the coding. I hope it could be my first blog and I can update it regularly and modify it clearer and more beautiful. But sorry for now it is only a chinese version.
 
@@ -18,6 +16,10 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 #### Github页面的一些快捷键
 https://docs.github.com/cn/get-started/using-github/keyboard-shortcuts
+
+#### Github上生成Markdown文件的目录
+Github上没办法使用`[TOC]`...真的是挺不智能的。  
+使用VSCode中的Markdown All in One这个插件可以自动生成，考虑目前我的Blog还是没有太多内容，之后再创建目录吧。
 
 ## Leetcode Tips
 #### 线段树(Segment Tree)
@@ -111,3 +113,9 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 #### 本质矩阵(Essential Matrix)
+
+## 快捷键
+记录一些各种各样的快捷键。。。
+`ctrl+F` 搜索  
+`选中文件+F12` 修改文件名字  
+
