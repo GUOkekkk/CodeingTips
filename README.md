@@ -5,6 +5,11 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 
 ## Markdown语法Tips
+#### 如何添加图片在md文档
+
+
+#### 解决看不到自己的readme中的图片
+
 #### 如何打出代码框
 使用 `` 反引号 ex：`.md`
 
