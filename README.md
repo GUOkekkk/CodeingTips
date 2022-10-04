@@ -7,7 +7,7 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ## Markdown语法Tips
 #### 如何添加图片在md文档
 1. 比较直接的方法就是把图片上传到repository中然后`![name](link)` 但是容易受DNS域名污染
-2. 可以把图片转换到base64码再`![name](data:image/png;base64,XXX)` 但是base64码很长影响写作，可以`![name][base64str]`和`[base64str]:data:image/png;base64,XXX`来代替。 
+2. 可以把图片转换到base64码再`![name](data:image/png;base64,XXX)` 但是base64码很长影响写作，可以`![name][base64str]`和`[base64str]:data:image/png;base64,XXX`来代替。`Png2Base64.ipynb`可以用来转换图片到base64码基于python。
 Tip：但是不知道为什么我的第二种方法并不成功，第一种方法本地也没办法看到图片，只能用手机才能看到。
 
 #### 解决看不到自己的readme中的图片
