@@ -130,8 +130,9 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 + `ctrl+K` word里面插入超链接
 
 ## Python
-#### all() and any()
+### all() and any()
 any(x)判断x对象是否为空对象，如果都为空、0、false，则返回false，如果不都为空、0、false，则返回true
+
 ex:       ` if any(s < end and start < e for s, e in self.overlaps):
             return False`
             
