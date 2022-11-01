@@ -136,4 +136,8 @@ any(x)判断x对象是否为空对象，如果都为空、0、false，则返回f
 ex:       ` if any(s < end and start < e for s, e in self.overlaps):
             return False`
             
+note: 1. 不能迭代tuple，只能变成array
+      2. any 里面的for loop 里面定义的s和e外部没办法调用
+      3. 迭代器里任意一个为真就可以
+            
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
