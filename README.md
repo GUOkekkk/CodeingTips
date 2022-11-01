@@ -128,3 +128,11 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 + `选中文件+F12` 修改文件名字  
 + 在Github页面使用`?`调出键盘快捷键
 + `ctrl+K` word里面插入超链接
+
+## Python
+#### all() and any()
+any(x)判断x对象是否为空对象，如果都为空、0、false，则返回false，如果不都为空、0、false，则返回true
+ex:       ` if any(s < end and start < e for s, e in self.overlaps):
+            return False`
+            
+all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
