@@ -142,3 +142,34 @@ note:
 +  迭代器里任意一个为真就可以
             
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
+
+### plot大小不一样的子图以及控制坐标轴位置
+`
+plt.figure()
+plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = False
+plt.rcParams['ytick.left'] = plt.rcParams['ytick.labelleft'] = True
+plt.subplot(1,2,1)
+plt.plot(x, y,'r', label ='Trajectory')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.legend(loc='upper left', fontsize=7)
+
+plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = True
+plt.rcParams['ytick.left'] = plt.rcParams['ytick.labelleft'] = False
+plt.subplot(2,2,2)
+plt.plot(time, x,'b')
+plt.xlabel('time')
+plt.ylabel('x')
+
+
+plt.subplot(2,2,4)
+plt.plot(time, y,'b')
+plt.xlabel('time')
+plt.ylabel('y')
+
+plt.savefig('tra.png')
+`
+
+### JupyterTips
+#### 使用`esc+f`进入查找替换
+#### 长按`alt`加移动鼠标多行修改代码
