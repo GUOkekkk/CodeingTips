@@ -129,6 +129,9 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 + 在Github页面使用`?`调出键盘快捷键
 + `ctrl+K` word里面插入超链接
 
+## ROS2
+### 如何保存数据--rosbag
+Use `rosbag record` to store and `rosbag play` to read.
 ## Python
 ### all() and any()
 any(x)判断x对象是否为空对象，如果都为空、0、false，则返回false，如果不都为空、0、false，则返回true
@@ -144,7 +147,7 @@ note:
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
 
 ### plot大小不一样的子图以及控制坐标轴位置
-`
+            
 plt.figure()
 plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = False
 plt.rcParams['ytick.left'] = plt.rcParams['ytick.labelleft'] = True
@@ -168,8 +171,7 @@ plt.xlabel('time')
 plt.ylabel('y')
 
 plt.savefig('tra.png')
-`
-
+            
 ### JupyterTips
 #### 使用`esc+f`进入查找替换
 #### 长按`alt`加移动鼠标多行修改代码
