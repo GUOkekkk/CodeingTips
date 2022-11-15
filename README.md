@@ -147,8 +147,7 @@ note:
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
 
 ### plot大小不一样的子图以及控制坐标轴位置
-            
-plt.figure()
+            plt.figure()
 plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = False
 plt.rcParams['ytick.left'] = plt.rcParams['ytick.labelleft'] = True
 plt.subplot(1,2,1)
@@ -171,7 +170,6 @@ plt.xlabel('time')
 plt.ylabel('y')
 
 plt.savefig('tra.png')
-            
 ### JupyterTips
 #### 使用`esc+f`进入查找替换
 #### 长按`alt`加移动鼠标多行修改代码
