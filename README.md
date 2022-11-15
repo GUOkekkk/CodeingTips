@@ -134,7 +134,19 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 ## ROS2
 ### 如何保存数据--rosbag
 Use `rosbag record` to store and `rosbag play` to read.
+
+
 ## Python
+### pipreqs
+生成`requirements.txt` 方便环境配置
+在根目录下`pipreqs ./`
+### list(reversed(list))
+反转list
+### python函数签名
+就是告诉下面的函数我的输入输出是什么
+`def find_path(slef, maze_3d: np.ndarray, start: list, stop: list) -> list`
+### pycharm两次引号一次回车自动生成参数列表
+
 ### all() and any()
 any(x)判断x对象是否为空对象，如果都为空、0、false，则返回false，如果不都为空、0、false，则返回true
 
