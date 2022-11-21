@@ -139,6 +139,38 @@ Use `rosbag record` to store and `rosbag play` to read.
 
 
 ## Python
+### 内置函数
+常用内置函数 https://www.runoob.com/python/python-built-in-functions.html
+`filter(function, iterable):` 过滤序列，true or false function
+`map(function, iterable, ...):` 对一个或多个子列操作 ex：`map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])`
+### Lambda函数
+https://www.runoob.com/python/python-built-in-functions.html
+            # 程序从列表中过滤出偶数项
+            my_list = [1, 5, 4, 6, 8, 11, 3, 12]
+
+            new_list = list(filter(lambda x: (x%2 == 0) , my_list))
+
+            print(new_list)
+`lambda`和`filter`结合
+### String
+使用`str.split(' ', num)`分割。
+            string="asdasd"
+            print(list(string))
+            string_two=list(string)
+            print("".join(string_two))
+全部分割
+
+            str.isdigit()    判断所有字符都是数字（整形）   
+
+            str.isalnum() 判断所有字符都是数字或者字母    
+
+            str.isalpha()  判断所有字符都是字母 
+
+            str.islower()  判断所有字符都是小写 
+
+            str.isupper() 判断所有字符都是大写
+
+            str.istitle()    判断所有单词都是首字母大写
 ### JSON
 Json是JavaScript Object Notation是一种轻量级的数据交换格式。 
 需要使用`json`这个包来操作。 存在`json.loads`（处理字符串）和`json.load`（处理类文件对象）两种函数。
@@ -146,9 +178,13 @@ Json是JavaScript Object Notation是一种轻量级的数据交换格式。
 使用`frame = pd.DataFrame
 frame.to_json('.json')`
 
+### Numpy
+Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
 ### Pandas
 和SQL基本上一致，Pandas的Series是一列，多个列组成为一个DataFrame。
 前面的数字为index，也可以自己修改为str或者其他。
+https://zhuanlan.zhihu.com/p/113342292 Pandas的一些计数用法。`str.count`
+https://zhuanlan.zhihu.com/p/340770847 Pandas的`apply`用法。
 #### 读取
 
             data['w']  #选择表格中的'w'列，使用类字典属性,返回的是Series类型
@@ -198,6 +234,8 @@ frame.to_json('.json')`
 #### groupby函数
 `group = data.groupby("company")`
 转换成多个分组的sunDF
+`data.groupby('company').agg({'count'})`
+计算每组的个数
 `data.groupby('company').agg({'salary':'median','age':'mean'})` 
 对分组了的数据进行agg操作
 `data['avg_salary'] = data.groupby('company')['salary'].transform('mean')` 
