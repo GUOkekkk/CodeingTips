@@ -139,6 +139,75 @@ Use `rosbag record` to store and `rosbag play` to read.
 
 
 ## Python
+### JSON
+Json是JavaScript Object Notation是一种轻量级的数据交换格式。 
+需要使用`json`这个包来操作。 存在`json.loads`（处理字符串）和`json.load`（处理类文件对象）两种函数。
+可以将`json`和`pandas`结合起来使用。https://geek-docs.com/pandas/pandas-read-write/pandas-reading-and-writing-json.html 
+使用`frame = pd.DataFrame
+frame.to_json('.json')`
+
+### Pandas
+和SQL基本上一致，Pandas的Series是一列，多个列组成为一个DataFrame。
+前面的数字为index，也可以自己修改为str或者其他。
+#### 读取
+
+            data['w']  #选择表格中的'w'列，使用类字典属性,返回的是Series类型
+
+            data.w    #选择表格中的'w'列，使用点属性,返回的是Series类型
+
+            data[['w']]  #选择表格中的'w'列，返回的是DataFrame属性
+
+            data[['w','z']]  #选择表格中的'w'、'z'列
+
+            data[0:2]  #返回第1行到第2行的所有行，前闭后开，包括前不包括后
+
+            data[1:2]  #返回第2行，从0计，返回的是单行，通过有前后值的索引形式，
+                   #如果采用data[1]则报错
+
+            data.ix[1:2] #返回第2行的第三种方法，返回的是DataFrame，跟data[1:2]同
+
+            data['a':'b']  #利用index值进行切片，返回的是**前闭后闭**的DataFrame, 
+                    #即末端是包含的  
+            data.irow(0)   #取data的第一行
+            data.icol(0)   #取data的第一列
+
+            data.head()  #返回data的前几行数据，默认为前五行，需要前十行则dta.head(10)
+            data.tail()  #返回data的后几行数据，默认为后五行，需要后十行则data.tail(10)
+
+            ser.iget_value(0)  #选取ser序列中的第一个
+            ser.iget_value(-1) #选取ser序列中的最后一个，这种轴索引包含索引器的series不能采用ser[-1]去获取最后一个，这回引起歧义。
+
+            data.iloc[-1]   #选取DataFrame最后一行，返回的是Series
+            data.iloc[-1:]   #选取DataFrame最后一行，返回的是DataFrame
+
+            data.loc['a',['w','x']]   #返回‘a’行'w'、'x'列，这种用于选取行索引列索引已知
+
+            data.iat[1,1]   #选取第二行第二列，用于已知行、列位置的选取
+
+#### 随机生成DF
+            company=["A","B","C"]
+            ​
+            data=pd.DataFrame({
+                "company":[company[x] for x in np.random.randint(0,len(company),10)],
+                "salary":np.random.randint(5,50,10),
+                "age":np.random.randint(15,50,10)
+            }
+            )
+#### 按条件搜索
+`df[['key1', 'key2']][(df['key'] > 100) & | (df['key'] < 200)]`
+#### groupby函数
+`group = data.groupby("company")`
+转换成多个分组的sunDF
+`data.groupby('company').agg({'salary':'median','age':'mean'})` 
+对分组了的数据进行agg操作
+`data['avg_salary'] = data.groupby('company')['salary'].transform('mean')` 
+使用transform简便操作
+`oldest_staff = data.groupby('company',as_index=False).apply(get_oldest_staff)`
+
+             def get_oldest_staff(x):
+                 df = x.sort_values(by = 'age',ascending=True)
+               return df.iloc[-1,:]
+使用apply传入custom函数
 ### pipreqs
 生成`requirements.txt` 方便环境配置
 在根目录下`pipreqs ./`
