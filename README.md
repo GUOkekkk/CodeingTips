@@ -154,6 +154,7 @@ https://www.runoob.com/python/python-built-in-functions.html
 `lambda`和`filter`结合
 ### String
 使用`str.split(' ', num)`分割。
+
             string="asdasd"
             print(list(string))
             string_two=list(string)
