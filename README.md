@@ -125,6 +125,9 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 ### 本质矩阵(Essential Matrix)
+### 基本矩阵(Fundamental Matrix)
+### 单应矩阵(Homograph Matrix)
+https://blog.csdn.net/kokerf/article/details/72191054
 
 ## 快捷键
 记录一些各种各样的快捷键。。。
@@ -179,8 +182,22 @@ Json是JavaScript Object Notation是一种轻量级的数据交换格式。
 使用`frame = pd.DataFrame
 frame.to_json('.json')`
 
+### TensorFlow 2.0
+#### 以前的学习笔记
+https://github.com/GUOkekkk/TensorFlowLearn
+#### TF常用函数
 ### Numpy
 Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
+#### 一个有趣的np的sort
+# 在 sort 函数中排序字段 
+            dt = np.dtype([('name',  'S10'),('age',  int)]) 
+            a = np.array([("raju",21),("anil",25),("ravi",  17),  ("amar",27)], dtype = dt)  
+            print ('我们的数组是：')
+            print (a)
+            print ('\n')
+            print ('按 name 排序：')
+            print (np.sort(a, order =  'name'))
+
 ### Pandas
 和SQL基本上一致，Pandas的Series是一列，多个列组成为一个DataFrame。
 前面的数字为index，也可以自己修改为str或者其他。
