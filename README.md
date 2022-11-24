@@ -142,6 +142,8 @@ Use `rosbag record` to store and `rosbag play` to read.
 
 
 ## Python
+### 交换两个list中的元素
+a, b = b, a
 ### 内置函数
 常用内置函数 https://www.runoob.com/python/python-built-in-functions.html
 `filter(function, iterable):` 过滤序列，true or false function
