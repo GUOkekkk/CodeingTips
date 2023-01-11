@@ -37,6 +37,13 @@ Github上没办法使用`[TOC]`...真的是挺不智能的。
 ### 线段树(Segment Tree)
 
 ## LaTex语法Tips
+### 用`mininpage`插入图片（例如生成图片抬头）
+            \begin{minipage}[b]{0.6\linewidth}
+            \includegraphics[height=1.5cm, width=3.8cm]{Figures/LogoECN.png}
+            \end{minipage}
+            \begin{minipage}[b]{0.35\linewidth}
+            \includegraphics[height=1.5cm, width=5cm]{Figures/vblogo.png}
+            \end{minipage}
 ### 如何打欧元符号
 引用\usepackage{textcomp} 使用\texteuro
 
