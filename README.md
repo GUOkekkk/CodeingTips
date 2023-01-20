@@ -56,6 +56,32 @@ Github上没办法使用`[TOC]`...真的是挺不智能的。
 
 \end{paracol}
 
+### 表格
+            \usepackage{tabularx}
+            \usepackage{booktabs}
+
+            \setlength\tabcolsep{7pt} % Adjust column spacing
+            \begin{table}[h]\centering
+            \caption{Different packages related in SLAM on ROS}
+            \begin{tabularx}{\textwidth}{lXXX}\toprule
+             & Merits & Demerits & Principle\\\midrule
+            HectorSLAM & No need for odometer,high accuracy & Need a laser scanner with high update frequency and low measurement noise
+             & Scan-matching (Gaussian-Newton equation)
+            \\\midrule
+            KartoSLAM
+             & Have a better performance when drawing in a larger environment & Require a large memory to store nodes & Spare Pose Adjustment(SPA)\\\midrule
+            3D\_SLAM
+             & Build a 3D map and get more information
+             & Need a 3D lidar and better cpu to support a lot of calculations & Point-to-Plane (Iterative Closest Point)\\\midrule
+
+            GmappingSLAM & high accuracy in a \newline small environment,  low requirement for the scanning frequency of the lidar
+             & Need a lot of particle simulations to get good results
+             &  Rao-Blackwellized particle filter
+            \\\bottomrule
+            \label{slam}
+            \end{tabularx}
+            \end{table}
+
 ### 矩阵
 
 ```
