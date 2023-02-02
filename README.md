@@ -3,6 +3,15 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 这个`.md`文档是用来记录一些我遇到到问题，代码语法和方法在我写代码的时候（感觉中文退步太多）。。。我也想把他作为我的第一个blog并且持续更新，也需要继续学习让他越来越美观。有写blog的想法主要是受这位大神启发 https://doublelll3.ml/ 。BTW希望我能顺利找到工作。。。
 
+## Ubuntu
+
+### ln
+复制一个链接到另一个地址 ln -s（软复制）用ls查看时有～标志
+
+### mkdir
+### cd
+### rm
+
 ## Git
 ### Git push时，远端和本地同时修改
 先git pull再进行add, commit再git push
