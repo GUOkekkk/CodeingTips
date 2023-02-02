@@ -6,6 +6,12 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ## Git
 ### Git push时，远端和本地同时修改
 先git pull再进行add, commit再git push
+
+### git clone --recursive
+### git checkout 
+### git log + q
+### git branch -a
+
 ## Markdown语法Tips
 ### 如何打代码块
 使用`tab`键
@@ -155,12 +161,17 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 
 ### 叉乘矩阵
 
+### Mahalanobis distance
+
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 ### 本质矩阵(Essential Matrix)
 ### 基本矩阵(Fundamental Matrix)
 ### 单应矩阵(Homograph Matrix)
 https://blog.csdn.net/kokerf/article/details/72191054
+
+### Covisibility Graph
+https://www.cnblogs.com/liuzhenbo/p/10849840.html
 
 ## 快捷键
 记录一些各种各样的快捷键。。。
