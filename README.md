@@ -11,6 +11,13 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ### mkdir
 ### cd
 ### rm
+rm -r 删除整个文件夹
+
+### vi的用法
+https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
+
+## Docker用法
+https://www.quanxiaoha.com/docker/docker-container.html
 
 ## Git
 ### Git push时，远端和本地同时修改
@@ -366,6 +373,18 @@ all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为
             plt.ylabel('y')
 
             plt.savefig('tra.png')
+            
+
+
+
+### C++
+#### -> and .
+-> 当对象是指针类型时使用
+. 当对象是实体
+
+#### ～A()
+Destroctor
+
 ### JupyterTips
 #### 使用`esc+f`进入查找替换
 #### 长按`alt`加移动鼠标多行修改代码
