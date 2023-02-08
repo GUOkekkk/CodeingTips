@@ -13,6 +13,9 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ### rm
 rm -r 删除整个文件夹
 
+### pwd
+输出当前路径
+
 ### vi的用法
 https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
 
@@ -186,6 +189,11 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 ### 单应矩阵(Homograph Matrix)
 https://blog.csdn.net/kokerf/article/details/72191054
 
+### Levenberg-Marquardt Algorithm
+### Iteratively Rewighted Least Squares
+### EndtoEnd learning
+不提取数据特征，让模型自己去学习数据。
+
 ### Covisibility Graph
 https://www.cnblogs.com/liuzhenbo/p/10849840.html
 
@@ -202,6 +210,11 @@ Use `rosbag record` to store and `rosbag play` to read.
 
 
 ## Python
+### 使用glob或者os.listdir来得到文件夹中的文件地址
+但是需要注意的是，读取出来的文件是无序的。需要用`list.sort(key = lambda x : int(x.split('something')[0])`
+这个sort没有返回值，需要注意
+
+
 ### 交换两个list中的元素
 a, b = b, a
 ### 内置函数
