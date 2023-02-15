@@ -2,6 +2,7 @@
 This `.md` file is created to record some tips I met during the coding. I hope it could be my first blog and I can update it regularly and modify it clearer and more beautiful. But sorry for now it is only a chinese version.
 
 这个`.md`文档是用来记录一些我遇到到问题，代码语法和方法在我写代码的时候（感觉中文退步太多）。。。我也想把他作为我的第一个blog并且持续更新，也需要继续学习让他越来越美观。有写blog的想法主要是受这位大神启发 https://doublelll3.ml/ 。BTW希望我能顺利找到工作。。。
+
 - [CodeingTips](#codeingtips)
   - [Ubuntu](#ubuntu)
     - [ln](#ln)
@@ -63,8 +64,8 @@ This `.md` file is created to record some tips I met during the coding. I hope i
       - [以前的学习笔记](#以前的学习笔记)
       - [TF常用函数](#tf常用函数)
     - [Numpy](#numpy)
-      - [一个有趣的np的sort](#一个有趣的np的sort)
-- [在 sort 函数中排序字段](#在-sort-函数中排序字段)
+    - [一个有趣的np的sort](#一个有趣的np的sort)
+      - [在 sort 函数中排序字段](#在-sort-函数中排序字段)
     - [Pandas](#pandas)
       - [读取](#读取)
       - [随机生成DF](#随机生成df)
@@ -82,7 +83,9 @@ This `.md` file is created to record some tips I met during the coding. I hope i
     - [JupyterTips](#jupytertips)
       - [使用`esc+f`进入查找替换](#使用escf进入查找替换)
       - [长按`alt`加移动鼠标多行修改代码](#长按alt加移动鼠标多行修改代码)
-      
+
+
+
 ## Ubuntu
 
 ### ln
@@ -345,8 +348,8 @@ https://github.com/GUOkekkk/TensorFlowLearn
 #### TF常用函数
 ### Numpy
 Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
-#### 一个有趣的np的sort
-# 在 sort 函数中排序字段 
+### 一个有趣的np的sort
+#### 在 sort 函数中排序字段 
             dt = np.dtype([('name',  'S10'),('age',  int)]) 
             a = np.array([("raju",21),("anil",25),("ravi",  17),  ("amar",27)], dtype = dt)  
             print ('我们的数组是：')
