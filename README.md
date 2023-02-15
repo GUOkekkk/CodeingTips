@@ -88,10 +88,12 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ### 在Ubuntu下面修改鼠标侧键
     sudo apt install xbindkeys xautomation
     xbindkeys --defaults > $HOME/.xbindkeysrc
-检测侧键
+检测侧键 
+
     xev | grep button
     nano ~/.xbindkeysrc
-命令
+命令 
+
     #CTRL + C
     "xte 'keydown Control_L' 'key c' 'keyup Control_L'"
     b:9
