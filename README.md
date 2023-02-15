@@ -260,7 +260,7 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 ### 矩阵乘法
 
 ### 叉乘矩阵
-
+### Hamilton Product for the quaternion multiplication
 ### Mahalanobis distance
 
 ## 算法知识
