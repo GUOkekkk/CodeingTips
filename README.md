@@ -112,7 +112,7 @@ rm -r 删除整个文件夹
 ### pwd
 输出当前路径
 
-### vi的用法
+### vi的用法(nano is better)
 https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
 
 ## Docker用法
