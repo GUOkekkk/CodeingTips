@@ -85,7 +85,20 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 
 ## Ubuntu
+### 在Ubuntu下面修改鼠标侧键
+  sudo apt install xbindkeys xautomation
+  xbindkeys --defaults > $HOME/.xbindkeysrc
+检测侧键
+  xev | grep button
+  nano ~/.xbindkeysrc
+命令
+  #CTRL + C
+  "xte 'keydown Control_L' 'key c' 'keyup Control_L'"
+  b:9
 
+  #CTRL + V
+  "xte 'keydown Control_L' 'key v' 'keyup Control_L'"
+  b:8
 ### ln
 复制一个链接到另一个地址 ln -s（软复制）用ls查看时有～标志
 
