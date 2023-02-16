@@ -293,6 +293,9 @@ https://blog.csdn.net/kokerf/article/details/72191054
 ### Covisibility Graph
 https://www.cnblogs.com/liuzhenbo/p/10849840.html
 
+### 距离场
+场函数，空间中任意一个点到附近标志物的最小距离 有正有负表示内部或外部
+
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
