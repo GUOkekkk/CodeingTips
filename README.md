@@ -296,6 +296,17 @@ https://www.cnblogs.com/liuzhenbo/p/10849840.html
 ### 距离场
 场函数，空间中任意一个点到附近标志物的最小距离 有正有负表示内部或外部
 
+### 深度学习的一些评价标准
+Recall： TP/（TP + FN）查全 是不是所有的正样本都被检测出来： 肿瘤
+Precision：TP/（TP + FP）查准 输出的正样本是不是正确：垃圾邮件
+mAP： mean average precision 针对目标检测（也用IoU判断） 计算PR曲线下面的面积再根据类别平均
+https://zhuanlan.zhihu.com/p/43068926
+
+IoU：intersection over union 针对语义分割 
+
+PQ：Panoptic Segmentation 针对全景分割
+
+
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
