@@ -306,6 +306,19 @@ IoU：intersection over union 针对语义分割
 
 PQ：Panoptic Segmentation 针对全景分割
 
+### Attention
+https://zhuanlan.zhihu.com/p/392553460
+#### Self Attention
+#### Multi-head attention
+
+### NLP中的Mask操作
+1.为了计算中处理那些补出来的0的信息
+2.在decoder中去掉一些文本中的本来的信息，加强训练避免后续分词的影响
+
+### Operator
+#### Sobel 一阶微分 过滤模糊的地方
+#### Laplace 二阶微分
+#### LOG 先Gauss滤波再Laplace算子
 
 ## 快捷键
 记录一些各种各样的快捷键。。。
