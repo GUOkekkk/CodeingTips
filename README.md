@@ -320,6 +320,38 @@ https://zhuanlan.zhihu.com/p/392553460
 #### Laplace 二阶微分
 #### LOG 先Gauss滤波再Laplace算子
 
+### ICP
+Using the SVD to get the soulution 
+Optimize:
+- Filter some outlier which is the noise during the data collection
+- Use the KDtree structure to save the time
+
+### DLT
+利用叉乘来解决PnP中的尺度不确定性问题（因为尺度不确定不能用最小二乘法）
+
+### 对极约束
+对两张2d图像求解T的方法，通过八对点方法，求解E或者F
+
+### PnP问题
+已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证。 
+具体方法有EPnP，DLT等
+
+### ICP方法
+3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系 
+可以用SVD或者BA来求解
+
+### BA
+更多是后段全局优化，最小二乘法收敛光束
+
+### RANSAC
+Random Sample Consensus是一种过滤outlier的方法 
+- 选择子集
+- 建立模型
+- 确定ouliter或者inlier
+- 迭代
+- 找到最多inlier的集合
+
+
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
