@@ -315,6 +315,7 @@ https://zhuanlan.zhihu.com/p/392553460
 
 ### NLP中的Mask操作
 1.为了计算中处理那些补出来的0的信息 
+
 2.在decoder中去掉一些文本中的本来的信息，加强训练避免后续分词的影响 
 
 ### Operator
@@ -323,7 +324,8 @@ https://zhuanlan.zhihu.com/p/392553460
 #### LOG 先Gauss滤波再Laplace算子
 
 ### ICP
-Using the SVD to get the soulution 
+Using the SVD to get the soulution  
+
 Optimize:
 - Filter some outlier which is the noise during the data collection
 - Use the KDtree structure to save the time
@@ -335,11 +337,13 @@ Optimize:
 对两张2d图像求解T的方法，通过八对点方法，求解E或者F
 
 ### PnP问题
-已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证。  
+已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证. 
+
 具体方法有EPnP，DLT等
 
 ### ICP方法
-3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系  
+3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系. 
+
 可以用SVD或者BA来求解
 
 ### BA
@@ -377,8 +381,10 @@ Use `rosbag record` to store and `rosbag play` to read.
 ### 交换两个list中的元素
 a, b = b, a
 ### 内置函数
-常用内置函数 https://www.runoob.com/python/python-built-in-functions.html 
-`filter(function, iterable):` 过滤序列，true or false function 
+常用内置函数 https://www.runoob.com/python/python-built-in-functions.html  
+
+`filter(function, iterable):` 过滤序列，true or false function  
+
 `map(function, iterable, ...):` 对一个或多个子列操作 ex：`map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])` 
 ### Lambda函数
 https://www.runoob.com/python/python-built-in-functions.html
@@ -410,8 +416,10 @@ https://www.runoob.com/python/python-built-in-functions.html
 
             str.istitle()    判断所有单词都是首字母大写
 ### JSON
-Json是JavaScript Object Notation是一种轻量级的数据交换格式。  
+Json是JavaScript Object Notation是一种轻量级的数据交换格式. 
+
 需要使用`json`这个包来操作。 存在`json.loads`（处理字符串）和`json.load`（处理类文件对象）两种函数。 
+
 可以将`json`和`pandas`结合起来使用。https://geek-docs.com/pandas/pandas-read-write/pandas-reading-and-writing-json.html  
 使用`frame = pd.DataFrame 
 frame.to_json('.json')`
@@ -435,8 +443,11 @@ Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
 
 ### Pandas
 和SQL基本上一致，Pandas的Series是一列，多个列组成为一个DataFrame。
+
 前面的数字为index，也可以自己修改为str或者其他。
+
 https://zhuanlan.zhihu.com/p/113342292 Pandas的一些计数用法。`str.count`
+
 https://zhuanlan.zhihu.com/p/340770847 Pandas的`apply`用法。
 #### 读取
 
@@ -506,6 +517,7 @@ https://zhuanlan.zhihu.com/p/340770847 Pandas的`apply`用法。
 反转list
 ### python函数签名
 就是告诉下面的函数我的输入输出是什么
+
 `def find_path(slef, maze_3d: np.ndarray, start: list, stop: list) -> list`
 ### pycharm两次引号一次回车自动生成参数列表
 
@@ -553,6 +565,7 @@ all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为
 ## C++
 ### -> and .
 -> 当对象是指针类型时使用 
+
 . 当对象是实体
 
 ### ～A()
