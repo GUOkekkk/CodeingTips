@@ -320,12 +320,6 @@ https://zhuanlan.zhihu.com/p/392553460
 #### Laplace 二阶微分
 #### LOG 先Gauss滤波再Laplace算子
 
-### ICP
-Using the SVD to get the solution
-Optimize:
-- Filter some outlier which is the noise during the data collection
-- Use the KDtree structure to save the time
-
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
@@ -395,6 +389,7 @@ https://github.com/GUOkekkk/TensorFlowLearn
 ### Numpy
 Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
 ### 一个有趣的np的sort
+#### 高维数组最好还是用a[np.argsort[:, 1]]
 #### 在 sort 函数中排序字段 
             dt = np.dtype([('name',  'S10'),('age',  int)]) 
             a = np.array([("raju",21),("anil",25),("ravi",  17),  ("amar",27)], dtype = dt)  
