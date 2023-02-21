@@ -320,6 +320,12 @@ https://zhuanlan.zhihu.com/p/392553460
 #### Laplace 二阶微分
 #### LOG 先Gauss滤波再Laplace算子
 
+### ICP
+Using the SVD to get the solution
+Optimize:
+- Filter some outlier which is the noise during the data collection
+- Use the KDtree structure to save the time
+
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
