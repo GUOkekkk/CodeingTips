@@ -279,7 +279,7 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 ### Mahalanobis distance
 
 ## 算法知识
-最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
+最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。 
 ### 本质矩阵(Essential Matrix)
 ### 基本矩阵(Fundamental Matrix)
 ### 单应矩阵(Homograph Matrix)
@@ -297,14 +297,14 @@ https://www.cnblogs.com/liuzhenbo/p/10849840.html
 场函数，空间中任意一个点到附近标志物的最小距离 有正有负表示内部或外部
 
 ### 深度学习的一些评价标准
-Recall： TP/（TP + FN）查全 是不是所有的正样本都被检测出来： 肿瘤
-Precision：TP/（TP + FP）查准 输出的正样本是不是正确：垃圾邮件
-mAP： mean average precision 针对目标检测（也用IoU判断） 计算PR曲线下面的面积再根据类别平均
+Recall： TP/（TP + FN）查全 是不是所有的正样本都被检测出来： 肿瘤 
+Precision：TP/（TP + FP）查准 输出的正样本是不是正确：垃圾邮件 
+mAP： mean average precision 针对目标检测（也用IoU判断） 计算PR曲线下面的面积再根据类别平均 
 https://zhuanlan.zhihu.com/p/43068926
 
-IoU：intersection over union 针对语义分割 
+IoU：intersection over union 针对语义分割  
 
-PQ：Panoptic Segmentation 针对全景分割
+PQ：Panoptic Segmentation 针对全景分割 
 
 ### Attention
 https://zhuanlan.zhihu.com/p/392553460
@@ -312,8 +312,8 @@ https://zhuanlan.zhihu.com/p/392553460
 #### Multi-head attention
 
 ### NLP中的Mask操作
-1.为了计算中处理那些补出来的0的信息
-2.在decoder中去掉一些文本中的本来的信息，加强训练避免后续分词的影响
+1.为了计算中处理那些补出来的0的信息 
+2.在decoder中去掉一些文本中的本来的信息，加强训练避免后续分词的影响 
 
 ### Operator
 #### Sobel 一阶微分 过滤模糊的地方
@@ -333,11 +333,11 @@ Optimize:
 对两张2d图像求解T的方法，通过八对点方法，求解E或者F
 
 ### PnP问题
-已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证。 
+已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证。  
 具体方法有EPnP，DLT等
 
 ### ICP方法
-3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系 
+3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系  
 可以用SVD或者BA来求解
 
 ### BA
@@ -366,7 +366,7 @@ Use `rosbag record` to store and `rosbag play` to read.
 
 ## Python
 ### 使用glob或者os.listdir来得到文件夹中的文件地址
-但是需要注意的是，读取出来的文件是无序的。需要用`list.sort(key = lambda x : int(x.split('something')[0])`
+但是需要注意的是，读取出来的文件是无序的。需要用`list.sort(key = lambda x : int(x.split('something')[0])` 
 这个sort没有返回值，需要注意
 
 ### tqdm
@@ -375,9 +375,9 @@ Use `rosbag record` to store and `rosbag play` to read.
 ### 交换两个list中的元素
 a, b = b, a
 ### 内置函数
-常用内置函数 https://www.runoob.com/python/python-built-in-functions.html
-`filter(function, iterable):` 过滤序列，true or false function
-`map(function, iterable, ...):` 对一个或多个子列操作 ex：`map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])`
+常用内置函数 https://www.runoob.com/python/python-built-in-functions.html 
+`filter(function, iterable):` 过滤序列，true or false function 
+`map(function, iterable, ...):` 对一个或多个子列操作 ex：`map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])` 
 ### Lambda函数
 https://www.runoob.com/python/python-built-in-functions.html
             # 程序从列表中过滤出偶数项
@@ -408,10 +408,10 @@ https://www.runoob.com/python/python-built-in-functions.html
 
             str.istitle()    判断所有单词都是首字母大写
 ### JSON
-Json是JavaScript Object Notation是一种轻量级的数据交换格式。 
-需要使用`json`这个包来操作。 存在`json.loads`（处理字符串）和`json.load`（处理类文件对象）两种函数。
-可以将`json`和`pandas`结合起来使用。https://geek-docs.com/pandas/pandas-read-write/pandas-reading-and-writing-json.html 
-使用`frame = pd.DataFrame
+Json是JavaScript Object Notation是一种轻量级的数据交换格式。  
+需要使用`json`这个包来操作。 存在`json.loads`（处理字符串）和`json.load`（处理类文件对象）两种函数。 
+可以将`json`和`pandas`结合起来使用。https://geek-docs.com/pandas/pandas-read-write/pandas-reading-and-writing-json.html  
+使用`frame = pd.DataFrame 
 frame.to_json('.json')`
 
 ### TensorFlow 2.0
@@ -550,7 +550,7 @@ all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为
 
 ## C++
 ### -> and .
--> 当对象是指针类型时使用
+-> 当对象是指针类型时使用 
 . 当对象是实体
 
 ### ～A()
