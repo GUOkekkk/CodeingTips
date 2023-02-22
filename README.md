@@ -376,6 +376,14 @@ Real Time Kinematic技术，基于GPS技术（四颗卫星，一颗消除时间�
 
 GPS误差比较大1m以上， 用RTK减少误差（通过自身定位信息和基准站的相对定位信息来求解误差，使用实时差分），更为通用的是网络RTK生成虚拟基准站，需要移动网络
 
+### BERT
+Bidirectional Encoder Representation from Transformers，不同于之前的单向Transformer，BERT采用MLM（Marked Language Model）生成双向深度语义特征
+
+### pre-trained network
+https://zhuanlan.zhihu.com/p/159620066 
+
+PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者部分参数）负责共性部分，再通过小的针对特殊任务的数据集上的训练，负责特性部分， 可能是zaiPTM的基础上训练或者是只训练输出层
+
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
