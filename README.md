@@ -277,6 +277,18 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 ### 叉乘矩阵
 ### Hamilton Product for the quaternion multiplication
 ### Mahalanobis distance
+### Spherical Harmonics & Spherical Gaussian
+都是一种球面基函数，用来表示另一个复杂的非线性函数 
+
+Spherical Harmonics：球谐函数， 球面坐标系下的基函数来源于Laplace方程的解，正交，旋转不变性 一阶1一个系数，二阶4个系数，三阶九个系数（常用） 
+
+Laplace方程：Laplace算子，二阶偏导和为0, 如果等于一个函数就是Poisson方程（最基础的椭圆方程） 
+
+Spherical Gaussian：在球面上服从Gauss分布的基函数，可以自由设计 
+
+球面坐标系：可以用颜色也可以用形状来表示一个函数，所以为什么用基函数来表示光照情况， 
+
+三维空间下的一种坐标系，就像二维的极坐标系，三维空间常见坐标系：直角坐标系，圆柱坐标系
 
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。 
