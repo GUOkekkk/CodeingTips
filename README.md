@@ -384,6 +384,10 @@ https://zhuanlan.zhihu.com/p/159620066
 
 PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者部分参数）负责共性部分，再通过小的针对特殊任务的数据集上的训练，负责特性部分， 可能是zaiPTM的基础上训练或者是只训练输出层
 
+### Bearing Angle Image
+基于3D Pointcloud生成的2Dimage基于点和neighbor的关系
+
+
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
