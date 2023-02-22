@@ -369,6 +369,10 @@ Random Sample Consensus是一种过滤outlier的方法
 - 迭代
 - 找到最多inlier的集合
 
+### RTK
+Real Time Kinematic技术，基于GPS技术（四颗卫星，一颗消除时间误差， 四个参数）可以得到PVT（Position Velocity and Time）
+
+GPS误差比较大1m以上， 用RTK减少误差（通过自身定位信息和基准站的相对定位信息来求解误差，使用实时差分），更为通用的是网络RTK生成虚拟基准站，需要移动网络
 
 ## 快捷键
 记录一些各种各样的快捷键。。。
