@@ -580,6 +580,9 @@ np.asarray(np.where(condition)).T 返回<nums, n>的符合条件的位置
 ### numpy插入一列
 np.insert(a, axis, value, axis=1)
 
+### np.set_printoptions(threshold=1000)
+设置打印数据长度
+
 ### plot大小不一样的子图以及控制坐标轴位置
             plt.figure()
             plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = False
