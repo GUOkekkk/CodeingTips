@@ -588,6 +588,8 @@ np.insert(a, axis, value, axis=1)
 ### 过滤ndarrady中的重复元素
 set(tuple([tuple(i) for i in array]))
 
+### Python传入和传出的参数最好还是不要_开头
+
 ### plot大小不一样的子图以及控制坐标轴位置
             plt.figure()
             plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = False
