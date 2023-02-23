@@ -3,7 +3,9 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 这个`.md`文档是用来记录一些我遇到到问题，代码语法和方法在我写代码的时候（感觉中文退步太多）。。。我也想把他作为我的第一个blog并且持续更新，也需要继续学习让他越来越美观。有写blog的想法主要是受这位大神启发 https://doublelll3.ml/ （好像进不去了。。。）。BTW希望我能顺利找到工作。。。 
 
-对NLP感兴趣的也可以看看这个博主的博客 https://ivenwang.com/timeline/ 这个博主这种总结积累的过程真的很值得学习
+对NLP感兴趣的也可以看看这个博主的博客 https://ivenwang.com/timeline/ 这个博主这种总结积累的过程真的很值得学习 
+
+积累确实是一个好的事情，但是感觉有时候会耽误进程，还是慢慢做再慢慢调整
 - [CodeingTips](#codeingtips)
   - [Ubuntu](#ubuntu)
     - [ln](#ln)
@@ -582,6 +584,9 @@ np.insert(a, axis, value, axis=1)
 
 ### np.set_printoptions(threshold=1000)
 设置打印数据长度
+
+### 过滤ndarrady中的重复元素
+set(tuple([tuple(i) for i in array]))
 
 ### plot大小不一样的子图以及控制坐标轴位置
             plt.figure()
