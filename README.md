@@ -572,6 +572,14 @@ note:
             
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
 
+### np.where()用法
+np.where(condition, x, y) 按条件修改数组元素 
+
+np.asarray(np.where(condition)).T 返回<nums, n>的符合条件的位置
+
+### numpy插入一列
+np.insert(a, axis, value, axis=1)
+
 ### plot大小不一样的子图以及控制坐标轴位置
             plt.figure()
             plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = False
@@ -597,7 +605,6 @@ all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为
 
             plt.savefig('tra.png')
             
-
 
 
 ## C++
