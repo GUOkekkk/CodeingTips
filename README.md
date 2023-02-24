@@ -405,7 +405,10 @@ https://simondlevy.academic.wlu.edu/kalman-tutorial/
 #### Harris
 https://simondlevy.academic.wlu.edu/kalman-tutorial/
 #### FAST
-#### FAST
+#### BRIEF
+#### ORB
+#### SIFT
+#### SURF
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
