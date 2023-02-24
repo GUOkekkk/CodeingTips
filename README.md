@@ -398,6 +398,14 @@ PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者
 
 进行一些换汤不换药的预处理，网络增加几个层，DL里面再加工ML（虽然我本科也是这样😅）。不过只要结果好就是能发论文，而且说不定也真的可以落地，但是也让一些传统算法的发展空间越来越小。不过用DL去做找最优解这个部分我还是很赞成的，本身很多凸优化或者图优化也就是用算力去迭代，和DL区别不大。
 
+### EKF
+https://simondlevy.academic.wlu.edu/kalman-tutorial/
+
+### 常见的Feature（具体看笔记）
+#### Harris
+https://simondlevy.academic.wlu.edu/kalman-tutorial/
+#### FAST
+#### FAST
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索  
