@@ -650,6 +650,12 @@ set(tuple([tuple(i) for i in array]))
 
 . 当对象是实体
 
+### A good example to filter the data
+`        if (!std::isnormal(Z_ref) || Z_ref <=0 || Z_ref > slamcf::FE_PNP_MAX_Z_DIST)
+            continue;
+`
+
+
 ### ～A()
 Destroctor
 
