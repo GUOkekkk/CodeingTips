@@ -340,6 +340,7 @@ https://zhuanlan.zhihu.com/p/392553460
 #### LOG 先Gauss滤波再Laplace算子
 
 ### ICP
+其实ICP在相机坐标系下的点云配准得到的就是相机的pose变换（讨论的时候搞错了）
 Using the SVD to get the soulution  
 
 Optimize:
