@@ -340,7 +340,12 @@ https://zhuanlan.zhihu.com/p/392553460
 #### LOG 先Gauss滤波再Laplace算子
 
 ### ICP
-其实ICP在相机坐标系下的点云配准得到的就是相机的pose变换（讨论的时候搞错了）
+其实ICP在相机坐标系下的点云配准得到的就是相机的pose变换（讨论的时候搞错了） 
+
+可以使用Point-to-plane方法，加快收敛速度，避免落入local minimum，使用estimated normal vector上的距离 
+
+normal vector可以用当前点和周围邻域的协方差矩阵的最小特征值对应的特征向量求得（PCA） 
+
 Using the SVD to get the soulution  
 
 Optimize:
@@ -605,6 +610,10 @@ set(tuple([tuple(i) for i in array]))
 
 ### Python传入和传出的参数最好还是不要_开头
 ### 内部外部参数也需要注意
+
+### NP数组合并分割
+针对一维数组
+    np.append(a,b) = np.hstack((a,b))
 
 
 
