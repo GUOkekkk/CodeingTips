@@ -306,6 +306,26 @@ https://blog.csdn.net/kokerf/article/details/72191054
 ### EndtoEnd learning
 不提取数据特征，让模型自己去学习数据。
 
+### 一些Clustering 方法
+- Kmeans
+迭代保持中心不变，确定K
+- KD tree
+本质上二叉树，k维数据分割平面，可以用PCA找节点
+-  Hierarchical Kmeans with vocabulary tree
+重复使用Kmeans在每个分组中，直到得到最大深度 https://www.jianshu.com/p/6cec9c777853 
+根据特征对图像进行分类或者聚类便于检索
+-  brute-force search
+暴力搜索
+-  Locality-sensitive hashing
+找一个min-hashing map保证变换后的相似性 
+降低文档相似性比较复杂度https://zhuanlan.zhihu.com/p/108181478
+### 相似度计算
+- 欧式距离 Euclidean
+- 余弦距离：向量夹角的余弦
+- Hamming距离：二元向量的不同
+- Jaccard距离：最小的和/最大的和
+- 编辑距离：两个字符串经过多少变换可以一致
+
 ### Covisibility Graph
 https://www.cnblogs.com/liuzhenbo/p/10849840.html
 
