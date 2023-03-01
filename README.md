@@ -89,6 +89,9 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 
 ## Ubuntu
+### Vscode Ubuntu
+#### ctrl+K+0
+全部折叠，ctrl长按
 
 ### Ubuntu重启
 伸出你的左手，同时按住<Ctrl>+<Alt>键，别松开
