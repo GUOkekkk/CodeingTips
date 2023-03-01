@@ -89,6 +89,14 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 
 ## Ubuntu
+
+### Ubuntu重启
+伸出你的左手，同时按住<Ctrl>+<Alt>键，别松开
+右手先按一下<SysRq>，左手别松开，等1秒
+右手按一下 R，左手别松开，等1秒
+右手按一下 E，左手别松开。这时包括桌面在内，所有程序都会终止，你会看到一个黑乎乎的屏幕，稍微等一段时间
+右手依次按下 I，S，U，B，左手别松开。每按一次都等那么几秒种，你会发现每按一次，屏幕上信息都会有所变化。最后按下B时，屏幕显示reset，这时你的左手可以松开了，等几秒钟，计算机就会安全重启。
+  
 ### 在Ubuntu下面修改鼠标侧键
     sudo apt install xbindkeys xautomation
     xbindkeys --defaults > $HOME/.xbindkeysrc
