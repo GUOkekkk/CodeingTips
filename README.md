@@ -521,6 +521,7 @@ https://github.com/GUOkekkk/TensorFlowLearn
 #### TF常用函数
 ### Numpy
 Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
+### Numpy出现维度不对的时候用.ravel把二维变一维
 ### 一个有趣的np的sort
 #### 高维数组最好还是用a[np.argsort[:, 1]]
 #### 在 sort 函数中排序字段 
