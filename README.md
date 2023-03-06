@@ -374,6 +374,9 @@ https://zhuanlan.zhihu.com/p/392553460
 #### LOG 先Gauss滤波再Laplace算子
 
 ### ICP
+3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系. 
+
+可以用SVD或者BA来求解
 其实ICP在相机坐标系下的点云配准得到的就是相机的pose变换（讨论的时候搞错了） 
 
 可以使用Point-to-plane方法，加快收敛速度，避免落入local minimum，使用estimated normal vector上的距离 
@@ -384,7 +387,9 @@ Using the SVD to get the soulution
 
 Optimize:
 - Filter some outlier which is the noise during the data collection
-- Use the KDtree structure to save the time
+- Use the KDtree structure to save the time 
+
+在Open3d里面想得到iPi+1使用`o3d.pipelines.registration.registration_icp(pc3d_i, pc3d_i+1)` 效果不如PnP
 
 ### DLT
 利用叉乘来解决PnP中的尺度不确定性问题（因为尺度不确定不能用最小二乘法）
@@ -395,12 +400,10 @@ Optimize:
 ### PnP问题
 已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证. 
 
-具体方法有EPnP，DLT等
+具体方法有EPnP，DLT等 
 
-### ICP方法
-3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系. 
-
-可以用SVD或者BA来求解
+在opencv里面需要知道相机内参和畸变系数，一种随机方法，非线性最小二乘  
+得到iPi+1使用`solvePnPRansac(pc3d_i+1, image_i)`
 
 ### BA
 更多是后段全局优化，最小二乘法收敛光束
