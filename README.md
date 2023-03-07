@@ -655,7 +655,7 @@ set(tuple([tuple(i) for i in array]))
 
 ### Opencv
 #### cv2只支持unit8<0-255>或者float32<0.0-1.0>
-#### [一个方便键盘控制的cv的小demo]()
+#### [一个方便键盘控制的cv的小demo](https://github.com/GUOkekkk/ToolKit/blob/main/test_OF.py)
 
 ### Python传入和传出的参数最好还是不要_开头
 ### 内部外部参数也需要注意
