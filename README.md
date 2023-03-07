@@ -444,6 +444,14 @@ PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者
 ### EKF
 https://simondlevy.academic.wlu.edu/kalman-tutorial/
 
+### [Optical Flow](https://docs.opencv.org/4.1.2/d4/dee/tutorial_optical_flow.html)
+Based on two assumptions:1.The pixel intensities of an object do not change between consecutive frames.
+2.Neighbouring pixels have similar motion.
+Mainly implemented by using Lucas-Kanade method
+- Dense
+- Feature
+Color represents the direction and the intensity denotes length of displacement vector. It shows the vector information of two continuous frames in one picture
+
 ### 常见的Feature（具体看笔记）
 #### Harris
 https://simondlevy.academic.wlu.edu/kalman-tutorial/
