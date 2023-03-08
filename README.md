@@ -146,6 +146,8 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 
 ## Ubuntu
+### 脚本语言/Shell
+[Bash](https://www.runoob.com/linux/linux-shell.html)就是其中一种，python也属于广义的脚本语言，主要作用就是更好的操作系统
 ### Vscode Ubuntu
 #### ctrl+K+0
 全部折叠，ctrl长按
