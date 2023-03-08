@@ -589,6 +589,8 @@ Json是JavaScript Object Notation是一种轻量级的数据交换格式.
 使用`frame = pd.DataFrame 
 frame.to_json('.json')`
 
+[JMESPath](https://pypi.org/project/jmespath/)有点像SQL,主要用于搜索
+
 ### TensorFlow 2.0
 #### 以前的学习笔记
 https://github.com/GUOkekkk/TensorFlowLearn
