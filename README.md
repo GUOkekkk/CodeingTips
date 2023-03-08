@@ -92,6 +92,7 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ### Vscode Ubuntu
 #### ctrl+K+0
 全部折叠，ctrl长按
+### [zsh美化终端，但是会有点慢](https://blog.imfing.com/2020/06/ubuntu-18-04-theme-terminal-setup/#%E5%AE%89%E8%A3%85-zsh)
 ### history ｜ grep
 按条件搜索历史
 ### Ubuntu重启
