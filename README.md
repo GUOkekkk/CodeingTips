@@ -132,6 +132,8 @@ https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
 
 ## Docker用法
 https://www.quanxiaoha.com/docker/docker-container.html
+### A small example of the docker
+docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data):/data -v /home/ke/dev/aloslam/aloprodslam(your workspace):/workspace --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aloprodslam:latest(name of the image)
 
 ## Git
 ### Git push时，远端和本地同时修改
