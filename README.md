@@ -92,7 +92,8 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ### Vscode Ubuntu
 #### ctrl+K+0
 全部折叠，ctrl长按
-
+### history ｜ grep
+按条件搜索历史
 ### Ubuntu重启
 伸出你的左手，同时按住Ctrl+Alt键，别松开
 右手先按一下SysRq/PrtSc，左手别松开，等1秒
