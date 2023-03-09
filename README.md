@@ -179,7 +179,10 @@ This `.md` file is created to record some tips I met during the coding. I hope i
     b:8
 ### ln
 复制一个链接到另一个地址 ln -s（软复制）用ls查看时有～标志
-
+### mv
+移动文件，文件夹
+### cp
+or scp(安全copy) 复制一个文件到另一个文件，需要给要复制的文件的名字
 ### mkdir
 ### cd
 ### rm
