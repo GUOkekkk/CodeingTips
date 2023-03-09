@@ -460,12 +460,14 @@ Optimize:
 
 在Open3d里面想得到iPi+1使用`o3d.pipelines.registration.registration_icp(pc3d_i, pc3d_i+1)` 效果不如PnP
 
-### DLT
-利用叉乘来解决PnP中的尺度不确定性问题（因为尺度不确定不能用最小二乘法）
+### [DLT-PnP](https://zhuanlan.zhihu.com/p/58648937)
+利用叉乘来解决Pnp中的尺度不确定性问题（因为尺度不确定不能用最小二乘法）
+（PnP应该没有尺度不确定性。。）
 
 ### 对极约束
-对两张2d图像求解T的方法，通过八对点方法，求解E或者F
+对两张2d图像求解T的方法，通过八对点方法，求解E或者F，存在尺度不确定性
 
+### [三角测量](https://www.zhihu.com/question/27719009)
 ### PnP问题
 已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证. 
 
