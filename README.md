@@ -382,6 +382,7 @@ Spherical Gaussian：在球面上服从Gauss分布的基函数，可以自由设
 ### 基本矩阵(Fundamental Matrix)
 ### 单应矩阵(Homograph Matrix)
 https://blog.csdn.net/kokerf/article/details/72191054
+### [对极约束的问题](https://epsavlc.github.io/2018/11/26/epipolar-geometry.html)
 
 ### Levenberg-Marquardt Algorithm
 ### Iteratively Rewighted Least Squares
