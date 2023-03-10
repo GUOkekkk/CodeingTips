@@ -712,6 +712,8 @@ note:
             
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
 
+### np查找满足条件的元素个数
+`np.count_nonzero((condition a & conidtion b), axis=0)`
 ### np.where()用法
 np.where(condition, x, y) 按条件修改数组元素 
 
