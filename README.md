@@ -607,10 +607,10 @@ https://github.com/GUOkekkk/TensorFlowLearn
 #### TF常用函数
 ### Numpy
 Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
-### Numpy出现维度不对的时候用.ravel把二维变一维
-### 一个有趣的np的sort
-#### 高维数组最好还是用a[np.argsort[:, 1]]
-#### 在 sort 函数中排序字段 
+#### Numpy出现维度不对的时候用.ravel把二维变一维
+#### np.sort
+高维数组最好还是用a[np.argsort[:, 1]]
+#### 在 np.sort 函数中排序字段 
             dt = np.dtype([('name',  'S10'),('age',  int)]) 
             a = np.array([("raju",21),("anil",25),("ravi",  17),  ("amar",27)], dtype = dt)  
             print ('我们的数组是：')
@@ -618,6 +618,8 @@ Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
             print ('\n')
             print ('按 name 排序：')
             print (np.sort(a, order =  'name'))
+#### np norm axis=i ,remove the i axis on the final result shape
+`loss = np.linalg.norm((depths_l[:N] - alo_depth[:N]), ord=1, axis=(1, 2))`
 
 ### Pandas
 和SQL基本上一致，Pandas的Series是一列，多个列组成为一个DataFrame。
