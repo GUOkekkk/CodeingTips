@@ -184,7 +184,11 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 ### mv
 移动文件，文件夹
 ### cp
-or scp(安全copy) 复制一个文件到另一个文件，需要给要复制的文件的名字
+or scp(安全copy) 复制一个文件到另一个文件，需要给要复制的文件的名字 
+
+`cp -r` copy the whole folder `mkdir -p todir && cp -r fromdir todir` 
+
+[a bash shell to copy same file](http://t.csdn.cn/Ua5MO)
 ### mkdir
 ### cd
 ### rm
