@@ -389,6 +389,8 @@ https://blog.csdn.net/kokerf/article/details/72191054
 ### EndtoEnd learning
 不提取数据特征，让模型自己去学习数据。
 
+
+### [TCN](https://naokishibuya.medium.com/temporal-convolutional-networks-94293f1a83f8)
 ### 一些Clustering 方法
 - Kmeans
 迭代保持中心不变，确定K
