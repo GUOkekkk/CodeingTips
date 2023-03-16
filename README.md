@@ -381,6 +381,7 @@ Spherical Gaussian：在球面上服从Gauss分布的基函数，可以自由设
 用来衡量两个概率分布的差别的非对称性度量
 
 ## 算法知识
+### [Robot Engineer](https://robotacademy.net.au/)
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。 
 ### 本质矩阵(Essential Matrix)
 ### 基本矩阵(Fundamental Matrix)
