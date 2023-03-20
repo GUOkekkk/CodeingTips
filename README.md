@@ -3,9 +3,12 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 这个`.md`文档是用来记录一些我遇到到问题，代码语法和方法在我写代码的时候（感觉中文退步太多）。。。我也想把他作为我的第一个blog并且持续更新，也需要继续学习让他越来越美观。有写blog的想法主要是受这位大神启发 https://doublelll3.ml/ （好像进不去了。。。）。BTW希望我能顺利找到工作。。。 
 
-对NLP感兴趣的也可以看看这个博主的博客 https://ivenwang.com/timeline/ 这个博主这种总结积累的过程真的很值得学习 
+对NLP感兴趣的也可以看看这个博主的博客 https://ivenwang.com/timeline/ 这个博主这种总结积累的过程真的很值得学习  
 
-积累确实是一个好的事情，但是感觉有时候会耽误进程，还是慢慢做再慢慢调整
+积累确实是一个好的事情，但是感觉有时候会耽误进程，还是慢慢做再慢慢调整。看见各种bloger和vloger感觉真的是有意思，但是让我自己做又觉得好麻烦。就把这个网页做为一个简单的blog记录一下遇到的问题和解决方案吧（主要是给自己。。），总结一下遇到的问题确实是很有帮助的，还有[文献](https://github.com/GUOkekkk/Literature)总结。 
+
+如果有侵权请直接联系[我](guoke9612@gmail.com)，我会立马删除。 
+If there is any infringement, please feel free to contact [me](guoke9612@gmail.com) directly, I will delete it immediately
 - [CodeingTips](#codeingtips)
   - [Ubuntu](#ubuntu)
     - [Vscode Ubuntu](#vscode-ubuntu)
@@ -143,7 +146,9 @@ This `.md` file is created to record some tips I met during the coding. I hope i
     - [使用`esc+f`进入查找替换](#使用escf进入查找替换)
     - [长按`alt`加移动鼠标多行修改代码](#长按alt加移动鼠标多行修改代码)
 
-
+## 一些好的总结
+### SLAM benchmark
+### pointcloud place recognition
 
 ## Ubuntu
 ### sudo nautilus
