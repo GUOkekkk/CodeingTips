@@ -452,6 +452,10 @@ https://zhuanlan.zhihu.com/p/392553460
 #### Self Attention
 #### Multi-head attention
 
+### Transformer
+https://zhuanlan.zhihu.com/p/48508221 
+
+http://jalammar.github.io/illustrated-transformer/
 ### NLP中的Mask操作
 1.为了计算中处理那些补出来的0的信息 
 
