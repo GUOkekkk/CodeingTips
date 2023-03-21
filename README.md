@@ -456,6 +456,9 @@ https://zhuanlan.zhihu.com/p/392553460
 https://zhuanlan.zhihu.com/p/48508221 
 
 http://jalammar.github.io/illustrated-transformer/
+
+### Short-cut
+From the ResNet, https://www.cnblogs.com/linzzz98/articles/13454369.html
 ### NLP中的Mask操作
 1.为了计算中处理那些补出来的0的信息 
 
