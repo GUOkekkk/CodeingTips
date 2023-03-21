@@ -152,7 +152,8 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
 https://www.cnblogs.com/kin-zhang/p/16943210.html
 ### pointcloud place recognition
 https://github.com/kxhit/awesome-point-cloud-place-recognition
-
+### Object Pose Estimation
+https://github.com/YoungXIAO13/ObjectPoseEstimationSummary
 ## Ubuntu
 ### sudo nautilus
 以root模式GUI打开文件夹
