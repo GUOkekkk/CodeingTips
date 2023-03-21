@@ -776,7 +776,8 @@ surf = cv2.xfeatures2d.SURF_create()
 
             np.append(a,b) = np.hstack((a,b))
 
-
+### super().__init__(paras)
+调用父类的init
 
 ### plot大小不一样的子图以及控制坐标轴位置
             plt.figure()
