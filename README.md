@@ -761,6 +761,12 @@ set(tuple([tuple(i) for i in array]))
 ### Opencv
 #### cv2只支持unit8<0-255>或者float32<0.0-1.0>
 #### [一个方便键盘控制的cv的小demo](https://github.com/GUOkekkk/ToolKit/blob/main/test_OF.py)
+#### Opencv不支持SURF
+`
+pip install opencv-python==3.4.2.16
+pip install opencv-contrib-python==3.4.2.16
+surf = cv2.xfeatures2d.SURF_create()
+`
 
 ### Python传入和传出的参数最好还是不要_开头
 ### 内部外部参数也需要注意
