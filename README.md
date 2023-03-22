@@ -582,6 +582,7 @@ Use `rosbag record` to store and `rosbag play` to read.
 但是需要注意的是，读取出来的文件是无序的。需要用`list.sort(key = lambda x : int(x.split('something')[0])` 
 这个sort没有返回值，需要注意
 
+### [Pytorch3D](https://pytorch3d.readthedocs.io/en/latest/overview.html)
 ### tqdm
 一个package可以可视化一个迭代器
 
