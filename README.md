@@ -389,6 +389,9 @@ Spherical Gaussian：在球面上服从Gauss分布的基函数，可以自由设
 ### KL散度/相对熵
 用来衡量两个概率分布的差别的非对称性度量
 
+### [Grobner basis](https://zhuanlan.zhihu.com/p/262906557)
+计算多项式环的理想，高维多元多项式组求解
+
 ## 算法知识
 ### [Robot Engineer](https://robotacademy.net.au/)
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。 
