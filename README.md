@@ -390,6 +390,7 @@ Spherical Gaussian：在球面上服从Gauss分布的基函数，可以自由设
 用来衡量两个概率分布的差别的非对称性度量
 
 ### [Grobner basis](https://zhuanlan.zhihu.com/p/262906557)
+space: https://blog.csdn.net/qq_33458986/article/details/103198580
 计算多项式环的理想，高维多元多项式组求解
 
 ## 算法知识
