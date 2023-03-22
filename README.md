@@ -808,7 +808,19 @@ surf = cv2.xfeatures2d.SURF_create()
 
             plt.savefig('tra.png')
             
+### Add legends elegantly
 
+    labels_handles = {
+        "Estimated cameras": handle_cam[0],
+        "GT cameras": handle_cam_gt[0],
+    }
+    ax.legend(
+        labels_handles.values(),
+        labels_handles.keys(),
+        loc="upper center",
+        bbox_to_anchor=(0.5, 0),
+    )`
+`
 
 ## C++
 ### -> and .
