@@ -489,6 +489,8 @@ https://zhuanlan.zhihu.com/p/48508221
 
 http://jalammar.github.io/illustrated-transformer/
 
+https://www.cvmart.net/community/detail/4032
+
 ### Short-cut
 From the ResNet, https://www.cnblogs.com/linzzz98/articles/13454369.html
 ### NLP中的Mask操作
