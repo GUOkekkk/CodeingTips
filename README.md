@@ -481,10 +481,6 @@ IoU：intersection over union 针对语义分割
 
 PQ：Panoptic Segmentation 针对全景分割 
 
-### Attention
-https://zhuanlan.zhihu.com/p/392553460
-#### Self Attention
-#### Multi-head attention
 
 ### Transformer
 https://zhuanlan.zhihu.com/p/48508221 
@@ -492,6 +488,12 @@ https://zhuanlan.zhihu.com/p/48508221
 http://jalammar.github.io/illustrated-transformer/
 
 https://www.cvmart.net/community/detail/4032
+
+#### Attention
+https://zhuanlan.zhihu.com/p/392553460
+
+#### Encoder-decoder
+https://easyai.tech/ai-definition/encoder-decoder-seq2seq/
 
 ### Short-cut
 From the ResNet, https://www.cnblogs.com/linzzz98/articles/13454369.html
