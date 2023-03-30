@@ -180,6 +180,8 @@ https://www.cnblogs.com/kin-zhang/p/16943210.html
 https://github.com/kxhit/awesome-point-cloud-place-recognition
 ### Object Pose Estimation
 https://github.com/YoungXIAO13/ObjectPoseEstimationSummary
+### Robot Academy
+https://robotacademy.net.au/
 ## Ubuntu
 ### sudo nautilus
 以root模式GUI打开文件夹
