@@ -674,6 +674,8 @@ https://github.com/GUOkekkk/TensorFlowLearn
 ### Numpy
 Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
 #### Numpy出现维度不对的时候用.ravel把二维变一维
+#### [::2]
+the form is [start:end:step], so [::2] means form 0 to the end and each 2 steps to take the instance.
 #### np.sort
 高维数组最好还是用a[np.argsort[:, 1]]
 #### 在 np.sort 函数中排序字段 
