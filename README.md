@@ -862,7 +862,10 @@ surf = cv2.xfeatures2d.SURF_create()
 
 ### PyTorch
 #### torch.matmul()
-好像直接过滤了相同的维度了
+好像直接过滤了相同的维度了然后乘法
+
+#### .squeeze and .unsqueeze
+squeeze压缩tenor，unsqueeze对tensor扩维
 
 ## C++
 ### -> and .
