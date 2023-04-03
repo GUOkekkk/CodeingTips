@@ -860,6 +860,10 @@ surf = cv2.xfeatures2d.SURF_create()
     )`
 `
 
+### PyTorch
+#### torch.matmul()
+好像直接过滤了相同的维度了
+
 ## C++
 ### -> and .
 -> 当对象是指针类型时使用 
