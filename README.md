@@ -483,6 +483,8 @@ IoU：intersection over union 针对语义分割
 
 PQ：Panoptic Segmentation 针对全景分割 
 
+### Zero-shot learning & few-shot learning
+http://t.csdn.cn/a4O8C
 
 ### Transformer
 https://zhuanlan.zhihu.com/p/48508221 
