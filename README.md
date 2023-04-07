@@ -184,6 +184,9 @@ https://github.com/kxhit/awesome-point-cloud-place-recognition
 https://github.com/YoungXIAO13/ObjectPoseEstimationSummary
 ### Robot Academy
 https://robotacademy.net.au/
+### DL Visualization
+https://jalammar.github.io/illustrated-word2vec/
+
 ## Ubuntu
 ### sudo nautilus
 以root模式GUI打开文件夹
