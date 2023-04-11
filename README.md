@@ -186,6 +186,10 @@ https://github.com/YoungXIAO13/ObjectPoseEstimationSummary
 https://robotacademy.net.au/
 ### DL Visualization
 https://jalammar.github.io/illustrated-word2vec/
+### Robot simulation & Robot learning
+https://github.com/zalo/mujoco_wasm 
+
+https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-cortex-vc-1/
 
 ## Ubuntu
 ### sudo nautilus
