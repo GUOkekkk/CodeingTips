@@ -502,6 +502,8 @@ https://zhuanlan.zhihu.com/p/392553460
 #### Encoder-decoder
 https://easyai.tech/ai-definition/encoder-decoder-seq2seq/
 
+#### [Deep Double Descent](https://openai.com/research/deep-double-descent)
+
 ### Short-cut
 From the ResNet, https://www.cnblogs.com/linzzz98/articles/13454369.html
 ### NLP中的Mask操作
