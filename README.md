@@ -188,6 +188,8 @@ https://robotacademy.net.au/
 https://jalammar.github.io/illustrated-word2vec/
 ### Robot simulation & Robot learning
 https://github.com/zalo/mujoco_wasm 
+### Sim2Real
+https://zhuanlan.zhihu.com/p/510951914
 
 https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-cortex-vc-1/
 
