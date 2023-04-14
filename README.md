@@ -188,9 +188,9 @@ https://robotacademy.net.au/
 https://jalammar.github.io/illustrated-word2vec/
 ### Robot simulation & Robot learning
 https://github.com/zalo/mujoco_wasm 
-### Sim2Real
+#### Sim2Real
 https://zhuanlan.zhihu.com/p/510951914
-
+#### Robot long-term learning
 https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-cortex-vc-1/
 
 ## Ubuntu
@@ -434,7 +434,6 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 计算多项式环的理想，高维多元多项式组求解
 
 ## 算法知识
-### [Robot Engineer](https://robotacademy.net.au/)
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。 
 ### 本质矩阵(Essential Matrix)
 ### 基本矩阵(Fundamental Matrix)
