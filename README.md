@@ -253,6 +253,9 @@ https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
 https://www.quanxiaoha.com/docker/docker-container.html
 ### A small example of the docker
 docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data):/data -v /home/ke/dev/aloslam/aloprodslam(your workspace):/workspace --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aloprodslam:latest(name of the image)
+### docker debug
+`Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?` -> `sudo systemctl start docker` ( check if docker is running?) -> `Job for docker.service failed because the control process exited with error code. See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.` -> `sudo rm /etc/docker/daemon.json`
+
 
 ## Git
 ### Git push时，远端和本地同时修改
