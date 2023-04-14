@@ -279,12 +279,15 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 1. 比较直接的方法就是把图片上传到repository中然后`![name](link)` 但是容易受DNS域名污染
 2. 可以把图片转换到base64码再`![name](data:image/png;base64,XXX)` 但是base64码很长影响写作，可以`![name][base64str]`和`[base64str]:data:image/png;base64,XXX`来代替。`Png2Base64.ipynb`可以用来转换图片到base64码基于python。
 Tip：但是不知道为什么我的第二种方法并不成功，第一种方法本地也没办法看到图片，只能用手机才能看到。
-3. 或者使用html语言  
+3. 或者使用html语言
+``` 
+<p align="center">
       <center>
       <img src="https://img-blog.csdn.net/20151129213701642" width="25%" height="25%" />
       Figure 1. Lena
       </center>
-
+</p>
+```
 ### 解决看不到自己的readme中的图片
 DNS域名污染， 解决办法：
 https://segmentfault.com/a/1190000038705840
