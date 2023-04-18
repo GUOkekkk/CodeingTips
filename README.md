@@ -264,6 +264,11 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 ### git checkout 
 ### git log + q
 ### git branch -a
+### Git permission denied
+put it on the .bashrc
+`eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa`
+and go to `~/.ssh/` do the `sudo chown -R username`
 
 ## Markdown语法Tips
 ### 生成requirement和项目结构
