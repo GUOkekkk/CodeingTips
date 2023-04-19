@@ -919,6 +919,48 @@ surf = cv2.xfeatures2d.SURF_create()
 
 ### PyTorch
 ### [循环生成网络的层](https://zhuanlan.zhihu.com/p/119280719)
+ex: 
+
+      class Encoder_Block(nn.Module):
+          def __init__(self, layers_num = 3, num_hid=128, num_head=8, num_kp = 200, device = 'cuda:0'):
+              super(Encoder_Block, self).__init__()
+              self.layers_num = layers_num
+              self.num_hid = num_hid
+              self.num_head = num_head
+              self.num_kp = num_kp
+              self.device = device
+              self.encoder_layers = [] # key tricky
+
+              for i in range(layers_num): # key tricky
+                  encoder_layer =nn.TransformerEncoderLayer(d_model=self.num_hid, nhead=self.num_head).to(device=self.device)
+                  setattr(self,'encoder_layer%i'%i,encoder_layer)
+                  self.encoder_layers.append(encoder_layer)
+
+              self.itmlp = nn.Sequential(
+                  nn.Linear(self.num_hid, self.num_hid*2),
+                  nn.ReLU(),
+                  nn.Linear(self.num_hid*2, self.num_hid//2),
+                  nn.ReLU(),
+                  nn.Linear(self.num_hid//2, 7),).to(device=self.device)
+
+              self.pnp_check = PnP_check(K=torch.Tensor(np.array([[1,0,0],[0,1,0],[0,0,1]])).cuda(), num_hid=self.num_hid, num_kp=self.num_kp).to(device=self.device)
+
+              self.pos2demb = PositionEmbedding2d(num_hid=self.num_hid, num_kp=self.num_kp).to(device=self.device)
+
+          def __set__init(self,layer):
+              init.normal_(layer.weight, mean = 0, std = 1)
+
+          def forward(self, input_emb, pos3d):
+              # (B, N+1, num_hid)  (B, N, 3)
+              for i in range(self.layers_num): # key tricky
+                  output_emb = self.encoder_layers[i](input_emb) # (B, N+1, num_hid)
+                  t_token = output_emb[:, -1, :] # (B, 1, num_hid)
+                  t_vec = self.itmlp(t_token) # (B, 1, 7)
+                  kp2d_check = self.pnp_check(pos3d, t_vec) # (B, N, 2)
+                  p2d_check_emb = self.pos2demb(kp2d_check) # (B, N, num_hid)
+                  output_emb[:, :-1, :] = output_emb[:, :-1, :] + p2d_check_emb # (B, N, num_hid)
+                  input_emb = output_emb
+              return input_emb
 
 #### .to(device=device)
 make sure or the model/tensor has the smae device
