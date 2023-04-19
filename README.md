@@ -286,10 +286,8 @@ Tip：但是不知道为什么我的第二种方法并不成功，第一种方�
 3. 或者使用html语言
 ``` 
 <p align="center">
-      <center>
       <img src="https://img-blog.csdn.net/20151129213701642" width="25%" height="25%" />
       Figure 1. Lena
-      </center>
 </p>
 ```
 ### 解决看不到自己的readme中的图片
