@@ -655,6 +655,13 @@ Use `rosbag record` to store and `rosbag play` to read.
 ### tqdm
 一个package可以可视化一个迭代器
 
+### join
+    str.join(sequence)
+ex:
+    symbol = "-";
+    seq = ("a", "b", "c");
+    print symbol.join( seq )
+    --> a-b-c
 ### 交换两个list中的元素
 a, b = b, a
 ### 内置函数
