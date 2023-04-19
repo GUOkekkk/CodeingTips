@@ -933,6 +933,13 @@ ex: `summary(model, (3, 640, 128)) # did not take the batch as the input size`
 #### .squeeze and .unsqueeze
 squeeze压缩tenor，unsqueeze对tensor扩维
 
+#### cat the iterative tensor
+ex: 
+
+    test = []
+    for i in range(10):
+      test.append(tensor_i.unsqueeze(0)) # tensor_i (4,4) -> (1, 4, 4)
+    torch.cat(test, dim=0) # key tricky
 ## C++
 ### -> and .
 -> 当对象是指针类型时使用 
