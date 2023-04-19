@@ -920,6 +920,8 @@ surf = cv2.xfeatures2d.SURF_create()
 ### PyTorch
 #### .to(device=device)
 make sure or the model/tensor has the smae device
+#### .cpu() & .cuda()
+numpy only take the .cpu()...but go back to tensor has to use the .cuda()
 #### torch.matmul()
 好像直接过滤了相同的维度了然后乘法
 
