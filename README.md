@@ -906,6 +906,11 @@ make sure or the model/tensor has the smae device
 #### torch.matmul()
 好像直接过滤了相同的维度了然后乘法
 
+#### summary
+use `from torchinfo import summary` or `from torchsummary import summary` but `torchsummary` is not suitable for the transformer 
+
+ex: `summary(model, (3, 640, 128)) # did not take the batch as the input size`
+
 #### .squeeze and .unsqueeze
 squeeze压缩tenor，unsqueeze对tensor扩维
 
