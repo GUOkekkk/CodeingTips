@@ -657,7 +657,8 @@ Use `rosbag record` to store and `rosbag play` to read.
 
 ### join
     str.join(sequence)
-ex:
+ex: 
+
     symbol = "-";
     seq = ("a", "b", "c");
     print symbol.join( seq )
