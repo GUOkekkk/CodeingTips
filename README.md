@@ -918,6 +918,8 @@ surf = cv2.xfeatures2d.SURF_create()
 `
 
 ### PyTorch
+### [循环生成网络的层](https://zhuanlan.zhihu.com/p/119280719)
+
 #### .to(device=device)
 make sure or the model/tensor has the smae device
 #### .cpu() & .cuda()
