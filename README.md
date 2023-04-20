@@ -6,7 +6,7 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 积累确实是一个好的事情，但是感觉有时候会耽误进程，还是慢慢做再慢慢调整。看见各种bloger和vloger感觉真的是有意思，但是让我自己做又觉得好麻烦。就把这个网页做为一个简单的blog记录一下遇到的问题和解决方案吧（主要是给自己。。），总结一下遇到的问题确实是很有帮助的，还有[文献](https://github.com/GUOkekkk/Literature)总结。 
 
-**🤖**: Optimistic science fiction typically imagines a future where humans create art and pursue fulfilling pastimes while AI-enabled robots handle dull or dangerous tasks. In contrast, the AI systems of today display increasingly sophisticated generative abilities on ostensible creative tasks. But where are the robots? This gap is known as Moravec’s paradox, the thesis that the hardest problems in AI involve sensorimotor skills, not abstract thought or reasoning. To put it another way, “The hard problems are easy, and the easy problems are hard.”
+🤖 : Optimistic science fiction typically imagines a future where humans create art and pursue fulfilling pastimes while AI-enabled robots handle dull or dangerous tasks. In contrast, the AI systems of today display increasingly sophisticated generative abilities on ostensible creative tasks. But where are the robots? This gap is known as Moravec’s paradox, the thesis that the hardest problems in AI involve sensorimotor skills, not abstract thought or reasoning. To put it another way, “**The hard problems are easy, and the easy problems are hard.**”
 
 如果有侵权请直接联系[我](guoke9612@gmail.com)，我会立马删除. 
 
@@ -635,7 +635,9 @@ PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者
 
 但是现在太多跨学科和DL结合了，控制，感知，生物等等，把一些很优美的公式和算法替代了，变成了不可以解释的AI，也为同行没办法复现出一样的结果找理由。
 
-进行一些换汤不换药的预处理，网络增加几个层，DL里面再加工ML（虽然我本科也是这样😅）。不过只要结果好就是能发论文，而且说不定也真的可以落地，但是也让一些传统算法的发展空间越来越小。不过用DL去做找最优解这个部分我还是很赞成的，本身很多凸优化或者图优化也就是用算力去迭代，和DL区别不大。
+进行一些换汤不换药的预处理，网络增加几个层，DL里面再加工ML（虽然我本科也是这样😅）。不过只要结果好就是能发论文，而且说不定也真的可以落地，但是也让一些传统算法的发展空间越来越小。不过用DL去做找最优解这个部分我还是很赞成的，本身很多凸优化或者图优化也就是用算力去迭代，和DL区别不大。 
+
+`Simplicity is prerequisite for reliability   --Edsger W. Dijkstra`
 
 ### EKF
 https://simondlevy.academic.wlu.edu/kalman-tutorial/
