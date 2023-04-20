@@ -270,6 +270,10 @@ VScode YYDS🏄🏼
 ### Auto-form does not work
 - [ ] check if the settings.json is correct
 - [ ] choose the suitable interpreter(with `black` package otherwise `pip install black`)
+
+### [Keyshot in Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
+The Linux and Windows is different, take care!
+
 ## Docker用法
 https://www.quanxiaoha.com/docker/docker-container.html
 ### A small example of the docker
