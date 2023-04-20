@@ -265,6 +265,11 @@ rm -r 删除整个文件夹
 ### vi的用法(nano is better)
 https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
 
+## VScode
+VScode YYDS🏄🏼
+### Auto-form does not work
+- [ ] check if the settings.json is correct
+- [ ] choose the suitable interpreter(with `black` package otherwise `pip install black`)
 ## Docker用法
 https://www.quanxiaoha.com/docker/docker-container.html
 ### A small example of the docker
