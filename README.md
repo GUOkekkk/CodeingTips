@@ -709,6 +709,7 @@ https://www.runoob.com/python/python-built-in-functions.html
             print(new_list)
 `lambda`和`filter`结合
 ### String
+#### split
 使用`str.split(' ', num)`分割。
 
             string="asdasd"
@@ -728,6 +729,21 @@ https://www.runoob.com/python/python-built-in-functions.html
             str.isupper() 判断所有字符都是大写
 
             str.istitle()    判断所有单词都是首字母大写
+
+#### [f-string](https://realpython.com/python-f-strings/)
+ex: 
+
+      name = "Eric"
+      profession = "comedian"
+      affiliation = "Monty Python"
+      message = (
+          f"Hi {name}. "
+          f"You are a {profession}. "
+          f"You were in {affiliation}."
+      )
+      message
+
+
 ### JSON
 Json是JavaScript Object Notation是一种轻量级的数据交换格式. 
 
