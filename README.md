@@ -6,7 +6,7 @@ This `.md` file is created to record some tips I met during the coding. I hope i
 
 积累确实是一个好的事情，但是感觉有时候会耽误进程，还是慢慢做再慢慢调整。看见各种bloger和vloger感觉真的是有意思，但是让我自己做又觉得好麻烦。就把这个网页做为一个简单的blog记录一下遇到的问题和解决方案吧（主要是给自己。。），总结一下遇到的问题确实是很有帮助的，还有[文献](https://github.com/GUOkekkk/Literature)总结。 
 
-Optimistic science fiction typically imagines a future where humans create art and pursue fulfilling pastimes while AI-enabled robots handle dull or dangerous tasks. In contrast, the AI systems of today display increasingly sophisticated generative abilities on ostensible creative tasks. But where are the robots? This gap is known as Moravec’s paradox, the thesis that the hardest problems in AI involve sensorimotor skills, not abstract thought or reasoning. To put it another way, “The hard problems are easy, and the easy problems are hard.”
+**🤖**: Optimistic science fiction typically imagines a future where humans create art and pursue fulfilling pastimes while AI-enabled robots handle dull or dangerous tasks. In contrast, the AI systems of today display increasingly sophisticated generative abilities on ostensible creative tasks. But where are the robots? This gap is known as Moravec’s paradox, the thesis that the hardest problems in AI involve sensorimotor skills, not abstract thought or reasoning. To put it another way, “The hard problems are easy, and the easy problems are hard.”
 
 如果有侵权请直接联系[我](guoke9612@gmail.com)，我会立马删除. 
 
@@ -297,6 +297,8 @@ ssh-add ~/.ssh/id_rsa`
 and go to `~/.ssh/` do the `sudo chown -R username`
 
 ## Markdown语法Tips
+### [Emojipeida](https://emojipedia.org/)
+### [Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
 ### 生成requirement和项目结构
 `pip intsall pipreqs`
 
