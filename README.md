@@ -216,6 +216,11 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - zoom in/out -> `ctrl + +/-`
 - how to change the tab/file?
 - how to select things
+- scroll
+
+
+
+
 ### sudo nautilus
 以root模式GUI打开文件夹
 ### 脚本语言/Shell
