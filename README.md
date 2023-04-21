@@ -214,9 +214,16 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 以root模式GUI打开文件夹
 ### 脚本语言/Shell
 [Bash](https://www.runoob.com/linux/linux-shell.html)就是其中一种，python也属于广义的脚本语言，主要作用就是更好的操作系统
+
 ### Vscode Ubuntu
 #### ctrl+K+0
 全部折叠，ctrl长按
+
+### [Use Terminator](https://www.tecmint.com/terminator-a-linux-terminal-emulator-to-manage-multiple-terminal-windows/#:~:text=Quit%20the%20Terminator%20%E2%80%93%20Ctrl%2BShift,to%20Next%20Tab%20%E2%80%93%20Ctrl%2Bpage_Down)
+- Split terminals horizontally: `Ctrl + Shift + O`
+- Split terminals vertically: `Ctrl + Shift + E`
+- Move the tab: `Alt + direction`
+
 ### [zsh美化终端，但是会有点慢](https://blog.imfing.com/2020/06/ubuntu-18-04-theme-terminal-setup/#%E5%AE%89%E8%A3%85-zsh)
 ### history ｜ grep
 按条件搜索历史
