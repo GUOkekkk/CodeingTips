@@ -214,6 +214,8 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - close the window -> `alt + F4`
 - change the window -> `alt + tab`
 - zoom in/out -> `ctrl + +/-`
+- how to change the tab/file?
+- how to select things
 ### sudo nautilus
 以root模式GUI打开文件夹
 ### 脚本语言/Shell
