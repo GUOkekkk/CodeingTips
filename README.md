@@ -210,6 +210,9 @@ https://zhuanlan.zhihu.com/p/510951914
 https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-cortex-vc-1/
 
 ## Ubuntu
+### Don't use mouse!!! ⌨️
+- close the window -> `alt + F4`
+- change the window -> `alt + tab`
 ### sudo nautilus
 以root模式GUI打开文件夹
 ### 脚本语言/Shell
