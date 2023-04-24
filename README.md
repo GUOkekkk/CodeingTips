@@ -1028,6 +1028,11 @@ ex:
     for i in range(10):
       test.append(tensor_i.unsqueeze(0)) # tensor_i (4,4) -> (1, 4, 4)
     torch.cat(test, dim=0) # key tricky
+    
+#### Inplace???
+error : 
+
+    RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1, 200, 2, 64]], which is output 0 of AsStridedBackward0, is at version 2; expected version 1 instead. Hint: the backtrace further above shows the operation that failed to compute its gradient. The variable in question was changed in there or anywhere later. Good luck!
 ## C++
 ### -> and .
 -> 当对象是指针类型时使用 
