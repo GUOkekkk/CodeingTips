@@ -509,8 +509,9 @@ https://blog.csdn.net/kokerf/article/details/72191054
 ### 路径规划
 #### [RRT(Rapidly-exploring random tree)](https://blog.csdn.net/qq_43310597/article/details/107238684)
 [Voronoi diagram](https://en.wikipedia.org/wiki/Voronoi_diagram)
-#### [PRM(Probabilistic Roadmap)]
-#### [A*]
+#### PRM(Probabilistic Roadmap)(Dijkstra method)
+#### A*
+#### [DWA](https://www.guyuehome.com/38209)
 
 ### [TCN](https://naokishibuya.medium.com/temporal-convolutional-networks-94293f1a83f8)
 ### 一些Clustering 方法
