@@ -222,7 +222,7 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - Split terminals horizontally: `Ctrl + Shift + O`
 - Split terminals vertically: `Ctrl + Shift + E`
 - Scroll in the terminator: `shift + page up/down`
-- Move the tab: `Alt + direction
+- Move the tab: `Alt + direction'
 - how to scroll?
 
 
