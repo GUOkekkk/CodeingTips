@@ -219,8 +219,10 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - close the file in vscode -> `ctrl + w`
 - open more files in vscode -> `ctrl + shift + p + back`
 - [more shortcuts in vscode](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
-- how to select things
-- scroll
+- Split terminals horizontally: `Ctrl + Shift + O`
+- Split terminals vertically: `Ctrl + Shift + E`
+- Move the tab: `Alt + direction
+- how to scroll?
 
 
 
@@ -231,13 +233,12 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 [Bash](https://www.runoob.com/linux/linux-shell.html)就是其中一种，python也属于广义的脚本语言，主要作用就是更好的操作系统
 
 ### [Use Terminator](https://www.tecmint.com/terminator-a-linux-terminal-emulator-to-manage-multiple-terminal-windows/#:~:text=Quit%20the%20Terminator%20%E2%80%93%20Ctrl%2BShift,to%20Next%20Tab%20%E2%80%93%20Ctrl%2Bpage_Down)
-- Split terminals horizontally: `Ctrl + Shift + O`
-- Split terminals vertically: `Ctrl + Shift + E`
-- Move the tab: `Alt + direction`
 
 ### [zsh美化终端，但是会有点慢](https://blog.imfing.com/2020/06/ubuntu-18-04-theme-terminal-setup/#%E5%AE%89%E8%A3%85-zsh)
+
 ### history ｜ grep
 按条件搜索历史
+
 ### Ubuntu重启
 伸出你的左手，同时按住Ctrl+Alt键，别松开
 右手先按一下SysRq/PrtSc，左手别松开，等1秒
