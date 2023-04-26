@@ -221,6 +221,7 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - [more shortcuts in vscode](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 - Split terminals horizontally: `Ctrl + Shift + O`
 - Split terminals vertically: `Ctrl + Shift + E`
+- Scroll in the terminator: `shift + page up/down`
 - Move the tab: `Alt + direction
 - how to scroll?
 
