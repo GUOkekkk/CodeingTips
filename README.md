@@ -213,8 +213,12 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 ### Don't use mouse!!! ⌨️
 - close the window -> `alt + F4`
 - change the window -> `alt + tab`
+- use `ctrl + direction` to move quickly and use `shift` to choose
 - zoom in/out -> `ctrl + +/-`
-- how to change the tab/file?
+- change the tab/file in vscode -> `ctrl + tab`
+- close the file in vscode -> `ctrl + w`
+- open more files in vscode -> `ctrl + shift + p + back`
+- [more shortcuts in vscode](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 - how to select things
 - scroll
 
