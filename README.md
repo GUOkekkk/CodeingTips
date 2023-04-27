@@ -705,6 +705,12 @@ Use `rosbag record` to store and `rosbag play` to read.
 ### tqdm
 一个package可以可视化一个迭代器
 
+### ord()
+The `ord()` function returns an integer representing the Unicode character.
+ex: 
+
+    ord('9') - ord('0')
+    
 ### join
     str.join(sequence)
 ex: 
