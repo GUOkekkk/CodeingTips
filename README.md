@@ -301,6 +301,7 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 ### docker debug
 `Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?` -> `sudo systemctl start docker` ( check if docker is running?) -> `Job for docker.service failed because the control process exited with error code. See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.` -> `sudo rm /etc/docker/daemon.json`
 
+## [ChatGPT Prompts](https://writesonic.com/blog/how-to-write-chatgpt-prompts/)
 
 ## Git
 ### Git push时，远端和本地同时修改
