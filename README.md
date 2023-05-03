@@ -210,11 +210,12 @@ https://zhuanlan.zhihu.com/p/510951914
 https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-cortex-vc-1/
 
 ## 工作流程
-- 连接server
-- 在`Dockerfile`里创建image
-- 通过image创建container
-- 进入container连接WandB
-- 开始training
+- 连接server `ssh servername`
+- 在`Dockerfile`里创建image `sudo -H docker build - <torch_gk_pnp_Dockerfile  -t nash_pnp`
+- 通过image创建container `docker run --name torch-pnp --shm-size=16gb --gpus all -it -v /data:/data -v /home/ke:/workspace --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --env PYTHONPATH=/workspace/torch_pnp/alopix:/workspace/torch_pnp/alovb:/workspace/torch_pnp/aloception-oss:/workspace/torch_pnp/alovb/alovb/pnp_transformer nash_pnp`
+- check the nivida `watch -n 0.1 nvidia-smi` & choose the suitable GPU device `export_CUDA_VISIBLE_DEVICES=0`
+- 进入container连接WandB `--log`
+- 开始training `add some args`
 
 ## Ubuntu
 ### Don't use mouse!!! ⌨️
@@ -313,6 +314,11 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 ## Git
 ### Git push时，远端和本地同时修改
 先git pull再进行add, commit再git push
+
+### git pull does not work
+  git fetch --all
+  git reset --hard origin/gk_pnp 
+  git pull
 
 ### git clone --recursive
 ### git checkout 
