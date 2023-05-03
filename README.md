@@ -315,10 +315,11 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 ### Git push时，远端和本地同时修改
 先git pull再进行add, commit再git push
 
-### git pull does not work
-  git fetch --all
-  git reset --hard origin/gk_pnp 
-  git pull
+### git pull does not work 
+
+    git fetch --all
+    git reset --hard origin/gk_pnp 
+    git pull
 
 ### git clone --recursive
 ### git checkout 
