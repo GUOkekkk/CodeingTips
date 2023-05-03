@@ -209,6 +209,13 @@ https://zhuanlan.zhihu.com/p/510951914
 #### Robot long-term learning
 https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-cortex-vc-1/
 
+## 工作流程
+- 连接server
+- 在`Dockerfile`里创建image
+- 通过image创建container
+- 进入container连接WandB
+- 开始training
+
 ## Ubuntu
 ### Don't use mouse!!! ⌨️
 - close the window -> `alt + F4`
