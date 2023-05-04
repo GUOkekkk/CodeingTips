@@ -1,14 +1,14 @@
 # CodeingTips
 This `.md` file is created to record some tips I met during the coding. I hope it could be my first blog and I can update it regularly and modify it clearer and more beautiful. But sorry for now it is only a chinese version.
-这个`.md`文档是用来记录一些我遇到到问题，代码语法和方法在我写代码的时候（感觉中文退步太多）。。。我也想把他作为我的第一个blog并且持续更新，也需要继续学习让他越来越美观。有写blog的想法主要是受这位大神启发 https://doublelll3.ml/ （好像进不去了。。。）。BTW希望我能顺利找到工作。。。 
+这个`.md`文档是用来记录一些我遇到到问题，代码语法和方法在我写代码的时候（感觉中文退步太多）。。。我也想把他作为我的第一个blog并且持续更新，也需要继续学习让他越来越美观。有写blog的想法主要是受这位大神启发 https://doublelll3.ml/ （好像进不去了。。。）。BTW希望我能顺利找到工作。。。
 
-对NLP感兴趣的也可以看看这个博主的博客 https://ivenwang.com/timeline/ 这个博主这种总结积累的过程真的很值得学习  
+对NLP感兴趣的也可以看看这个博主的博客 https://ivenwang.com/timeline/ 这个博主这种总结积累的过程真的很值得学习
 
-积累确实是一个好的事情，但是感觉有时候会耽误进程，还是慢慢做再慢慢调整。看见各种bloger和vloger感觉真的是有意思，但是让我自己做又觉得好麻烦。就把这个网页做为一个简单的blog记录一下遇到的问题和解决方案吧（主要是给自己。。），总结一下遇到的问题确实是很有帮助的，还有[文献](https://github.com/GUOkekkk/Literature)总结。 
+积累确实是一个好的事情，但是感觉有时候会耽误进程，还是慢慢做再慢慢调整。看见各种bloger和vloger感觉真的是有意思，但是让我自己做又觉得好麻烦。就把这个网页做为一个简单的blog记录一下遇到的问题和解决方案吧（主要是给自己。。），总结一下遇到的问题确实是很有帮助的，还有[文献](https://github.com/GUOkekkk/Literature)总结。
 
 🤖 : Optimistic science fiction typically imagines a future where humans create art and pursue fulfilling pastimes while AI-enabled robots handle dull or dangerous tasks. In contrast, the AI systems of today display increasingly sophisticated generative abilities on ostensible creative tasks. But where are the robots? This gap is known as Moravec’s paradox, the thesis that the hardest problems in AI involve sensorimotor skills, not abstract thought or reasoning. To put it another way, “**The hard problems are easy, and the easy problems are hard.**”
 
-如果有侵权请直接联系[我](guoke9612@gmail.com)，我会立马删除. 
+如果有侵权请直接联系[我](guoke9612@gmail.com)，我会立马删除.
 
 If there is any infringement, please feel free to contact [me](guoke9612@gmail.com) directly, I will delete it immediately
 
@@ -22,11 +22,12 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [Robot simulation \& Robot learning](#robot-simulation--robot-learning)
       - [Sim2Real](#sim2real)
       - [Robot long-term learning](#robot-long-term-learning)
+  - [工作流程](#工作流程)
   - [Ubuntu](#ubuntu)
+    - [Don't use mouse!!! ⌨️](#dont-use-mouse-️)
     - [sudo nautilus](#sudo-nautilus)
     - [脚本语言/Shell](#脚本语言shell)
-    - [Vscode Ubuntu](#vscode-ubuntu)
-      - [ctrl+K+0](#ctrlk0)
+    - [Use Terminator](#use-terminator)
     - [zsh美化终端，但是会有点慢](#zsh美化终端但是会有点慢)
     - [history ｜ grep](#history--grep)
     - [Ubuntu重启](#ubuntu重启)
@@ -40,17 +41,25 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [rm](#rm)
     - [pwd](#pwd)
     - [vi的用法(nano is better)](#vi的用法nano-is-better)
+  - [VScode](#vscode)
+    - [Auto-form does not work](#auto-form-does-not-work)
+    - [Keyshot in Linux](#keyshot-in-linux)
+    - [Server error](#server-error)
   - [Docker用法](#docker用法)
     - [A small example of the docker](#a-small-example-of-the-docker)
     - [docker debug](#docker-debug)
+  - [ChatGPT Prompts](#chatgpt-prompts)
   - [Git](#git)
     - [Git push时，远端和本地同时修改](#git-push时远端和本地同时修改)
+    - [git pull does not work](#git-pull-does-not-work)
     - [git clone --recursive](#git-clone---recursive)
     - [git checkout](#git-checkout)
     - [git log + q](#git-log--q)
     - [git branch -a](#git-branch--a)
     - [Git permission denied](#git-permission-denied)
   - [Markdown语法Tips](#markdown语法tips)
+    - [Emojipeida](#emojipeida)
+    - [Cheatsheet](#cheatsheet)
     - [生成requirement和项目结构](#生成requirement和项目结构)
     - [如何添加图片在md文档](#如何添加图片在md文档)
     - [解决看不到自己的readme中的图片](#解决看不到自己的readme中的图片)
@@ -87,8 +96,9 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [EndtoEnd learning](#endtoend-learning)
     - [路径规划](#路径规划)
       - [RRT(Rapidly-exploring random tree)](#rrtrapidly-exploring-random-tree)
-      - [\[PRM(Probabilistic Roadmap)\]](#prmprobabilistic-roadmap)
-      - [\[A\*\]](#a)
+      - [PRM(Probabilistic Roadmap)(Dijkstra method)](#prmprobabilistic-roadmapdijkstra-method)
+      - [A\*](#a)
+      - [DWA](#dwa)
     - [TCN](#tcn)
     - [一些Clustering 方法](#一些clustering-方法)
     - [相似度计算](#相似度计算)
@@ -136,18 +146,21 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [If `import` does not work](#if-import-does-not-work)
     - [Pytorch3D](#pytorch3d)
     - [tqdm](#tqdm)
+    - [ord()](#ord)
     - [join](#join)
     - [交换两个list中的元素](#交换两个list中的元素)
     - [内置函数](#内置函数)
     - [Lambda函数](#lambda函数)
     - [String](#string)
+      - [split](#split)
+      - [f-string](#f-string)
     - [JSON](#json)
     - [TensorFlow 2.0](#tensorflow-20)
       - [以前的学习笔记](#以前的学习笔记)
       - [TF常用函数](#tf常用函数)
     - [Numpy](#numpy)
       - [Numpy出现维度不对的时候用.ravel把二维变一维](#numpy出现维度不对的时候用ravel把二维变一维)
-      - [\[::2\]](#2)
+      - [\[ : : 2\]](#---2)
       - [np.sort](#npsort)
       - [在 np.sort 函数中排序字段](#在-npsort-函数中排序字段)
       - [np norm axis=i ,remove the i axis on the final result shape](#np-norm-axisi-remove-the-i-axis-on-the-final-result-shape)
@@ -177,10 +190,14 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [plot大小不一样的子图以及控制坐标轴位置](#plot大小不一样的子图以及控制坐标轴位置)
     - [Add legends elegantly](#add-legends-elegantly)
     - [PyTorch](#pytorch)
+    - [循环生成网络的层](#循环生成网络的层)
       - [.to(device=device)](#todevicedevice)
+      - [.cpu() \& .cuda()](#cpu--cuda)
       - [torch.matmul()](#torchmatmul)
       - [summary](#summary)
       - [.squeeze and .unsqueeze](#squeeze-and-unsqueeze)
+      - [cat the iterative tensor](#cat-the-iterative-tensor)
+      - [Inplace???](#inplace)
   - [C++](#c)
     - [-\> and .](#--and-)
     - [A good example to filter the data](#a-good-example-to-filter-the-data)
@@ -188,6 +205,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
   - [JupyterTips](#jupytertips)
     - [使用`esc+f`进入查找替换](#使用escf进入查找替换)
     - [长按`alt`加移动鼠标多行修改代码](#长按alt加移动鼠标多行修改代码)
+
 
 
 
@@ -203,7 +221,7 @@ https://robotacademy.net.au/
 ### DL Visualization
 https://jalammar.github.io/illustrated-word2vec/
 ### Robot simulation & Robot learning
-https://github.com/zalo/mujoco_wasm 
+https://github.com/zalo/mujoco_wasm
 #### Sim2Real
 https://zhuanlan.zhihu.com/p/510951914
 #### Robot long-term learning
@@ -259,11 +277,11 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 ### 在Ubuntu下面修改鼠标侧键
     sudo apt install xbindkeys xautomation
     xbindkeys --defaults > $HOME/.xbindkeysrc
-检测侧键 
+检测侧键
 
     xev | grep button
     nano ~/.xbindkeysrc
-命令 
+命令
 
     #CTRL + C
     "xte 'keydown Control_L' 'key c' 'keyup Control_L'"
@@ -277,9 +295,9 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 ### mv
 移动文件，文件夹/rename
 ### cp
-or scp(安全copy) 复制一个文件到另一个文件，需要给要复制的文件的名字 
+or scp(安全copy) 复制一个文件到另一个文件，需要给要复制的文件的名字
 
-`cp -r` copy the whole folder `mkdir -p todir && cp -r fromdir todir` 
+`cp -r` copy the whole folder `mkdir -p todir && cp -r fromdir todir`
 
 [a bash shell to copy same file](http://t.csdn.cn/Ua5MO)
 ### mkdir
@@ -302,6 +320,11 @@ VScode YYDS🏄🏼
 ### [Keyshot in Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 The Linux and Windows is different, take care!
 
+### Server error
+Error: `error loading webview: error: could not register service worker: invalidstateerror: failed to register a serviceworker: the document is in an invalid state..`
+
+
+Solution: close all VScode window and run `killall code`
 ## Docker用法
 https://www.quanxiaoha.com/docker/docker-container.html
 ### A small example of the docker
@@ -315,14 +338,14 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 ### Git push时，远端和本地同时修改
 先git pull再进行add, commit再git push
 
-### git pull does not work 
+### git pull does not work
 
     git fetch --all
-    git reset --hard origin/gk_pnp 
+    git reset --hard origin/gk_pnp
     git pull
 
 ### git clone --recursive
-### git checkout 
+### git checkout
 ### git log + q
 ### git branch -a
 ### Git permission denied
@@ -337,9 +360,9 @@ and go to `~/.ssh/` do the `sudo chown -R username`
 ### 生成requirement和项目结构
 `pip intsall pipreqs`
 
-`pipreqs .` 
+`pipreqs .`
 
-`sudo npm install mddir -g` 
+`sudo npm install mddir -g`
 
 `mddir` or `mddir /../../`
 ### 如何添加图片在md文档
@@ -347,7 +370,7 @@ and go to `~/.ssh/` do the `sudo chown -R username`
 2. 可以把图片转换到base64码再`![name](data:image/png;base64,XXX)` 但是base64码很长影响写作，可以`![name][base64str]`和`[base64str]:data:image/png;base64,XXX`来代替。`Png2Base64.ipynb`可以用来转换图片到base64码基于python。
 Tip：但是不知道为什么我的第二种方法并不成功，第一种方法本地也没办法看到图片，只能用手机才能看到。
 3. 或者使用html语言
-``` 
+```
 <p align="center">
       <img src="https://img-blog.csdn.net/20151129213701642" width="25%" height="25%" />
       Figure 1. Lena
@@ -368,7 +391,7 @@ https://segmentfault.com/a/1190000038705840
 https://docs.github.com/cn/get-started/using-github/keyboard-shortcuts
 
 ### Github上生成Markdown文件的目录
-Github上没办法使用`[TOC]`...真的是挺不智能的。  
+Github上没办法使用`[TOC]`...真的是挺不智能的。
 使用VSCode中的Markdown All in One这个插件可以自动生成，考虑目前我的Blog还是没有太多内容，之后再创建目录吧。
 
 ## Leetcode Tips
@@ -386,7 +409,7 @@ Github上没办法使用`[TOC]`...真的是挺不智能的。
 引用\usepackage{textcomp} 使用\texteuro
 
 ### 不对称分段
-引用\usepackage{paracol} 使用  
+引用\usepackage{paracol} 使用
 \columnratio{0.3}
 \begin{paracol}{2}
 
@@ -425,22 +448,22 @@ Github上没办法使用`[TOC]`...真的是挺不智能的。
 ```
 $$
 \begin{gathered}
-\begin{matrix} 0 & 1 \\ 
+\begin{matrix} 0 & 1 \\
 1 & 0 \end{matrix}
 \quad
 \begin{pmatrix} 0 & -i \\
 i & 0 \end{pmatrix}
 \quad
-\begin{bmatrix} 0 & -1 \\ 
+\begin{bmatrix} 0 & -1 \\
 1 & 0 \end{bmatrix}
 \quad
 \begin{Bmatrix} 1 & 0 \\
 0 & -1 \end{Bmatrix}
 \quad
-\begin{vmatrix} a & b \\ 
+\begin{vmatrix} a & b \\
 c & d \end{vmatrix}
 \quad
-\begin{Vmatrix} i & 0 \\ 
+\begin{Vmatrix} i & 0 \\
 0 & -i \end{Vmatrix}
 \end{gathered}
 $$
@@ -449,13 +472,13 @@ $$
 
 $$
 \begin{gathered}
-\begin{matrix} 0 & 1 \\ 
+\begin{matrix} 0 & 1 \\
 1 & 0 \end{matrix}
 \quad
-\begin{pmatrix} 0 & -i \\ 
+\begin{pmatrix} 0 & -i \\
 i & 0 \end{pmatrix}
 \quad
-\begin{bmatrix} 0 & -1 \\ 
+\begin{bmatrix} 0 & -1 \\
 1 & 0 \end{bmatrix}
 \quad
 \begin{Bmatrix} 1 & 0 \\
@@ -476,14 +499,14 @@ $$
 首先是简单的向量的外积, ex：
 
 $$ a = [a_1\ \  a_2]^T \ \ \ \ b = [b_1\  b_2 \ b_3] $$
-$$a \otimes b = \begin{bmatrix} a_1b_1 & a_1b_2 & a_1b_3 \\ 
+$$a \otimes b = \begin{bmatrix} a_1b_1 & a_1b_2 & a_1b_3 \\
 a_2b_1 & a_2b_2 & a_2b_3 \end{bmatrix}$$
 
 
-也可以推广到矩阵形式，从外积推广到克罗内克积。  
+也可以推广到矩阵形式，从外积推广到克罗内克积。
 如果$A$是一个$m \times n$的矩阵， 而$B$是一个$p \times q$的矩阵，则$ A \otimes B$是一个$mp \times nq$的分块矩阵
 
-$$ A \otimes B = \begin{bmatrix} a_{11}B & \cdots & a_{1n}B \\ 
+$$ A \otimes B = \begin{bmatrix} a_{11}B & \cdots & a_{1n}B \\
 \vdots & \ddots & \vdots \\
 a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 
@@ -495,15 +518,15 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 ### Hamilton Product for the quaternion multiplication
 ### Mahalanobis distance
 ### Spherical Harmonics & Spherical Gaussian
-都是一种球面基函数，用来表示另一个复杂的非线性函数 
+都是一种球面基函数，用来表示另一个复杂的非线性函数
 
-Spherical Harmonics：球谐函数， 球面坐标系下的基函数来源于Laplace方程的解，正交，旋转不变性 一阶1一个系数，二阶4个系数，三阶九个系数（常用） 
+Spherical Harmonics：球谐函数， 球面坐标系下的基函数来源于Laplace方程的解，正交，旋转不变性 一阶1一个系数，二阶4个系数，三阶九个系数（常用）
 
-Laplace方程：Laplace算子，二阶偏导和为0, 如果等于一个函数就是Poisson方程（最基础的椭圆方程） 
+Laplace方程：Laplace算子，二阶偏导和为0, 如果等于一个函数就是Poisson方程（最基础的椭圆方程）
 
-Spherical Gaussian：在球面上服从Gauss分布的基函数，可以自由设计 
+Spherical Gaussian：在球面上服从Gauss分布的基函数，可以自由设计
 
-球面坐标系：可以用颜色也可以用形状来表示一个函数，所以为什么用基函数来表示光照情况， 
+球面坐标系：可以用颜色也可以用形状来表示一个函数，所以为什么用基函数来表示光照情况，
 
 三维空间下的一种坐标系，就像二维的极坐标系，三维空间常见坐标系：直角坐标系，圆柱坐标系
 
@@ -515,7 +538,7 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 计算多项式环的理想，高维多元多项式组求解
 
 ## 算法知识
-最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。 
+最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 ### 本质矩阵(Essential Matrix)
 ### 基本矩阵(Fundamental Matrix)
 ### 单应矩阵(Homograph Matrix)
@@ -541,12 +564,12 @@ https://blog.csdn.net/kokerf/article/details/72191054
 - KD tree
 本质上二叉树，k维数据分割平面，可以用PCA找节点
 -  Hierarchical Kmeans with vocabulary tree
-重复使用Kmeans在每个分组中，直到得到最大深度 https://www.jianshu.com/p/6cec9c777853 
+重复使用Kmeans在每个分组中，直到得到最大深度 https://www.jianshu.com/p/6cec9c777853
 根据特征对图像进行分类或者聚类便于检索
 -  brute-force search
 暴力搜索
 -  Locality-sensitive hashing
-找一个min-hashing map保证变换后的相似性 
+找一个min-hashing map保证变换后的相似性
 降低文档相似性比较复杂度https://zhuanlan.zhihu.com/p/108181478
 ### 相似度计算
 - 欧式距离 Euclidean
@@ -562,22 +585,22 @@ https://www.cnblogs.com/liuzhenbo/p/10849840.html
 场函数，空间中任意一个点到附近标志物的最小距离 有正有负表示内部或外部
 
 ### 深度学习的一些评价标准
-Recall： TP/（TP + FN）查全 是不是所有的正样本都被检测出来： 肿瘤 
+Recall： TP/（TP + FN）查全 是不是所有的正样本都被检测出来： 肿瘤
 
-Precision：TP/（TP + FP）查准 输出的正样本是不是正确：垃圾邮件 
+Precision：TP/（TP + FP）查准 输出的正样本是不是正确：垃圾邮件
 
 mAP： mean average precision 针对目标检测（也用IoU判断） 计算PR曲线下面的面积再根据类别平均
 https://zhuanlan.zhihu.com/p/43068926
 
-IoU：intersection over union 针对语义分割  
+IoU：intersection over union 针对语义分割
 
-PQ：Panoptic Segmentation 针对全景分割 
+PQ：Panoptic Segmentation 针对全景分割
 
 ### Zero-shot learning & few-shot learning
 http://t.csdn.cn/a4O8C
 
 ### Transformer
-https://zhuanlan.zhihu.com/p/48508221 
+https://zhuanlan.zhihu.com/p/48508221
 
 http://jalammar.github.io/illustrated-transformer/
 
@@ -594,9 +617,9 @@ https://easyai.tech/ai-definition/encoder-decoder-seq2seq/
 ### Short-cut
 From the ResNet, https://www.cnblogs.com/linzzz98/articles/13454369.html
 ### NLP中的Mask操作
-1.为了计算中处理那些补出来的0的信息 
+1.为了计算中处理那些补出来的0的信息
 
-2.在decoder中去掉一些文本中的本来的信息，加强训练避免后续分词的影响 
+2.在decoder中去掉一些文本中的本来的信息，加强训练避免后续分词的影响
 
 ### Operator
 #### Sobel 一阶微分 过滤模糊的地方
@@ -604,20 +627,20 @@ From the ResNet, https://www.cnblogs.com/linzzz98/articles/13454369.html
 #### LOG 先Gauss滤波再Laplace算子
 
 ### ICP
-3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系. 
+3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系.
 
 可以用SVD或者BA来求解
-其实ICP在相机坐标系下的点云配准得到的就是相机的pose变换（讨论的时候搞错了） 
+其实ICP在相机坐标系下的点云配准得到的就是相机的pose变换（讨论的时候搞错了）
 
-可以使用Point-to-plane方法，加快收敛速度，避免落入local minimum，使用estimated normal vector上的距离 
+可以使用Point-to-plane方法，加快收敛速度，避免落入local minimum，使用estimated normal vector上的距离
 
-normal vector可以用当前点和周围邻域的协方差矩阵的最小特征值对应的特征向量求得（PCA） 
+normal vector可以用当前点和周围邻域的协方差矩阵的最小特征值对应的特征向量求得（PCA）
 
-Using the SVD to get the soulution  
+Using the SVD to get the soulution
 
 Optimize:
 - Filter some outlier which is the noise during the data collection
-- Use the KDtree structure to save the time 
+- Use the KDtree structure to save the time
 
 在Open3d里面想得到iPi+1使用`o3d.pipelines.registration.registration_icp(pc3d_i, pc3d_i+1)` 效果不如PnP
 
@@ -630,18 +653,18 @@ Optimize:
 
 ### [三角测量](https://www.zhihu.com/question/27719009)
 ### PnP问题
-已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证. 
+已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证.
 
-具体方法有[EPnP](http://t.csdn.cn/Bn1MG)，DLT等 
+具体方法有[EPnP](http://t.csdn.cn/Bn1MG)，DLT等
 
-在opencv里面需要知道相机内参和畸变系数，一种随机方法，非线性最小二乘  
+在opencv里面需要知道相机内参和畸变系数，一种随机方法，非线性最小二乘
 得到iPi+1使用`solvePnPRansac(pc3d_i+1, image_i)`
 
 ### BA
 更多是后段全局优化，最小二乘法收敛光束
 
 ### RANSAC
-Random Sample Consensus是一种过滤outlier的方法 
+Random Sample Consensus是一种过滤outlier的方法
 - 选择子集
 - 建立模型
 - 确定ouliter或者inlier
@@ -657,7 +680,7 @@ GPS误差比较大1m以上， 用RTK减少误差（通过自身定位信息和�
 Bidirectional Encoder Representation from Transformers，不同于之前的单向Transformer，BERT采用MLM（Marked Language Model）生成双向深度语义特征
 
 ### pre-trained network
-https://zhuanlan.zhihu.com/p/159620066 
+https://zhuanlan.zhihu.com/p/159620066
 
 PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者部分参数）负责共性部分，再通过小的针对特殊任务的数据集上的训练，负责特性部分， 可能是zaiPTM的基础上训练或者是只训练输出层
 
@@ -665,13 +688,13 @@ PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者
 基于3D Pointcloud生成的2Dimage基于点和neighbor的关系
 
 ### DL+Transdisciplinary
-其实我个人对于DL or ML or AI一直以来还很推崇的，计算机的计算性能被最大开发，也越来愈去模仿人脑（所以要读一些脑科学的书） 
+其实我个人对于DL or ML or AI一直以来还很推崇的，计算机的计算性能被最大开发，也越来愈去模仿人脑（所以要读一些脑科学的书）
 
-像孩子学习东西一样构造网络，构造pipeline，像大脑一样对信息进行编码Transformer，我很认可这一定是未来，可能五年之内会有一些决定性的进步（Chatgpt完全不是🙊） 
+像孩子学习东西一样构造网络，构造pipeline，像大脑一样对信息进行编码Transformer，我很认可这一定是未来，可能五年之内会有一些决定性的进步（Chatgpt完全不是🙊）
 
 但是现在太多跨学科和DL结合了，控制，感知，生物等等，把一些很优美的公式和算法替代了，变成了不可以解释的AI，也为同行没办法复现出一样的结果找理由。
 
-进行一些换汤不换药的预处理，网络增加几个层，DL里面再加工ML（虽然我本科也是这样😅）。不过只要结果好就是能发论文，而且说不定也真的可以落地，但是也让一些传统算法的发展空间越来越小。不过用DL去做找最优解这个部分我还是很赞成的，本身很多凸优化或者图优化也就是用算力去迭代，和DL区别不大。 
+进行一些换汤不换药的预处理，网络增加几个层，DL里面再加工ML（虽然我本科也是这样😅）。不过只要结果好就是能发论文，而且说不定也真的可以落地，但是也让一些传统算法的发展空间越来越小。不过用DL去做找最优解这个部分我还是很赞成的，本身很多凸优化或者图优化也就是用算力去迭代，和DL区别不大。
 
 `Simplicity is prerequisite for reliability   --Edsger W. Dijkstra`
 
@@ -696,8 +719,8 @@ https://simondlevy.academic.wlu.edu/kalman-tutorial/
 #### SURF
 ## 快捷键
 记录一些各种各样的快捷键。。。
-+ `ctrl+F` 搜索  
-+ `选中文件+F12` 修改文件名字  
++ `ctrl+F` 搜索
++ `选中文件+F12` 修改文件名字
 + 在Github页面使用`?`调出键盘快捷键
 + `ctrl+K` word里面插入超链接
 
@@ -710,24 +733,24 @@ Use `rosbag record` to store and `rosbag play` to read.
 ### [Python常用运算符](https://www.runoob.com/python/python-operators.html)
 简单也是最有效的`0^1=1`; `1^1=0`
 ### 使用glob或者os.listdir来得到文件夹中的文件地址
-但是需要注意的是，读取出来的文件是无序的。需要用`list.sort(key = lambda x : int(x.split('something')[0])` 
+但是需要注意的是，读取出来的文件是无序的。需要用`list.sort(key = lambda x : int(x.split('something')[0])`
 这个sort没有返回值，需要注意
 ### If `import` does not work
 - Check the `echo $PYTHONPATH`
-- `export your path` or import the absolute path 
+- `export your path` or import the absolute path
 ### [Pytorch3D](https://pytorch3d.readthedocs.io/en/latest/overview.html)
 ### tqdm
 一个package可以可视化一个迭代器
 
 ### ord()
 The `ord()` function returns an integer representing the Unicode character.
-ex: 
+ex:
 
     ord('9') - ord('0')
-    
+
 ### join
     str.join(sequence)
-ex: 
+ex:
 
     symbol = "-";
     seq = ("a", "b", "c");
@@ -736,11 +759,11 @@ ex:
 ### 交换两个list中的元素
 a, b = b, a
 ### 内置函数
-常用内置函数 https://www.runoob.com/python/python-built-in-functions.html  
+常用内置函数 https://www.runoob.com/python/python-built-in-functions.html
 
-`filter(function, iterable):` 过滤序列，true or false function  
+`filter(function, iterable):` 过滤序列，true or false function
 
-`map(function, iterable, ...):` 对一个或多个子列操作 ex：`map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])` 
+`map(function, iterable, ...):` 对一个或多个子列操作 ex：`map(lambda x, y: x + y, [1, 3, 5, 7, 9], [2, 4, 6, 8, 10])`
 ### Lambda函数
 https://www.runoob.com/python/python-built-in-functions.html
             # 程序从列表中过滤出偶数项
@@ -760,20 +783,20 @@ https://www.runoob.com/python/python-built-in-functions.html
             print("".join(string_two))
 全部分割
 
-            str.isdigit()    判断所有字符都是数字（整形）   
+            str.isdigit()    判断所有字符都是数字（整形）
 
-            str.isalnum() 判断所有字符都是数字或者字母    
+            str.isalnum() 判断所有字符都是数字或者字母
 
-            str.isalpha()  判断所有字符都是字母 
+            str.isalpha()  判断所有字符都是字母
 
-            str.islower()  判断所有字符都是小写 
+            str.islower()  判断所有字符都是小写
 
             str.isupper() 判断所有字符都是大写
 
             str.istitle()    判断所有单词都是首字母大写
 
 #### [f-string](https://realpython.com/python-f-strings/)
-ex: 
+ex:
 
       name = "Eric"
       profession = "comedian"
@@ -787,12 +810,12 @@ ex:
 
 
 ### JSON
-Json是JavaScript Object Notation是一种轻量级的数据交换格式. 
+Json是JavaScript Object Notation是一种轻量级的数据交换格式.
 
-需要使用`json`这个包来操作。 存在`json.loads`（处理字符串）和`json.load`（处理类文件对象）两种函数。 
+需要使用`json`这个包来操作。 存在`json.loads`（处理字符串）和`json.load`（处理类文件对象）两种函数。
 
-可以将`json`和`pandas`结合起来使用。https://geek-docs.com/pandas/pandas-read-write/pandas-reading-and-writing-json.html  
-使用`frame = pd.DataFrame 
+可以将`json`和`pandas`结合起来使用。https://geek-docs.com/pandas/pandas-read-write/pandas-reading-and-writing-json.html
+使用`frame = pd.DataFrame
 frame.to_json('.json')`
 
 [JMESPath](https://pypi.org/project/jmespath/)有点像SQL,主要用于搜索
@@ -808,9 +831,9 @@ Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
 the form is [start : end : step], so [ : : 2] means form 0 to the end and each 2 steps to take the instance.
 #### np.sort
 高维数组最好还是用a[np.argsort[:, 1]]
-#### 在 np.sort 函数中排序字段 
-            dt = np.dtype([('name',  'S10'),('age',  int)]) 
-            a = np.array([("raju",21),("anil",25),("ravi",  17),  ("amar",27)], dtype = dt)  
+#### 在 np.sort 函数中排序字段
+            dt = np.dtype([('name',  'S10'),('age',  int)])
+            a = np.array([("raju",21),("anil",25),("ravi",  17),  ("amar",27)], dtype = dt)
             print ('我们的数组是：')
             print (a)
             print ('\n')
@@ -844,8 +867,8 @@ https://zhuanlan.zhihu.com/p/340770847 Pandas的`apply`用法。
 
             data.ix[1:2] #返回第2行的第三种方法，返回的是DataFrame，跟data[1:2]同
 
-            data['a':'b']  #利用index值进行切片，返回的是**前闭后闭**的DataFrame, 
-                    #即末端是包含的  
+            data['a':'b']  #利用index值进行切片，返回的是**前闭后闭**的DataFrame,
+                    #即末端是包含的
             data.irow(0)   #取data的第一行
             data.icol(0)   #取data的第一列
 
@@ -878,9 +901,9 @@ https://zhuanlan.zhihu.com/p/340770847 Pandas的`apply`用法。
 转换成多个分组的sunDF
 `data.groupby('company').agg({'count'})`
 计算每组的个数
-`data.groupby('company').agg({'salary':'median','age':'mean'})` 
+`data.groupby('company').agg({'salary':'median','age':'mean'})`
 对分组了的数据进行agg操作
-`data['avg_salary'] = data.groupby('company')['salary'].transform('mean')` 
+`data['avg_salary'] = data.groupby('company')['salary'].transform('mean')`
 使用transform简便操作
 `oldest_staff = data.groupby('company',as_index=False).apply(get_oldest_staff)`
 
@@ -904,18 +927,18 @@ any(x)判断x对象是否为空对象，如果都为空、0、false，则返回f
 
 ex:       ` if any(s < end and start < e for s, e in self.overlaps):
             return False`
-            
-note: 
+
+note:
 + 不能迭代tuple，只能变成array
 + any 里面的for loop 里面定义的s和e外部没办法调用
 +  迭代器里任意一个为真就可以
-            
+
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
 
 ### np查找满足条件的元素个数
 `np.count_nonzero((condition a & conidtion b), axis=0)`
 ### np.where()用法
-np.where(condition, x, y) 按条件修改数组元素 
+np.where(condition, x, y) 按条件修改数组元素
 
 np.asarray(np.where(condition)).T 返回<nums, n>的符合条件的位置
 
@@ -942,7 +965,7 @@ surf = cv2.xfeatures2d.SURF_create()
 ### 内部外部参数也需要注意
 
 ### NP数组合并分割
-针对一维数组 
+针对一维数组
 
             np.append(a,b) = np.hstack((a,b))
 
@@ -973,7 +996,7 @@ surf = cv2.xfeatures2d.SURF_create()
             plt.ylabel('y')
 
             plt.savefig('tra.png')
-            
+
 ### Add legends elegantly
 
     labels_handles = {
@@ -990,7 +1013,7 @@ surf = cv2.xfeatures2d.SURF_create()
 
 ### PyTorch
 ### [循环生成网络的层](https://zhuanlan.zhihu.com/p/119280719)
-ex: 
+ex:
 
       class Encoder_Block(nn.Module):
           def __init__(self, layers_num = 3, num_hid=128, num_head=8, num_kp = 200, device = 'cuda:0'):
@@ -1041,7 +1064,7 @@ numpy only take the .cpu()...but go back to tensor has to use the .cuda()
 好像直接过滤了相同的维度了然后乘法
 
 #### summary
-use `from torchinfo import summary` or `from torchsummary import summary` but `torchsummary` is not suitable for the transformer 
+use `from torchinfo import summary` or `from torchsummary import summary` but `torchsummary` is not suitable for the transformer
 
 ex: `summary(model, (3, 640, 128)) # did not take the batch as the input size`
 
@@ -1049,22 +1072,22 @@ ex: `summary(model, (3, 640, 128)) # did not take the batch as the input size`
 squeeze压缩tenor，unsqueeze对tensor扩维
 
 #### cat the iterative tensor
-ex: 
+ex:
 
     test = []
     for i in range(10):
       test.append(tensor_i.unsqueeze(0)) # tensor_i (4,4) -> (1, 4, 4)
     torch.cat(test, dim=0) # key tricky
-    
+
 #### Inplace???
-error : 
+error :
 
     RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1, 200, 2, 64]], which is output 0 of AsStridedBackward0, is at version 2; expected version 1 instead. Hint: the backtrace further above shows the operation that failed to compute its gradient. The variable in question was changed in there or anywhere later. Good luck!
- 
+
 碰到这个问题，首先要找到是哪个tensor有问题（对模型要清楚， 每个tensor的shape都标注出来！）把inplace操作如`x += 1`改成`y = x.clone() y = x+1`
 ## C++
 ### -> and .
--> 当对象是指针类型时使用 
+-> 当对象是指针类型时使用
 
 . 当对象是实体
 
