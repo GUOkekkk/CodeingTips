@@ -1080,7 +1080,9 @@ ex:
     torch.cat(test, dim=0) # key tricky
 
 #### torch乘法
-torch.einsum
+torch.einsum!! 
+
+dot product: `torch.einsum('bi,bi->b', test1, test2)`
 
 #### Inplace???
 error :
