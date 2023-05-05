@@ -1079,6 +1079,9 @@ ex:
       test.append(tensor_i.unsqueeze(0)) # tensor_i (4,4) -> (1, 4, 4)
     torch.cat(test, dim=0) # key tricky
 
+#### torch乘法
+torch.einsum
+
 #### Inplace???
 error :
 
