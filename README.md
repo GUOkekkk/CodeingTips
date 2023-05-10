@@ -732,6 +732,10 @@ Use `rosbag record` to store and `rosbag play` to read.
 ## Python
 ### [Python常用运算符](https://www.runoob.com/python/python-operators.html)
 简单也是最有效的`0^1=1`; `1^1=0`
+
+### 阶乘
+`reduce(lambda x, y: x*y, [1] + list(range(1, n+1)))`
+
 ### 使用glob或者os.listdir来得到文件夹中的文件地址
 但是需要注意的是，读取出来的文件是无序的。需要用`list.sort(key = lambda x : int(x.split('something')[0])`
 这个sort没有返回值，需要注意
