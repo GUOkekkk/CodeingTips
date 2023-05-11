@@ -980,6 +980,20 @@ surf = cv2.xfeatures2d.SURF_create()
 调用父类的init
 
 ### plot大小不一样的子图以及控制坐标轴位置
+`plt.figure()` is also based on the  `axes`
+- using the variable ax for single a Axes 
+
+`fig, ax = plt.subplots()`
+
+- using the variable axs for multiple Axes
+
+`fig, axs = plt.subplots(2, 2)`
+
+- using tuple unpacking for multiple Axes
+
+`fig, (ax1, ax2) = plt.subplots(1, 2)`
+`fig, ((ax1, ax2), (ax3, ax4)) = plt.subplots(2, 2)`
+
             plt.figure()
             plt.rcParams['ytick.right'] = plt.rcParams['ytick.labelright'] = False
             plt.rcParams['ytick.left'] = plt.rcParams['ytick.labelleft'] = True
