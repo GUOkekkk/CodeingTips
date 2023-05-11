@@ -296,8 +296,11 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 移动文件，文件夹/rename
 ### cp
 or scp(安全copy) 复制一个文件到另一个文件，需要给要复制的文件的名字
-
 `cp -r` copy the whole folder `mkdir -p todir && cp -r fromdir todir`
+
+#### copy from the server
+`scp -r vb-4:`
+
 
 [a bash shell to copy same file](http://t.csdn.cn/Ua5MO)
 ### mkdir
