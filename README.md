@@ -331,7 +331,14 @@ Solution: close all VScode window and run `killall code`
 ## Docker用法
 https://www.quanxiaoha.com/docker/docker-container.html
 ### A small example of the docker
-docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data):/data -v /home/ke/dev/aloslam/aloprodslam(your workspace):/workspace --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aloprodslam:latest(name of the image)
+docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data):/data -v /home/ke/dev/aloslam/aloprodslam(your workspace):/workspace --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aloprodslam:latest(name of the image) 
+
+##### Build the image
+`sudo -H docker build - < torch_gk_pnp_Dockerfile -t nash_pnp`
+
+##### Build the container
+`docker run --name torch-pnp --shm-size=16gb --net=host --gpus all -it -v /data:/data -v /home/ke:/workspace -v /home/ubuntu/weights:/weights --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --env PYTHONPATH=/workspace/torch_pnp/alopix:/workspace/torch_pnp/alovb:/workspace/torch_pnp/aloception-oss:/workspace/torch_pnp/alovb/alovb/pnp_transformer nash_pnp`
+
 ### docker debug
 `Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?` -> `sudo systemctl start docker` ( check if docker is running?) -> `Job for docker.service failed because the control process exited with error code. See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.` -> `sudo rm /etc/docker/daemon.json`
 
