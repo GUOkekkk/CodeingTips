@@ -342,6 +342,10 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 ### docker debug
 `Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?` -> `sudo systemctl start docker` ( check if docker is running?) -> `Job for docker.service failed because the control process exited with error code. See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.` -> `sudo rm /etc/docker/daemon.json`
 
+### Can not see the plot in dokcer container
+1. when connect to the server `-X`, when run the image `--net=host` 
+2. add `xhost +` outside the docker
+
 ## [ChatGPT Prompts](https://writesonic.com/blog/how-to-write-chatgpt-prompts/)
 
 ## Git
