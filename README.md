@@ -253,7 +253,8 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - freeze/unfrezze the terminal -> `ctrl+s / ctrl + q`
 
 
-
+### check the memory
+`du -hs *`
 ### sudo nautilus
 以root模式GUI打开文件夹
 ### 脚本语言/Shell
