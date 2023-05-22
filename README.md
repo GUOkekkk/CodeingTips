@@ -25,6 +25,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
   - [工作流程](#工作流程)
   - [Ubuntu](#ubuntu)
     - [Don't use mouse!!! ⌨️](#dont-use-mouse-️)
+    - [check the memory](#check-the-memory)
     - [sudo nautilus](#sudo-nautilus)
     - [脚本语言/Shell](#脚本语言shell)
     - [Use Terminator](#use-terminator)
@@ -36,6 +37,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [ln](#ln)
     - [mv](#mv)
     - [cp](#cp)
+      - [copy from the server](#copy-from-the-server)
     - [mkdir](#mkdir)
     - [cd](#cd)
     - [rm](#rm)
@@ -47,7 +49,10 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [Server error](#server-error)
   - [Docker用法](#docker用法)
     - [A small example of the docker](#a-small-example-of-the-docker)
+        - [Build the image](#build-the-image)
+        - [Build the container](#build-the-container)
     - [docker debug](#docker-debug)
+    - [Can not see the plot in dokcer container](#can-not-see-the-plot-in-dokcer-container)
   - [ChatGPT Prompts](#chatgpt-prompts)
   - [Git](#git)
     - [Git push时，远端和本地同时修改](#git-push时远端和本地同时修改)
@@ -122,6 +127,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [三角测量](#三角测量)
     - [PnP问题](#pnp问题)
     - [BA](#ba)
+    - [Pose Graph](#pose-graph)
     - [RANSAC](#ransac)
     - [RTK](#rtk)
     - [BERT](#bert)
@@ -142,6 +148,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [如何保存数据--rosbag](#如何保存数据--rosbag)
   - [Python](#python)
     - [Python常用运算符](#python常用运算符)
+    - [阶乘](#阶乘)
     - [使用glob或者os.listdir来得到文件夹中的文件地址](#使用glob或者oslistdir来得到文件夹中的文件地址)
     - [If `import` does not work](#if-import-does-not-work)
     - [Pytorch3D](#pytorch3d)
@@ -197,6 +204,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [summary](#summary)
       - [.squeeze and .unsqueeze](#squeeze-and-unsqueeze)
       - [cat the iterative tensor](#cat-the-iterative-tensor)
+      - [torch乘法](#torch乘法)
       - [Inplace???](#inplace)
   - [C++](#c)
     - [-\> and .](#--and-)
@@ -205,6 +213,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
   - [JupyterTips](#jupytertips)
     - [使用`esc+f`进入查找替换](#使用escf进入查找替换)
     - [长按`alt`加移动鼠标多行修改代码](#长按alt加移动鼠标多行修改代码)
+
 
 
 
@@ -332,7 +341,7 @@ Solution: close all VScode window and run `killall code`
 ## Docker用法
 https://www.quanxiaoha.com/docker/docker-container.html
 ### A small example of the docker
-docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data):/data -v /home/ke/dev/aloslam/aloprodslam(your workspace):/workspace --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aloprodslam:latest(name of the image) 
+docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data):/data -v /home/ke/dev/aloslam/aloprodslam(your workspace):/workspace --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix aloprodslam:latest(name of the image)
 
 ##### Build the image
 `sudo -H docker build - < torch_gk_pnp_Dockerfile -t nash_pnp`
@@ -344,7 +353,7 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 `Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?` -> `sudo systemctl start docker` ( check if docker is running?) -> `Job for docker.service failed because the control process exited with error code. See "systemctl status docker.service" and "journalctl -xeu docker.service" for details.` -> `sudo rm /etc/docker/daemon.json`
 
 ### Can not see the plot in dokcer container
-1. when connect to the server `-X`, when run the image `--net=host` 
+1. when connect to the server `-X`, when run the image `--net=host`
 2. add `xhost +` outside the docker
 
 ## [ChatGPT Prompts](https://writesonic.com/blog/how-to-write-chatgpt-prompts/)
@@ -996,7 +1005,7 @@ surf = cv2.xfeatures2d.SURF_create()
 
 ### plot大小不一样的子图以及控制坐标轴位置
 `plt.figure()` is also based on the  `axes`
-- using the variable ax for single a Axes 
+- using the variable ax for single a Axes
 
 `fig, ax = plt.subplots()`
 
@@ -1116,7 +1125,7 @@ ex:
     torch.cat(test, dim=0) # key tricky
 
 #### torch乘法
-torch.einsum!! 
+torch.einsum!!
 
 dot product: `torch.einsum('bi,bi->b', test1, test2)`
 
