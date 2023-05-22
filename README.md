@@ -359,6 +359,10 @@ docker run --name aloslam_ke(your name)--gpus all -it -v /home/ke/data(your data
 1. when connect to the server `-X`, when run the image `--net=host`
 2. add `xhost +` outside the docker
 
+### Enter the container
+Not use the `attach` 
+
+`sudo docker exec -it cfc30c0330f6 /bin/bash`
 ## [ChatGPT Prompts](https://writesonic.com/blog/how-to-write-chatgpt-prompts/)
 
 ## Git
