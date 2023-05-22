@@ -261,7 +261,10 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - how to scroll -> `shift+page up/page down`
 - freeze/unfrezze the terminal -> `ctrl+s / ctrl + q`
 
+### ffmpeg
+`sudo apt install ffmpeg  ` 
 
+`ffmpeg -i test.mp4 -vcodec libx264 rotation.mp4`
 ### check the memory
 `du -hs *`
 ### sudo nautilus
