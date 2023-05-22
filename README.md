@@ -678,6 +678,9 @@ Optimize:
 ### BA
 更多是后段全局优化，最小二乘法收敛光束
 
+### Pose Graph
+https://www.youtube.com/watch?v=saVZtgPyyJQ
+
 ### RANSAC
 Random Sample Consensus是一种过滤outlier的方法
 - 选择子集
