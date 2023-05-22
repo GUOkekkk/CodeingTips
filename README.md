@@ -769,6 +769,11 @@ Use `rosbag record` to store and `rosbag play` to read.
 ### check the topic
 `rostopic list`
 
+### Insttall packages
+update the apt at first `sudo apt update` 
+
+then `sudo apt-get install ros-noetic-rviz`
+
 ## Python
 ### [Python常用运算符](https://www.runoob.com/python/python-operators.html)
 简单也是最有效的`0^1=1`; `1^1=0`
