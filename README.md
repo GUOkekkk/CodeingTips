@@ -392,6 +392,13 @@ put it on the .bashrc
 ssh-add ~/.ssh/id_rsa`
 and go to `~/.ssh/` do the `sudo chown -R username`
 
+### git delete
+```
+git checkout master
+git branch -d bad_branch
+git push origin --delete bad_branch
+```
+
 ## Markdown语法Tips
 ### [Emojipeida](https://emojipedia.org/)
 ### [Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
