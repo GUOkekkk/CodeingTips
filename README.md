@@ -237,12 +237,18 @@ https://zhuanlan.zhihu.com/p/510951914
 https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-cortex-vc-1/
 
 ## 工作流程
+#### Server & Training
 - 连接server `ssh servername`
 - 在`Dockerfile`里创建image `sudo -H docker build - <torch_gk_pnp_Dockerfile  -t nash_pnp`
 - 通过image创建container `docker run --name torch-pnp --shm-size=16gb --gpus all -it -v /data:/data -v /home/ke:/workspace --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --env PYTHONPATH=/workspace/torch_pnp/alopix:/workspace/torch_pnp/alovb:/workspace/torch_pnp/aloception-oss:/workspace/torch_pnp/alovb/alovb/pnp_transformer nash_pnp`
 - check the nivida `watch -n 0.1 nvidia-smi` & choose the suitable GPU device `export_CUDA_VISIBLE_DEVICES=0`
 - 进入container连接WandB `--log`
 - 开始training `add some args`
+
+#### Git merge
+- 经常把main merge到自己的branch（复杂）
+- 提出一个merge request -> 详细的描述
+- reviewer给出thread -> push commit解决thread，关闭thread
 
 ## Ubuntu
 ### Don't use mouse!!! ⌨️
