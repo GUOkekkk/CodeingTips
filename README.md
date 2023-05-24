@@ -249,6 +249,7 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - 经常把main merge到自己的branch（复杂）
 - 提出一个merge request -> 详细的描述
 - reviewer给出thread -> push commit解决thread，关闭thread
+- re-request view
 
 ## Ubuntu
 ### Don't use mouse!!! ⌨️
