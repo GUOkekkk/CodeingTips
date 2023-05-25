@@ -274,6 +274,8 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 `ffmpeg -i test.mp4 -vcodec libx264 rotation.mp4`
 ### check the memory
 `du -hs *`
+### check the pid
+`ps -aux | grep -v grep | grep 1409800`
 ### sudo nautilus
 以root模式GUI打开文件夹
 ### 脚本语言/Shell
