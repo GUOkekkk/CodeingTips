@@ -780,6 +780,10 @@ https://www.cnblogs.com/shandianchengzi/p/15232145.html
 ### 如何保存数据--rosbag
 Use `rosbag record` to store and `rosbag play` to read.
 
+### Common bug
+https://karelics.fi/ros-2-common-issues-and-mistakes/
+
+
 ### check the topic
 `rostopic list`
 
