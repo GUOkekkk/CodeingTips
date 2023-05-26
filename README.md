@@ -600,9 +600,9 @@ https://blog.csdn.net/kokerf/article/details/72191054
 ### [对极约束的问题](https://epsavlc.github.io/2018/11/26/epipolar-geometry.html)
 
 ### Levenberg-Marquardt Algorithm
-迭代方法，用于非线性最小二乘问题，可以包含非线性参数的问题。通过求解一系列最小二乘问题来逼近最小二乘问题的解。 
+迭代方法，用于非线性最小二乘问题，可以包含非线性参数的问题。通过求解一系列最小二乘问题来逼近最小二乘问题的解。
 
-结合了梯度下降法和Netwon's method。接近最小值的时候像Netwon下降更快，原点考虑更多情况。需要计算Jacobian矩阵和LM factor
+结合了梯度下降法和Netwon's method。[接近最小值的时候像Netwon下降更快，initial point or deverge考虑更多情况](https://www.cs.cornell.edu/courses/cs4780/2018fa/lectures/lecturenote07.html#:~:text=The%20gradient%20step%20moves%20the,used%20to%20approximate%20the%20function.)。需要计算Jacobian矩阵和LM factor
 ### Iteratively Rewighted Least Squares
 ### EndtoEnd learning
 不提取数据特征，让模型自己去学习数据。
