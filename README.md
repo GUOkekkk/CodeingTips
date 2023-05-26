@@ -887,7 +887,18 @@ ex:
       )
       message
 
+#### "{}".format
+https://www.runoob.com/python/att-string-format.htmlhttps://www.runoob.com/python/att-string-format.html 
 
+"""
+The {:05d} is a format specification for integer types in Python. It works as follows:
+
+: is the start of the format specification.
+0 indicates that the output should be padded with zeros.
+5 specifies the width of the output, i.e., the minimum number of characters in the output. If idx is less than 5 digits, it will be left-padded with zeros.
+d stands for "decimal", which specifies that the number should be formatted as an integer.
+So, if idx is 7, file_name will be "traj_00007.pkl", or if idx is 123, file_name will be "traj_00123.pkl"
+"""
 ### JSON
 Json是JavaScript Object Notation是一种轻量级的数据交换格式.
 
