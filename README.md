@@ -586,6 +586,13 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
+### VO
+#### Feature-based Method
+使用feature，然后重投影误差（8点法，5点法。计算快，但是特征计算麻烦。效率低，需要考虑outlier
+#### Direct method
+计算整个光流， 使用整个图片，但也有semi-direct，用特征周围的区域块。最小化photometic error。 
+
+计算耗时间，大的运动很难检测，需要相邻帧变化不大。鲁棒性好，精确，但是对光线变化敏感。
 ### 本质矩阵(Essential Matrix)
 ### 基本矩阵(Fundamental Matrix)
 ### 单应矩阵(Homograph Matrix)
@@ -593,6 +600,9 @@ https://blog.csdn.net/kokerf/article/details/72191054
 ### [对极约束的问题](https://epsavlc.github.io/2018/11/26/epipolar-geometry.html)
 
 ### Levenberg-Marquardt Algorithm
+迭代方法，用于非线性最小二乘问题，可以包含非线性参数的问题。通过求解一系列最小二乘问题来逼近最小二乘问题的解。 
+
+结合了梯度下降法和Netwon's method。接近最小值的时候像Netwon下降更快，原点考虑更多情况。需要计算Jacobian矩阵和LM factor
 ### Iteratively Rewighted Least Squares
 ### EndtoEnd learning
 不提取数据特征，让模型自己去学习数据。
