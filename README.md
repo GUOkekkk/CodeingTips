@@ -268,6 +268,8 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - how to scroll -> `shift+page up/page down`
 - freeze/unfrezze the terminal -> `ctrl+s / ctrl + q`
 
+### record the screen
+`ctrl + shift + alt + r`
 ### ffmpeg
 `sudo apt install ffmpeg  ` 
 
