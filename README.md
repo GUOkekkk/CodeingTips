@@ -673,6 +673,8 @@ https://easyai.tech/ai-definition/encoder-decoder-seq2seq/
 
 #### [Deep Double Descent](https://openai.com/research/deep-double-descent)
 
+### Regularization
+https://0809zheng.github.io/2020/03/03/regularization.html
 ### Short-cut
 From the ResNet, https://www.cnblogs.com/linzzz98/articles/13454369.html
 ### NLP中的Mask操作
