@@ -588,6 +588,13 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 也是基于特征值分解，结合AtA的特征值分解和AAt的特征值分解，求特征方程
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
+### 四元数 旋转矩阵 旋转向量 欧垃角
+#### quaternion
+#### rotation matrix
+#### rotation vector
+#### Euler angle
+
+
 ### VO
 #### Feature-based Method
 使用feature，然后重投影误差（8点法，5点法。计算快，但是特征计算麻烦。效率低，需要考虑outlier
