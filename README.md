@@ -244,6 +244,8 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - check the nivida `watch -n 0.1 nvidia-smi` & choose the suitable GPU device `export_CUDA_VISIBLE_DEVICES=0`
 - 进入container连接WandB `--log`
 - 开始training `add some args`
+- check the memory `du -hs *`
+- check the pid `ps -aux | grep -v grep | grep 1409800`
 
 #### Git merge
 - 经常把main merge到自己的branch（复杂）
@@ -274,10 +276,6 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 `sudo apt install ffmpeg  ` 
 
 `ffmpeg -i test.mp4 -vcodec libx264 rotation.mp4`
-### check the memory
-`du -hs *`
-### check the pid
-`ps -aux | grep -v grep | grep 1409800`
 ### sudo nautilus
 以root模式GUI打开文件夹
 ### 脚本语言/Shell
