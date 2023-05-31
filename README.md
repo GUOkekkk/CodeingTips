@@ -589,10 +589,12 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 ### 四元数 旋转矩阵 旋转向量 欧垃角
+`from scipy.spatial.transform import Rotation as R`
 #### quaternion
 #### rotation matrix
 #### rotation vector
 #### Euler angle
+Normally we choose the `degrees=False`
 
 
 ### VO
