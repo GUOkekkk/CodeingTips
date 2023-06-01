@@ -828,7 +828,23 @@ then `sudo apt-get install ros-noetic-rviz`
 
 ## Python
 ### [Python常用运算符](https://www.runoob.com/python/python-operators.html)
-简单也是最有效的`0^1=1`; `1^1=0`
+简单也是最有效的`0^1=1`; `1^1=0` 
+
+`cv2.waitKey(1) == ord("q")` 
+
+`1 << n` move to the left n bits, like the x 2^n
+`1 >> n` move to the right n bits, like the % 2^n
+
+### args 
+`args` is useful for the python development
+```
+from argparse import ArgumentParser
+
+parser = ArgumentParser(description='test')
+parser.add_argument('--input', default=, type=, help = '')  
+parser.add_argument('--input', default=, action="store_true", help = '')
+args = parser.parse_args()
+```
 
 ### 阶乘
 `reduce(lambda x, y: x*y, [1] + list(range(1, n+1)))`
@@ -1072,6 +1088,17 @@ pip install opencv-python==3.4.2.16
 pip install opencv-contrib-python==3.4.2.16
 surf = cv2.xfeatures2d.SURF_create()
 `
+#### COLOR_GRAY2BGR
+Not so sure about this part, but seems the CV2 only could save the color video not the gray 
+
+```
+    gmap_render = plot_traj(gmap_render, odometry.trajectory)
+    # ? why it can only saves the color image?
+    gmap_render_rgb = cv2.cvtColor(gmap_render, cv2.COLOR_GRAY2BGR)
+    cv2.imshow("gmap_render", gmap_render_rgb)
+    if viewhandle is not None:
+        viewhandle.write((gmap_render_rgb * 255).astype(np.uint8))  # it needs to be in uint8 format
+```
 
 ### Python传入和传出的参数最好还是不要_开头
 ### 内部外部参数也需要注意
