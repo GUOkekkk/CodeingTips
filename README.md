@@ -599,6 +599,7 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 ### 变换
 https://zhuanlan.zhihu.com/p/428075759
 相机复原：先到affine space再回到Euclidean space
+
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 ### 四元数 旋转矩阵 旋转向量 欧垃角
@@ -617,10 +618,20 @@ Normally we choose the `degrees=False`
 计算整个光流， 使用整个图片，但也有semi-direct，用特征周围的区域块。最小化photometic error。 
 
 计算耗时间，大的运动很难检测，需要相邻帧变化不大。鲁棒性好，精确，但是对光线变化敏感。
-### 本质矩阵(Essential Matrix)
-### 基本矩阵(Fundamental Matrix)
-### 单应矩阵(Homograph Matrix)
+
+### 常用矩阵
+- 本质矩阵(Essential Matrix) -> 5
+- 基本矩阵(Fundamental Matrix) -> 7
+- 单应矩阵(Homograph Matrix) -> 8
+- 相机矩阵(camera matrix)
 https://blog.csdn.net/kokerf/article/details/72191054
+
+### KM algorithm
+[增广路定理](https://oi-wiki.org/graph/graph-matching/augment/)
+[Hungarian Algorithm](https://zhuanlan.zhihu.com/p/208596378) -> no weights
+[Kuhn-Munkres (KM) algorithm](https://zhuanlan.zhihu.com/p/214072424) -> with weights
+
+
 ### [对极约束的问题](https://epsavlc.github.io/2018/11/26/epipolar-geometry.html)
 
 ### Levenberg-Marquardt Algorithm
