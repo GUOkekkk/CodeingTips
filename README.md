@@ -595,6 +595,10 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 求解最小二乘解或者矩阵求解，求个伪逆。 
 
 也是基于特征值分解，结合AtA的特征值分解和AAt的特征值分解，求特征方程
+
+### 变换
+https://zhuanlan.zhihu.com/p/428075759
+相机复原：先到affine space再回到Euclidean space
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 ### 四元数 旋转矩阵 旋转向量 欧垃角
