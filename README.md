@@ -294,6 +294,15 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 右手按一下 R，左手别松开，等1秒
 右手按一下 E，左手别松开。这时包括桌面在内，所有程序都会终止，你会看到一个黑乎乎的屏幕，稍微等一段时间
 右手依次按下 I，S，U，B，左手别松开。每按一次都等那么几秒种，你会发现每按一次，屏幕上信息都会有所变化。最后按下B时，屏幕显示reset，这时你的左手可以松开了，等几秒钟，计算机就会安全重启。
+
+### use Jekyll in local
+Jekyll is a static website creation tool.
+```
+sudo apt-get install ruby-full
+sudo gem install bundler
+sudo bundle install
+```
+check the web `bundle exec jekyll serve`
 ### 在Ubuntu下面修改鼠标侧键
     sudo apt install xbindkeys xautomation
     xbindkeys --defaults > $HOME/.xbindkeysrc
