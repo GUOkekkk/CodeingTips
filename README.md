@@ -817,6 +817,11 @@ https://simondlevy.academic.wlu.edu/kalman-tutorial/
 
 ### ARP(Address Resolution Protocol)
 [ARP attack](https://www.bilibili.com/video/BV1ZW411a7mF/?spm_id_from=333.788.recommend_more_video.-1)
+
+### LIDAR & RADAR
+LIDAR: Light; RADAR: ratio/millimeter wave
+- 4d lidar(3d positions & velocity)
+[example](https://www.aeva.com/aeries-ii/)
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索
