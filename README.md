@@ -23,16 +23,19 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [Sim2Real](#sim2real)
       - [Robot long-term learning](#robot-long-term-learning)
   - [工作流程](#工作流程)
+      - [Server \& Training](#server--training)
+      - [Git merge](#git-merge)
   - [Ubuntu](#ubuntu)
     - [Don't use mouse!!! ⌨️](#dont-use-mouse-️)
-    - [check the memory](#check-the-memory)
+    - [record the screen](#record-the-screen)
+    - [ffmpeg](#ffmpeg)
     - [sudo nautilus](#sudo-nautilus)
     - [脚本语言/Shell](#脚本语言shell)
     - [Use Terminator](#use-terminator)
     - [zsh美化终端，但是会有点慢](#zsh美化终端但是会有点慢)
     - [history ｜ grep](#history--grep)
     - [Ubuntu重启](#ubuntu重启)
-    - [Ubuntu moniter the GPU](#ubuntu-moniter-the-gpu)
+    - [use Jekyll in local](#use-jekyll-in-local)
     - [在Ubuntu下面修改鼠标侧键](#在ubuntu下面修改鼠标侧键)
     - [ln](#ln)
     - [mv](#mv)
@@ -53,6 +56,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
         - [Build the container](#build-the-container)
     - [docker debug](#docker-debug)
     - [Can not see the plot in dokcer container](#can-not-see-the-plot-in-dokcer-container)
+    - [Enter the container](#enter-the-container)
   - [ChatGPT Prompts](#chatgpt-prompts)
   - [Git](#git)
     - [Git push时，远端和本地同时修改](#git-push时远端和本地同时修改)
@@ -62,6 +66,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [git log + q](#git-log--q)
     - [git branch -a](#git-branch--a)
     - [Git permission denied](#git-permission-denied)
+    - [git delete](#git-delete)
   - [Markdown语法Tips](#markdown语法tips)
     - [Emojipeida](#emojipeida)
     - [Cheatsheet](#cheatsheet)
@@ -91,10 +96,19 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [Spherical Harmonics \& Spherical Gaussian](#spherical-harmonics--spherical-gaussian)
     - [KL散度/相对熵](#kl散度相对熵)
     - [Grobner basis](#grobner-basis)
+    - [SVD](#svd)
+    - [变换](#变换)
   - [算法知识](#算法知识)
-    - [本质矩阵(Essential Matrix)](#本质矩阵essential-matrix)
-    - [基本矩阵(Fundamental Matrix)](#基本矩阵fundamental-matrix)
-    - [单应矩阵(Homograph Matrix)](#单应矩阵homograph-matrix)
+    - [四元数 旋转矩阵 旋转向量 欧垃角](#四元数-旋转矩阵-旋转向量-欧垃角)
+      - [quaternion](#quaternion)
+      - [rotation matrix](#rotation-matrix)
+      - [rotation vector](#rotation-vector)
+      - [Euler angle](#euler-angle)
+    - [VO](#vo)
+      - [Feature-based Method](#feature-based-method)
+      - [Direct method](#direct-method)
+    - [常用矩阵](#常用矩阵)
+    - [KM algorithm](#km-algorithm)
     - [对极约束的问题](#对极约束的问题)
     - [Levenberg-Marquardt Algorithm](#levenberg-marquardt-algorithm)
     - [Iteratively Rewighted Least Squares](#iteratively-rewighted-least-squares)
@@ -115,6 +129,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [Attention](#attention)
       - [Encoder-decoder](#encoder-decoder)
       - [Deep Double Descent](#deep-double-descent)
+    - [Regularization](#regularization)
     - [Short-cut](#short-cut)
     - [NLP中的Mask操作](#nlp中的mask操作)
     - [Operator](#operator)
@@ -143,11 +158,17 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [ORB](#orb)
       - [SIFT](#sift)
       - [SURF](#surf)
+    - [ARP(Address Resolution Protocol)](#arpaddress-resolution-protocol)
+    - [LIDAR \& RADAR](#lidar--radar)
   - [快捷键](#快捷键)
   - [ROS2](#ros2)
     - [如何保存数据--rosbag](#如何保存数据--rosbag)
+    - [Common bug](#common-bug)
+    - [check the topic](#check-the-topic)
+    - [Insttall packages](#insttall-packages)
   - [Python](#python)
     - [Python常用运算符](#python常用运算符)
+    - [args](#args)
     - [阶乘](#阶乘)
     - [使用glob或者os.listdir来得到文件夹中的文件地址](#使用glob或者oslistdir来得到文件夹中的文件地址)
     - [If `import` does not work](#if-import-does-not-work)
@@ -158,9 +179,11 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [交换两个list中的元素](#交换两个list中的元素)
     - [内置函数](#内置函数)
     - [Lambda函数](#lambda函数)
+      - [sort and lambda](#sort-and-lambda)
     - [String](#string)
       - [split](#split)
       - [f-string](#f-string)
+      - ["{}".format](#format)
     - [JSON](#json)
     - [TensorFlow 2.0](#tensorflow-20)
       - [以前的学习笔记](#以前的学习笔记)
@@ -171,6 +194,12 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [np.sort](#npsort)
       - [在 np.sort 函数中排序字段](#在-npsort-函数中排序字段)
       - [np norm axis=i ,remove the i axis on the final result shape](#np-norm-axisi-remove-the-i-axis-on-the-final-result-shape)
+      - [np查找满足条件的元素个数](#np查找满足条件的元素个数)
+      - [np.where()用法](#npwhere用法)
+      - [numpy插入一列](#numpy插入一列)
+      - [np.set\_printoptions(threshold=1000)](#npset_printoptionsthreshold1000)
+      - [过滤ndarrady中的重复元素](#过滤ndarrady中的重复元素)
+      - [NP数组合并分割](#np数组合并分割)
     - [Pandas](#pandas)
       - [读取](#读取)
       - [随机生成DF](#随机生成df)
@@ -181,18 +210,13 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [python函数签名](#python函数签名)
     - [pycharm两次引号一次回车自动生成参数列表](#pycharm两次引号一次回车自动生成参数列表)
     - [all() and any()](#all-and-any)
-    - [np查找满足条件的元素个数](#np查找满足条件的元素个数)
-    - [np.where()用法](#npwhere用法)
-    - [numpy插入一列](#numpy插入一列)
-    - [np.set\_printoptions(threshold=1000)](#npset_printoptionsthreshold1000)
-    - [过滤ndarrady中的重复元素](#过滤ndarrady中的重复元素)
     - [Opencv](#opencv)
       - [cv2只支持unit8\<0-255\>或者float32\<0.0-1.0\>](#cv2只支持unit80-255或者float3200-10)
       - [一个方便键盘控制的cv的小demo](#一个方便键盘控制的cv的小demo)
       - [Opencv不支持SURF](#opencv不支持surf)
+      - [COLOR\_GRAY2BGR](#color_gray2bgr)
     - [Python传入和传出的参数最好还是不要\_开头](#python传入和传出的参数最好还是不要_开头)
     - [内部外部参数也需要注意](#内部外部参数也需要注意)
-    - [NP数组合并分割](#np数组合并分割)
     - [super().__init__(paras)](#superinitparas)
     - [plot大小不一样的子图以及控制坐标轴位置](#plot大小不一样的子图以及控制坐标轴位置)
     - [Add legends elegantly](#add-legends-elegantly)
@@ -910,6 +934,12 @@ https://www.runoob.com/python/python-built-in-functions.html
 
             print(new_list)
 `lambda`和`filter`结合
+#### sort and lambda
+```
+        # sort B based on the value of A[i]
+        B = sorted(range(N), key=lambda i: A[i])
+```
+
 ### String
 #### split
 使用`str.split(' ', num)`分割。
@@ -972,6 +1002,7 @@ frame.to_json('.json')`
 #### 以前的学习笔记
 https://github.com/GUOkekkk/TensorFlowLearn
 #### TF常用函数
+
 ### Numpy
 Numpy基本函数 https://cloud.tencent.com/developer/article/1770104
 #### Numpy出现维度不对的时候用.ravel把二维变一维
@@ -989,6 +1020,27 @@ the form is [start : end : step], so [ : : 2] means form 0 to the end and each 2
             print (np.sort(a, order =  'name'))
 #### np norm axis=i ,remove the i axis on the final result shape
 `loss = np.linalg.norm((depths_l[:N] - alo_depth[:N]), ord=1, axis=(1, 2))`
+
+#### np查找满足条件的元素个数
+`np.count_nonzero((condition a & conidtion b), axis=0)`
+#### np.where()用法
+np.where(condition, x, y) 按条件修改数组元素
+
+np.asarray(np.where(condition)).T 返回<nums, n>的符合条件的位置
+
+#### numpy插入一列
+np.insert(a, axis, value, axis=1)
+
+#### np.set_printoptions(threshold=1000)
+设置打印数据长度
+
+#### 过滤ndarrady中的重复元素
+set(tuple([tuple(i) for i in array]))
+#### NP数组合并分割
+针对一维数组
+
+            np.append(a,b) = np.hstack((a,b))
+
 
 ### Pandas
 和SQL基本上一致，Pandas的Series是一列，多个列组成为一个DataFrame。
@@ -1083,21 +1135,7 @@ note:
 
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
 
-### np查找满足条件的元素个数
-`np.count_nonzero((condition a & conidtion b), axis=0)`
-### np.where()用法
-np.where(condition, x, y) 按条件修改数组元素
 
-np.asarray(np.where(condition)).T 返回<nums, n>的符合条件的位置
-
-### numpy插入一列
-np.insert(a, axis, value, axis=1)
-
-### np.set_printoptions(threshold=1000)
-设置打印数据长度
-
-### 过滤ndarrady中的重复元素
-set(tuple([tuple(i) for i in array]))
 
 ### Opencv
 #### cv2只支持unit8<0-255>或者float32<0.0-1.0>
@@ -1122,12 +1160,6 @@ Not so sure about this part, but seems the CV2 only could save the color video n
 
 ### Python传入和传出的参数最好还是不要_开头
 ### 内部外部参数也需要注意
-
-### NP数组合并分割
-针对一维数组
-
-            np.append(a,b) = np.hstack((a,b))
-
 ### super().__init__(paras)
 调用父类的init
 
