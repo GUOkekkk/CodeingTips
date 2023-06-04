@@ -312,6 +312,13 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 ### history ｜ grep
 按条件搜索历史
 
+### 登陆进去黑屏但是cursor可以用
+今天以为把公司电脑搞坏了，吓傻了，原来是是google-pinyin和ubuntu20之后的有冲突
+```
+$sudo apt remove fcitx
+$sudo apt remove fcitx-googlepinyin
+$sudo apt autoremove
+```
 ### Ubuntu重启
 伸出你的左手，同时按住Ctrl+Alt键，别松开
 右手先按一下SysRq/PrtSc，左手别松开，等1秒
