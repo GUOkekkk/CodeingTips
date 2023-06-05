@@ -650,6 +650,9 @@ Normally we choose the `degrees=False`
 
 计算耗时间，大的运动很难检测，需要相邻帧变化不大。鲁棒性好，精确，但是对光线变化敏感。
 
+### CNN explainer
+https://poloclub.github.io/cnn-explainer/
+
 ### 常用矩阵
 - 本质矩阵(Essential Matrix) -> 5
 - 基本矩阵(Fundamental Matrix) -> 7
