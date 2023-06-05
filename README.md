@@ -725,6 +725,9 @@ PQ：Panoptic Segmentation 针对全景分割
 ### Zero-shot learning & few-shot learning
 http://t.csdn.cn/a4O8C
 
+### Using a fixed conv1D to replace the avg_pool1D could reduce the time
+`avg_pool1d(kernel=2, stride=2) = conv1d(kernel=2, stride=2)`
+
 ### Transformer
 https://zhuanlan.zhihu.com/p/48508221
 
