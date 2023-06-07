@@ -686,6 +686,19 @@ compared to the "Sigmoid" or "tanh" (they map the input to the [0,1] or [-1, 1])
 By enabling larger gradients to be backpropagated, the ReLU activation function allows earlier layers in the network to learn from error signals more effectively, alleviating the vanishing gradient problem to a large extent.
 It's worth noting that while ReLU helps with the vanishing gradient problem, it can cause another problem known as the "dying ReLU" problem. This is where a ReLU unit can get stuck during training and always output 0, thereby causing the gradient through that unit to always be 0. Variations of ReLU, such as Leaky ReLU or Parametric ReLU, are designed to mitigate this issue by allowing small negative values when the input is less than 0.
 
+### 梯度消失和爆炸
+基本上梯度爆炸是因为权重初始化问题
+https://zhuanlan.zhihu.com/p/72589432
+
+### 为什么要做normalization
+https://cloud.tencent.com/developer/article/1456997
+
+### pretrain & fine-tuning
+https://zhuanlan.zhihu.com/p/389842883
+
+### GRU
+https://zhuanlan.zhihu.com/p/394426898
+
 ### VO
 #### Feature-based Method
 使用feature，然后重投影误差（8点法，5点法。计算快，但是特征计算麻烦。效率低，需要考虑outlier
