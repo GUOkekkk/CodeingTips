@@ -279,6 +279,7 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 
 ## Ubuntu
 ### Don't use mouse!!! ⌨️
+https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - close the window -> `alt + F4`
 - change the window -> `alt + tab`
 - use `ctrl + direction` to move quickly and use `shift` to choose
