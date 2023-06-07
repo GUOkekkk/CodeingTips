@@ -295,6 +295,17 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - how to scroll -> `shift+page up/page down`
 - freeze/unfrezze the terminal -> `ctrl+s / ctrl + q`
 
+### set up
+- [ ] [zotero](https://www.zotero.org/download/)
+- [ ] [flameshot](https://flameshot.org/#download)
+- [ ] [vscode](https://code.visualstudio.com/Download)
+- [ ] [terminator](https://doc.ubuntu-fr.org/terminator)
+- [ ] [zsh](https://blog.imfing.com/2020/06/ubuntu-18-04-theme-terminal-setup/#%E5%AE%89%E8%A3%85-zsh); [my config]()
+- [ ] [git](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04)
+- [ ] [docker](https://docs.docker.com/engine/install/ubuntu/)
+
+
+
 ### record the screen
 `ctrl + shift + alt + r`
 ### ffmpeg
