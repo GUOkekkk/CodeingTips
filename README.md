@@ -643,6 +643,17 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 https://zhuanlan.zhihu.com/p/428075759
 相机复原：先到affine space再回到Euclidean space
 
+### Normalization & Standardization
+- Normalization
+scales the values down to the range between 0 and 1 
+
+$$ (x - min(x)) / (max(x) - min(x)) $$
+
+- Standardization
+rescales data to have a mean (μ) of 0 and standard deviation (σ) of 1 (unit variance) 
+
+$$ \frac{x - u}{\delta} $$
+
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 ### 四元数 旋转矩阵 旋转向量 欧垃角
