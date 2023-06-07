@@ -300,7 +300,7 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - [ ] [flameshot](https://flameshot.org/#download)
 - [ ] [vscode](https://code.visualstudio.com/Download)
 - [ ] [terminator](https://doc.ubuntu-fr.org/terminator)
-- [ ] [zsh](https://blog.imfing.com/2020/06/ubuntu-18-04-theme-terminal-setup/#%E5%AE%89%E8%A3%85-zsh); [my config]()
+- [ ] [zsh](https://blog.imfing.com/2020/06/ubuntu-18-04-theme-terminal-setup/#%E5%AE%89%E8%A3%85-zsh); [my config](https://github.com/GUOkekkk/CodeingTips/blob/main/zsh_config.txt)
 - [ ] [git](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04)
 - [ ] [docker](https://docs.docker.com/engine/install/ubuntu/)
 
