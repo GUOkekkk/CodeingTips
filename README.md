@@ -697,7 +697,9 @@ https://cloud.tencent.com/developer/article/1456997
 https://zhuanlan.zhihu.com/p/389842883
 
 ### GRU
-https://zhuanlan.zhihu.com/p/394426898
+https://zhuanlan.zhihu.com/p/394426898  
+
+For using the GRU, it is better to choose the `Sigmoid` or the `Tanh` as the activate function(饱和的激活函数)
 
 ### VO
 #### Feature-based Method
