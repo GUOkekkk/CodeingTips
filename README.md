@@ -654,6 +654,9 @@ rescales data to have a mean (μ) of 0 and standard deviation (σ) of 1 (unit va
 
 $$ \frac{x - u}{\delta} $$
 
+### Convex & Concave
+https://learnopencv.com/convex-hull-using-opencv-in-python-and-c/
+
 ## 算法知识
 最近准备大疆的感知算法工程师感觉还是很多基础知识需要补充学习, 而且很多的中文名字也需要对应一下。
 ### 四元数 旋转矩阵 旋转向量 欧垃角
