@@ -647,7 +647,7 @@ https://zhuanlan.zhihu.com/p/428075759
 - Normalization
 scales the values down to the range between 0 and 1 
 
-$$ (x - min(x)) / (max(x) - min(x)) $$
+$$ \frac{(x - min(x))}{(max(x) - min(x))} $$
 
 - Standardization
 rescales data to have a mean (μ) of 0 and standard deviation (σ) of 1 (unit variance) 
