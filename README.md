@@ -653,6 +653,21 @@ https://zhuanlan.zhihu.com/p/428075759
 #### Euler angle
 Normally we choose the `degrees=False`
 
+### Activate function
+- Sigmoid
+$$ Sigmoid(x) = \frac{1}{1 + e^x} $$
+used for the binary classification
+
+- [Softmax](https://zhuanlan.zhihu.com/p/105722023)
+$$ sofxmax(x_i) = \frac{e^{x_i}}{\sum{j=1}{K}e^{z_j}} $$
+used for the multi-classification, the key point is the "soft". Compare a hard max, the softmax could give more infomation to the other categories and easy to get the gradient.
+
+
+- Relu
+$$ Relu(x) = max(0, x) $$
+compared to the "Sigmoid" or "tanh" (they map the input to the [0,1] or [-1, 1]), during backpropagation, these small gradients are multiplied together, and as the depth of the network increases, the gradients can become exceedingly small.
+By enabling larger gradients to be backpropagated, the ReLU activation function allows earlier layers in the network to learn from error signals more effectively, alleviating the vanishing gradient problem to a large extent.
+It's worth noting that while ReLU helps with the vanishing gradient problem, it can cause another problem known as the "dying ReLU" problem. This is where a ReLU unit can get stuck during training and always output 0, thereby causing the gradient through that unit to always be 0. Variations of ReLU, such as Leaky ReLU or Parametric ReLU, are designed to mitigate this issue by allowing small negative values when the input is less than 0.
 
 ### VO
 #### Feature-based Method
