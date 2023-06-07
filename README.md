@@ -398,8 +398,35 @@ The Linux and Windows is different, take care!
 ### Server error
 Error: `error loading webview: error: could not register service worker: invalidstateerror: failed to register a serviceworker: the document is in an invalid state..`
 
-
 Solution: close all VScode window and run `killall code`
+
+### Debug
+`launch.json` file form: 
+
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--file",
+                "/data/vb_office_natural/vb_office_natural.bag",
+                "--configuration",
+                "NAVDISPARITY-UP0_HS6_ITERS4_LS_OF_BEVFEAT_PI-320-320",
+            ]
+        }
+    ]
+}
+```
+Right click breakpoint -> conidtional breakpoint 
+
+Right click variable & add to watch -> add the variable to the watch window
 ## Docker用法
 https://www.quanxiaoha.com/docker/docker-container.html
 ### A small example of the docker
