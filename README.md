@@ -1043,6 +1043,9 @@ https://www.runoob.com/python/python-built-in-functions.html
 ```
 
 ### String
+#### replace
+s.replace(" ", "%20")
+
 #### split
 使用`str.split(' ', num)`分割。
 
