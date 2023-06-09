@@ -827,6 +827,9 @@ https://www.cvmart.net/community/detail/4032
 #### Attention
 https://zhuanlan.zhihu.com/p/392553460
 
+#### Key query, value
+https://stats.stackexchange.com/questions/421935/what-exactly-are-keys-queries-and-values-in-attention-mechanisms
+
 #### Encoder-decoder
 https://easyai.tech/ai-definition/encoder-decoder-seq2seq/
 
