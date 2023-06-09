@@ -788,7 +788,7 @@ https://blog.csdn.net/kokerf/article/details/72191054
 降低文档相似性比较复杂度https://zhuanlan.zhihu.com/p/108181478
 ### 相似度计算
 - 欧式距离 Euclidean
-- 余弦距离：向量夹角的余弦
+- 余弦距离/cosine similarity：向量夹角的余弦
 - Hamming距离：二元向量的不同
 - Jaccard距离：最小的和/最大的和
 - 编辑距离：两个字符串经过多少变换可以一致
