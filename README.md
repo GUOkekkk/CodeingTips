@@ -1230,6 +1230,16 @@ https://zhuanlan.zhihu.com/p/340770847 Pandas的`apply`用法。
 `def find_path(slef, maze_3d: np.ndarray, start: list, stop: list) -> list`
 ### pycharm两次引号一次回车自动生成参数列表
 
+### dict/hash table
+```
+        dic = {}
+        for c in s:
+            dic[c] = not c in dic
+```
+`not c in dic` return the bool 
+
+After the python 3.6, the dict is ordered based on the insert order
+
 ### all() and any()
 any(x)判断x对象是否为空对象，如果都为空、0、false，则返回false，如果不都为空、0、false，则返回true
 
