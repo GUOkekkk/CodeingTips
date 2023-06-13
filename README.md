@@ -270,6 +270,7 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - 开始training `add some args`
 - check the memory `du -hs *`
 - check the pid `ps -aux | grep -v grep | grep 1409800`
+- show the image `ssh -X vb-4` and `docker run --name torch-pnp --shm-size=16gb --net=host --gpus all -it -v /data:/data -v /home/ke:/workspace -v /home/ubuntu/weights:/weights --privileged -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix --env PYTHONPATH=/workspace/torch_pnp/alopix:/workspace/torch_pnp/alovb:/workspace/torch_pnp/aloception-oss:/workspace/torch_pnp/alovb/alovb/pnp_transformer nash_pnp`
 
 #### Git merge
 - 经常把main merge到自己的branch（复杂）
