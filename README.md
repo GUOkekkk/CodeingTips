@@ -305,7 +305,8 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - [ ] [git](https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04)
 - [ ] [docker](https://docs.docker.com/engine/install/ubuntu/)
 
-
+### Ubuntu 22.04 change the workspace
+Go to 'Multitask'
 
 ### record the screen
 `ctrl + shift + alt + r`
