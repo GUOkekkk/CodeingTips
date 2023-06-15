@@ -409,7 +409,9 @@ VScode YYDS🏄🏼
 - [ ] choose the suitable interpreter(with `black` package otherwise `pip install black`)
 
 ### [Keyshot in Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
-The Linux and Windows is different, take care!
+The Linux and Windows is different, take care! 
+
+[some useful keypoints](https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/)
 
 ### Server error
 Error: `error loading webview: error: could not register service worker: invalidstateerror: failed to register a serviceworker: the document is in an invalid state..`
