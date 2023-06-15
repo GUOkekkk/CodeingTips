@@ -363,6 +363,8 @@ check the web `bundle exec jekyll serve`
     #CTRL + V
     "xte 'keydown Control_L' 'key v' 'keyup Control_L'"
     b:8
+    
+Reboot
 ### ln
 复制一个链接到另一个地址 ln -s（软复制）用ls查看时有～标志
 ### mv
