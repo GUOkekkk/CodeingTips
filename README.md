@@ -306,7 +306,7 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - [ ] [docker](https://docs.docker.com/engine/install/ubuntu/)
 
 ### Ubuntu 22.04 change the workspace
-Go to 'Multitask'
+Go to 'Multitask', using multi-workspace makes the life easier
 
 ### record the screen
 `ctrl + shift + alt + r`
