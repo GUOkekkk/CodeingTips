@@ -356,15 +356,26 @@ check the web `bundle exec jekyll serve`
     nano ~/.xbindkeysrc
 命令
 
-    #CTRL + C
-    "xte 'keydown Control_L' 'key c' 'keyup Control_L'"
-    b:9
+```
+#CTRL + C
+"xte 'keydown Control_L' 'key c' 'keyup Control_L'"
+b:9
 
-    #CTRL + V
-    "xte 'keydown Control_L' 'key v' 'keyup Control_L'"
-    b:8
-    
-Reboot
+#CTRL + V
+"xte 'keydown Control_L' 'key v' 'keyup Control_L'"
+b:8
+
+#CTRL + TAB
+"xte 'keydown Control_L'  'keydown Tab' 'keyup Tab' 'keyup Control_L'"
+b:7
+
+#CTRL + SHIFT + TAB
+"xte 'keydown Control_L' 'keydown Shift_L' 'keydown Tab' 'keyup Tab' 'keyup Shift_L' 'keyup Control_L'"
+b:6
+```
+The b:2 is already = ctrl+b:1 
+
+Need Reboot
 ### ln
 复制一个链接到另一个地址 ln -s（软复制）用ls查看时有～标志
 ### mv
