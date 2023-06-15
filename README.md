@@ -682,6 +682,12 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 
 也是基于特征值分解，结合AtA的特征值分解和AAt的特征值分解，求特征方程
 
+### Pareto front & Nash equilibrium
+[Pareto Front](https://en.wikipedia.org/wiki/Pareto_front) 
+
+[Nash Equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium) 
+
+[The difference](https://www.quora.com/What-is-the-difference-between-Nash-Equilibrium-and-Pareto-Optimality), example[Prisoner's dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma)
 ### 变换
 https://zhuanlan.zhihu.com/p/428075759
 相机复原：先到affine space再回到Euclidean space
