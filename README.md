@@ -409,7 +409,9 @@ VScode YYDS🏄🏼
 - [ ] choose the suitable interpreter(with `black` package otherwise `pip install black`)
 
 ### [Keyshot in Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
-The Linux and Windows is different, take care! 
+The Linux and Windows is different, take care!  
+
+`ctrl+G`, find line
 
 [some useful keypoints](https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/)
 
