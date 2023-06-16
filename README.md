@@ -1438,6 +1438,9 @@ error :
     RuntimeError: one of the variables needed for gradient computation has been modified by an inplace operation: [torch.cuda.FloatTensor [1, 200, 2, 64]], which is output 0 of AsStridedBackward0, is at version 2; expected version 1 instead. Hint: the backtrace further above shows the operation that failed to compute its gradient. The variable in question was changed in there or anywhere later. Good luck!
 
 碰到这个问题，首先要找到是哪个tensor有问题（对模型要清楚， 每个tensor的shape都标注出来！）把inplace操作如`x += 1`改成`y = x.clone() y = x+1`
+
+### Python训练加速
+https://zhuanlan.zhihu.com/p/389455949
 ## C++
 ### -> and .
 -> 当对象是指针类型时使用
