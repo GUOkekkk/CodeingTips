@@ -1011,6 +1011,9 @@ then `sudo apt-get install ros-noetic-rviz`
 `1 << n` move to the left n bits, like the x 2^n
 `1 >> n` move to the right n bits, like the % 2^n
 
+### Assert的用法
+https://www.cnblogs.com/sewain/p/14456311.html
+
 ### args 
 `args` is useful for the python development
 ```
