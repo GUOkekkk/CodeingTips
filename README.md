@@ -309,6 +309,8 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 ### Ubuntu 22.04 change the workspace
 Go to 'Multitask', using multi-workspace makes the life easier
 
+### count how many files in the current folder
+`ls | wc -l`
 ### record the screen
 `ctrl + shift + alt + r`
 ### ffmpeg
