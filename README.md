@@ -1179,6 +1179,8 @@ set(tuple([tuple(i) for i in array]))
 
             np.append(a,b) = np.hstack((a,b))
 
+#### inverse the array
+`array[::-1]`
 
 ### Pandas
 和SQL基本上一致，Pandas的Series是一列，多个列组成为一个DataFrame。
