@@ -984,6 +984,17 @@ https://blog.csdn.net/My_Jobs/article/details/43451187
 LIDAR: Light; RADAR: ratio/millimeter wave
 - 4d lidar(3d positions & velocity)
 [example](https://www.aeva.com/aeries-ii/)
+
+
+## 计算机基础
+### 解释型语言和编译型语言
+https://www.freecodecamp.org/chinese/news/compiled-versus-interpreted-languages/
+
+### 值传递和引用传递
+https://cloud.tencent.com/developer/news/709436 
+
+在python中也取决于是否变量[可变](https://www.cnblogs.com/blackmatrix/p/5614086.html), so字典还有列表是引用传递
+
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索
@@ -1007,6 +1018,8 @@ https://karelics.fi/ros-2-common-issues-and-mistakes/
 update the apt at first `sudo apt update` 
 
 then `sudo apt-get install ros-noetic-rviz`
+
+
 
 ## Python
 ### [Python常用运算符](https://www.runoob.com/python/python-operators.html)
