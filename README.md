@@ -990,10 +990,13 @@ LIDAR: Light; RADAR: ratio/millimeter wave
 ### 解释型语言和编译型语言
 https://www.freecodecamp.org/chinese/news/compiled-versus-interpreted-languages/
 
-### 值传递和引用传递
+### pyhon值传递和引用传递
 https://cloud.tencent.com/developer/news/709436 
 
 在python中也取决于是否变量[可变](https://www.cnblogs.com/blackmatrix/p/5614086.html), so字典还有列表是引用传递
+
+### C++指针传递和引用传递
+https://developer.aliyun.com/article/373092
 
 ## 快捷键
 记录一些各种各样的快捷键。。。
