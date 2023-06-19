@@ -382,6 +382,9 @@ Need Reboot
 复制一个链接到另一个地址 ln -s（软复制）用ls查看时有～标志
 ### mv
 移动文件，文件夹/rename
+
+### dvc
+[Data Version Control](https://dvc.org/)
 ### cp
 or scp(安全copy) 复制一个文件到另一个文件，需要给要复制的文件的名字
 `cp -r` copy the whole folder `mkdir -p todir && cp -r fromdir todir`
