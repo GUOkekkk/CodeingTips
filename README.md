@@ -974,6 +974,9 @@ https://simondlevy.academic.wlu.edu/kalman-tutorial/
 #### SIFT
 #### SURF
 
+### 二叉树遍历
+https://blog.csdn.net/My_Jobs/article/details/43451187
+
 ### ARP(Address Resolution Protocol)
 [ARP attack](https://www.bilibili.com/video/BV1ZW411a7mF/?spm_id_from=333.788.recommend_more_video.-1)
 
@@ -1128,6 +1131,16 @@ The {:05d} is a format specification for integer types in Python. It works as fo
 d stands for "decimal", which specifies that the number should be formatted as an integer.
 So, if idx is 7, file_name will be "traj_00007.pkl", or if idx is 123, file_name will be "traj_00123.pkl"
 """
+
+### 数位之和
+```
+def sums(x):
+    s = 0
+    while x != 0:
+        s += x % 10
+        x = x // 10
+    return s
+```
 ### JSON
 Json是JavaScript Object Notation是一种轻量级的数据交换格式.
 
