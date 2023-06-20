@@ -1323,7 +1323,8 @@ note:
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
 
 
-
+### Python map
+`map(function, iterable)` ex: `nums = list(map(str, nums))`converting every item in the `nums` list to a string
 ### Opencv
 #### cv2只支持unit8<0-255>或者float32<0.0-1.0>
 #### [一个方便键盘控制的cv的小demo](https://github.com/GUOkekkk/ToolKit/blob/main/test_OF.py)
