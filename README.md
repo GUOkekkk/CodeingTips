@@ -1309,6 +1309,21 @@ https://zhuanlan.zhihu.com/p/340770847 Pandas的`apply`用法。
 
 After the python 3.6, the dict is ordered based on the insert order
 
+### define a sort rule in Python
+```
+class Solution:
+    def minNumber(self, nums: List[int]) -> str:
+        def sort_rule(x, y):
+            a, b = x + y, y + x
+            if a > b: return 1
+            elif a < b: return -1
+            else: return 0
+
+        strs = [str(num) for num in nums]
+        strs.sort(key = functools.cmp_to_key(sort_rule))
+        return ''.join(strs)
+```
+
 ### all() and any()
 any(x)判断x对象是否为空对象，如果都为空、0、false，则返回false，如果不都为空、0、false，则返回true
 
