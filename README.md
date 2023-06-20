@@ -671,9 +671,12 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 
 ### Mahalanobis distance
  A measure of distance between a point and a distribution.
+ 
 $$
-D^2 = (x - \mu)^T S^{-1} (x - \mu)
-$$
+D(x, Q)^2 = (x - \mu)^T S^{-1} (x - \mu)
+$$ 
+
+Where Q is a probability distribution with mean = u and positive-definite covariance matrix S
 
 ### Spherical Harmonics & Spherical Gaussian
 都是一种球面基函数，用来表示另一个复杂的非线性函数
