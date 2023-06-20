@@ -668,7 +668,13 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 
 ### 叉乘矩阵
 ### Hamilton Product for the quaternion multiplication
+
 ### Mahalanobis distance
+ A measure of distance between a point and a distribution.
+$$
+D^2 = (x - \mu)^T S^{-1} (x - \mu)
+$$
+
 ### Spherical Harmonics & Spherical Gaussian
 都是一种球面基函数，用来表示另一个复杂的非线性函数
 
@@ -773,6 +779,27 @@ For using the GRU, it is better to choose the `Sigmoid` or the `Tanh` as the act
 
 计算耗时间，大的运动很难检测，需要相邻帧变化不大。鲁棒性好，精确，但是对光线变化敏感。
 
+### Outlier Rejection
+- [Mahalanobis distance](https://en.wikipedia.org/wiki/Mahalanobis_distance)
+- [1-Point RANSAC](https://www.doc.ic.ac.uk/~ajd/Publications/civera_etal_jfr2010.pdf)
+- define a ratio to check the distance between the first and second of KNN-BF match
+example:
+```
+        _bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=False)
+        if len(self.previous_des0) == 0 or len(_des1) == 0:
+            return None, None
+
+        # Use knnMatch to get the 2 best matches
+        _knn_matches = _bf.knnMatch(self.previous_des0, _des1, k=2)
+
+        _good_match = []
+        ratio_test = 0.5
+        # Ratio test
+        assert len(_knn_matches[0]) == 2
+        for match1, match2 in _knn_matches:
+            if match1.distance < ratio_test * match2.distance:
+                _good_match.append(match1)
+```
 ### CNN explainer
 https://poloclub.github.io/cnn-explainer/
 
