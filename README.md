@@ -426,6 +426,8 @@ Error: `error loading webview: error: could not register service worker: invalid
 Solution: close all VScode window and run `killall code`
 
 ### Debug
+https://code.visualstudio.com/docs/editor/debugging 
+
 `launch.json` file form: 
 
 ```
@@ -449,7 +451,7 @@ Solution: close all VScode window and run `killall code`
     ]
 }
 ```
-Right click breakpoint -> conidtional breakpoint 
+Right click breakpoint -> conidtional breakpoint or log breakpoint
 
 Right click variable & add to watch -> add the variable to the watch window
 ## Docker用法
