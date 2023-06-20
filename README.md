@@ -962,6 +962,8 @@ PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者
 https://simondlevy.academic.wlu.edu/kalman-tutorial/
 
 ### [Optical Flow](https://docs.opencv.org/4.1.2/d4/dee/tutorial_optical_flow.html)
+https://nanonets.com/blog/optical-flow/ 
+
 Based on two assumptions:1.The pixel intensities of an object do not change between consecutive frames.
 2.Neighbouring pixels have similar motion.
 Mainly implemented by using Lucas-Kanade method
