@@ -1000,6 +1000,9 @@ https://cloud.tencent.com/developer/news/709436
 ### C++指针传递和引用传递
 https://developer.aliyun.com/article/373092
 
+### Assert in Python
+https://blog.csdn.net/weixin_39791387/article/details/125187612
+
 ## 快捷键
 记录一些各种各样的快捷键。。。
 + `ctrl+F` 搜索
