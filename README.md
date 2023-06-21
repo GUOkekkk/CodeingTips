@@ -678,6 +678,12 @@ $$
 
 Where Q is a probability distribution with mean = u and positive-definite covariance matrix S
 
+### Frobenius norm
+It is like the Euclidean Distance for the Matrix
+
+https://mathworld.wolfram.com/FrobeniusNorm.html#:~:text=The%20Frobenius%20norm%2C%20sometimes%20also,considered%20as%20a%20vector%20norm.
+
+
 ### Spherical Harmonics & Spherical Gaussian
 都是一种球面基函数，用来表示另一个复杂的非线性函数
 
