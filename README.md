@@ -280,6 +280,7 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - re-request view
 
 ## Ubuntu
+常见命令：https://zhuanlan.zhihu.com/p/392986700
 ### Don't use mouse!!! ⌨️
 https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - close the window -> `alt + F4`
