@@ -406,7 +406,44 @@ rm -r 删除整个文件夹
 输出当前路径
 
 ### vi的用法(nano is easier)
-https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
+https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html 
+
+Plugin:
+- https://www.jiqizhixin.com/articles/2020-06-05-4
+- https://zhuanlan.zhihu.com/p/349271041
+
+My `.vimrc`: 
+```
+call plug#begin('~/.vim/bundle')
+
+Plug 'skywind3000/vim-auto-popmenu'
+
+let g:apc_enable_ft = {'*':1}
+
+set cpt=.,k,w,b
+
+set completeopt=menu,menuone,noselect
+
+set shortmess+=c
+
+Plug 'skywind3000/vim-dict'
+
+Plug 'preservim/NERDTree'
+
+Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
+
+Plug 'jiangmiao/auto-pairs'
+
+Plug 'vim-airline/vim-airline'
+
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'preservim/nerdcommenter'
+
+let mapleader = ","
+
+call plug#end()
+```
 
 ## VScode
 VScode YYDS🏄🏼
