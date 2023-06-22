@@ -405,7 +405,7 @@ rm -r 删除整个文件夹
 ### pwd
 输出当前路径
 
-### vi的用法(nano is better)
+### vi的用法(nano is easier)
 https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
 
 ## VScode
