@@ -386,6 +386,10 @@ Need Reboot
 ### mv
 移动文件，文件夹/rename
 
+### check code lines
+
+`wc -l `find . -name '*.py'``
+
 ### dvc
 [Data Version Control](https://dvc.org/)
 ### cp
