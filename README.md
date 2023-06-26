@@ -776,6 +776,7 @@ https://learnopencv.com/convex-hull-using-opencv-in-python-and-c/
 ### 四元数 旋转矩阵 旋转向量 欧垃角
 `from scipy.spatial.transform import Rotation as R`
 #### quaternion
+做四元数的时候，注意w的位置在头还是尾，normalization的时候注意维度一致， 一般是norm(q, dim=-1, keepdim=true)
 #### rotation matrix
 #### rotation vector
 #### Euler angle
