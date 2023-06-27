@@ -27,6 +27,9 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [Git merge](#git-merge)
   - [Ubuntu](#ubuntu)
     - [Don't use mouse!!! ⌨️](#dont-use-mouse-️)
+    - [set up](#set-up)
+    - [Ubuntu 22.04 change the workspace](#ubuntu-2204-change-the-workspace)
+    - [count how many files in the current folder](#count-how-many-files-in-the-current-folder)
     - [record the screen](#record-the-screen)
     - [ffmpeg](#ffmpeg)
     - [sudo nautilus](#sudo-nautilus)
@@ -34,27 +37,32 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [Use Terminator](#use-terminator)
     - [zsh美化终端，但是会有点慢](#zsh美化终端但是会有点慢)
     - [history ｜ grep](#history--grep)
+    - [登陆进去黑屏但是cursor可以用](#登陆进去黑屏但是cursor可以用)
     - [Ubuntu重启](#ubuntu重启)
     - [use Jekyll in local](#use-jekyll-in-local)
     - [在Ubuntu下面修改鼠标侧键](#在ubuntu下面修改鼠标侧键)
     - [ln](#ln)
     - [mv](#mv)
+    - [check code lines](#check-code-lines)
+    - [dvc](#dvc)
     - [cp](#cp)
       - [copy from the server](#copy-from-the-server)
     - [mkdir](#mkdir)
     - [cd](#cd)
     - [rm](#rm)
     - [pwd](#pwd)
-    - [vi的用法(nano is better)](#vi的用法nano-is-better)
+    - [vi的用法(nano is easier)](#vi的用法nano-is-easier)
   - [VScode](#vscode)
     - [Auto-form does not work](#auto-form-does-not-work)
     - [Keyshot in Linux](#keyshot-in-linux)
     - [Server error](#server-error)
+    - [Debug](#debug)
   - [Docker用法](#docker用法)
     - [A small example of the docker](#a-small-example-of-the-docker)
         - [Build the image](#build-the-image)
         - [Build the container](#build-the-container)
     - [docker debug](#docker-debug)
+        - [reboot](#reboot)
     - [Can not see the plot in dokcer container](#can-not-see-the-plot-in-dokcer-container)
     - [Enter the container](#enter-the-container)
   - [ChatGPT Prompts](#chatgpt-prompts)
@@ -93,20 +101,31 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [叉乘矩阵](#叉乘矩阵)
     - [Hamilton Product for the quaternion multiplication](#hamilton-product-for-the-quaternion-multiplication)
     - [Mahalanobis distance](#mahalanobis-distance)
+    - [Frobenius norm](#frobenius-norm)
     - [Spherical Harmonics \& Spherical Gaussian](#spherical-harmonics--spherical-gaussian)
     - [KL散度/相对熵](#kl散度相对熵)
     - [Grobner basis](#grobner-basis)
     - [SVD](#svd)
+    - [Pareto front \& Nash equilibrium](#pareto-front--nash-equilibrium)
     - [变换](#变换)
+    - [Normalization \& Standardization](#normalization--standardization)
+    - [Convex \& Concave](#convex--concave)
   - [算法知识](#算法知识)
     - [四元数 旋转矩阵 旋转向量 欧垃角](#四元数-旋转矩阵-旋转向量-欧垃角)
       - [quaternion](#quaternion)
       - [rotation matrix](#rotation-matrix)
       - [rotation vector](#rotation-vector)
       - [Euler angle](#euler-angle)
+    - [Activate function](#activate-function)
+    - [梯度消失和爆炸](#梯度消失和爆炸)
+    - [为什么要做normalization](#为什么要做normalization)
+    - [pretrain \& fine-tuning](#pretrain--fine-tuning)
+    - [GRU](#gru)
     - [VO](#vo)
       - [Feature-based Method](#feature-based-method)
       - [Direct method](#direct-method)
+    - [Outlier Rejection](#outlier-rejection)
+    - [CNN explainer](#cnn-explainer)
     - [常用矩阵](#常用矩阵)
     - [KM algorithm](#km-algorithm)
     - [对极约束的问题](#对极约束的问题)
@@ -125,8 +144,10 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [距离场](#距离场)
     - [深度学习的一些评价标准](#深度学习的一些评价标准)
     - [Zero-shot learning \& few-shot learning](#zero-shot-learning--few-shot-learning)
+    - [Using a fixed conv1D to replace the avg\_pool1D could reduce the time](#using-a-fixed-conv1d-to-replace-the-avg_pool1d-could-reduce-the-time)
     - [Transformer](#transformer)
       - [Attention](#attention)
+      - [Key query, value](#key-query-value)
       - [Encoder-decoder](#encoder-decoder)
       - [Deep Double Descent](#deep-double-descent)
     - [Regularization](#regularization)
@@ -158,8 +179,14 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [ORB](#orb)
       - [SIFT](#sift)
       - [SURF](#surf)
+    - [二叉树遍历](#二叉树遍历)
     - [ARP(Address Resolution Protocol)](#arpaddress-resolution-protocol)
     - [LIDAR \& RADAR](#lidar--radar)
+  - [计算机基础](#计算机基础)
+    - [解释型语言和编译型语言](#解释型语言和编译型语言)
+    - [pyhon值传递和引用传递](#pyhon值传递和引用传递)
+    - [C++指针传递和引用传递](#c指针传递和引用传递)
+    - [Assert in Python](#assert-in-python)
   - [快捷键](#快捷键)
   - [ROS2](#ros2)
     - [如何保存数据--rosbag](#如何保存数据--rosbag)
@@ -168,6 +195,10 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [Insttall packages](#insttall-packages)
   - [Python](#python)
     - [Python常用运算符](#python常用运算符)
+    - [Python Access](#python-access)
+    - [Python argparse](#python-argparse)
+    - [Breakpoint()](#breakpoint)
+    - [Assert的用法](#assert的用法)
     - [args](#args)
     - [阶乘](#阶乘)
     - [使用glob或者os.listdir来得到文件夹中的文件地址](#使用glob或者oslistdir来得到文件夹中的文件地址)
@@ -181,9 +212,11 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [Lambda函数](#lambda函数)
       - [sort and lambda](#sort-and-lambda)
     - [String](#string)
+      - [replace](#replace)
       - [split](#split)
       - [f-string](#f-string)
       - ["{}".format](#format)
+    - [数位之和](#数位之和)
     - [JSON](#json)
     - [TensorFlow 2.0](#tensorflow-20)
       - [以前的学习笔记](#以前的学习笔记)
@@ -200,6 +233,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [np.set\_printoptions(threshold=1000)](#npset_printoptionsthreshold1000)
       - [过滤ndarrady中的重复元素](#过滤ndarrady中的重复元素)
       - [NP数组合并分割](#np数组合并分割)
+      - [inverse the array](#inverse-the-array)
     - [Pandas](#pandas)
       - [读取](#读取)
       - [随机生成DF](#随机生成df)
@@ -209,7 +243,10 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
     - [list(reversed(list))](#listreversedlist)
     - [python函数签名](#python函数签名)
     - [pycharm两次引号一次回车自动生成参数列表](#pycharm两次引号一次回车自动生成参数列表)
+    - [dict/hash table](#dicthash-table)
+    - [define a sort rule in Python](#define-a-sort-rule-in-python)
     - [all() and any()](#all-and-any)
+    - [Python map](#python-map)
     - [Opencv](#opencv)
       - [cv2只支持unit8\<0-255\>或者float32\<0.0-1.0\>](#cv2只支持unit80-255或者float3200-10)
       - [一个方便键盘控制的cv的小demo](#一个方便键盘控制的cv的小demo)
@@ -230,6 +267,7 @@ If there is any infringement, please feel free to contact [me](guoke9612@gmail.c
       - [cat the iterative tensor](#cat-the-iterative-tensor)
       - [torch乘法](#torch乘法)
       - [Inplace???](#inplace)
+    - [Python训练加速](#python训练加速)
   - [C++](#c)
     - [-\> and .](#--and-)
     - [A good example to filter the data](#a-good-example-to-filter-the-data)
@@ -315,7 +353,7 @@ Go to 'Multitask', using multi-workspace makes the life easier
 ### record the screen
 `ctrl + shift + alt + r`
 ### ffmpeg
-`sudo apt install ffmpeg  ` 
+`sudo apt install ffmpeg  `
 
 `ffmpeg -i test.mp4 -vcodec libx264 rotation.mp4`
 ### sudo nautilus
@@ -378,7 +416,7 @@ b:7
 "xte 'keydown Control_L' 'keydown Shift_L' 'keydown Tab' 'keyup Tab' 'keyup Shift_L' 'keyup Control_L'"
 b:6
 ```
-The b:2 is already = ctrl+b:1 
+The b:2 is already = ctrl+b:1
 
 Need Reboot
 ### ln
@@ -410,13 +448,13 @@ rm -r 删除整个文件夹
 输出当前路径
 
 ### vi的用法(nano is easier)
-https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html 
+https://www.cnblogs.com/emanlee/archive/2011/11/10/2243930.html
 
 Plugin:
 - https://www.jiqizhixin.com/articles/2020-06-05-4
 - https://zhuanlan.zhihu.com/p/349271041
 
-My `.vimrc`: 
+My `.vimrc`:
 ```
 call plug#begin('~/.vim/bundle')
 
@@ -456,7 +494,7 @@ VScode YYDS🏄🏼
 - [ ] choose the suitable interpreter(with `black` package otherwise `pip install black`)
 
 ### [Keyshot in Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
-The Linux and Windows is different, take care!  
+The Linux and Windows is different, take care!
 
 `ctrl+G`, find line
 
@@ -468,9 +506,9 @@ Error: `error loading webview: error: could not register service worker: invalid
 Solution: close all VScode window and run `killall code`
 
 ### Debug
-https://code.visualstudio.com/docs/editor/debugging 
+https://code.visualstudio.com/docs/editor/debugging
 
-`launch.json` file form: 
+`launch.json` file form:
 
 ```
 {
@@ -516,7 +554,7 @@ reboot or create a new container could solve some wired hardware(nvidia does not
 2. add `xhost +` outside the docker
 
 ### Enter the container
-Not use the `attach` 
+Not use the `attach`
 
 `sudo docker exec -it cfc30c0330f6 /bin/bash`
 ## [ChatGPT Prompts](https://writesonic.com/blog/how-to-write-chatgpt-prompts/)
@@ -713,10 +751,10 @@ a_{m1}B & \cdots & a_{mn}B \end{bmatrix} $$
 
 ### Mahalanobis distance
  A measure of distance between a point and a distribution.
- 
+
 $$
 D(x, Q)^2 = (x - \mu)^T S^{-1} (x - \mu)
-$$ 
+$$
 
 Where Q is a probability distribution with mean = u and positive-definite covariance matrix S
 
@@ -747,14 +785,14 @@ space: https://blog.csdn.net/qq_33458986/article/details/103198580
 计算多项式环的理想，高维多元多项式组求解
 
 ### SVD
-求解最小二乘解或者矩阵求解，求个伪逆。 
+求解最小二乘解或者矩阵求解，求个伪逆。
 
 也是基于特征值分解，结合AtA的特征值分解和AAt的特征值分解，求特征方程
 
 ### Pareto front & Nash equilibrium
-[Pareto Front](https://en.wikipedia.org/wiki/Pareto_front) 
+[Pareto Front](https://en.wikipedia.org/wiki/Pareto_front)
 
-[Nash Equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium) 
+[Nash Equilibrium](https://en.wikipedia.org/wiki/Nash_equilibrium)
 
 [The difference](https://www.quora.com/What-is-the-difference-between-Nash-Equilibrium-and-Pareto-Optimality), example[Prisoner's dilemma](https://en.wikipedia.org/wiki/Prisoner%27s_dilemma)
 ### 变换
@@ -763,12 +801,12 @@ https://zhuanlan.zhihu.com/p/428075759
 
 ### Normalization & Standardization
 - Normalization
-scales the values down to the range between 0 and 1 
+scales the values down to the range between 0 and 1
 
 $$ \frac{(x - min(x))}{(max(x) - min(x))} $$
 
 - Standardization
-rescales data to have a mean (μ) of 0 and standard deviation (σ) of 1 (unit variance) 
+rescales data to have a mean (μ) of 0 and standard deviation (σ) of 1 (unit variance)
 
 $$ \frac{x - u}{\delta} $$
 
@@ -787,22 +825,22 @@ https://learnopencv.com/convex-hull-using-opencv-in-python-and-c/
 Normally we choose the `degrees=False`
 
 ### Activate function
-- Sigmoid 
+- Sigmoid
 
-$$ Sigmoid(x) = \frac{1}{1 + e^x} $$ 
+$$ Sigmoid(x) = \frac{1}{1 + e^x} $$
 
 used for the binary classification, easy to cause the vanishing gradient, the gradient of the Relu is small (max=0.25) especially when the |x| is close to 1. After serval small gradients, it is easy to casue the vanishing gradient. Could use the batch_normalization to solve this problem. Make the input of the Sigmoid function is close to the 0.5.
 
-- [Softmax](https://zhuanlan.zhihu.com/p/105722023) 
+- [Softmax](https://zhuanlan.zhihu.com/p/105722023)
 
-$$ sofxmax(x_i) = \frac{e^{x_i}}{\sum{j=1}{K}e^{z_j}} $$ 
+$$ sofxmax(x_i) = \frac{e^{x_i}}{\sum{j=1}{K}e^{z_j}} $$
 
 used for the multi-classification, the key point is the "soft". Compare a hard max, the softmax could give more infomation to the other categories and easy to get the gradient.
 
 
-- Relu 
+- Relu
 
-$$ Relu(x) = max(0, x) $$ 
+$$ Relu(x) = max(0, x) $$
 
 compared to the "Sigmoid" or "tanh" (they map the input to the [0,1] or [-1, 1]), during backpropagation, these small gradients are multiplied together, and as the depth of the network increases, the gradients can become exceedingly small.
 By enabling larger gradients to be backpropagated, the ReLU activation function allows earlier layers in the network to learn from error signals more effectively, alleviating the vanishing gradient problem to a large extent.
@@ -819,7 +857,7 @@ https://cloud.tencent.com/developer/article/1456997
 https://zhuanlan.zhihu.com/p/389842883
 
 ### GRU
-https://zhuanlan.zhihu.com/p/394426898  
+https://zhuanlan.zhihu.com/p/394426898
 
 For using the GRU, it is better to choose the `Sigmoid` or the `Tanh` as the activate function(饱和的激活函数)
 
@@ -827,7 +865,7 @@ For using the GRU, it is better to choose the `Sigmoid` or the `Tanh` as the act
 #### Feature-based Method
 使用feature，然后重投影误差（8点法，5点法。计算快，但是特征计算麻烦。效率低，需要考虑outlier
 #### Direct method
-计算整个光流， 使用整个图片，但也有semi-direct，用特征周围的区域块。最小化photometic error。 
+计算整个光流， 使用整个图片，但也有semi-direct，用特征周围的区域块。最小化photometic error。
 
 计算耗时间，大的运动很难检测，需要相邻帧变化不大。鲁棒性好，精确，但是对光线变化敏感。
 
@@ -1041,7 +1079,7 @@ PTN or PTM 先通过有标注的较大的通用数据集训练出参数（或者
 https://simondlevy.academic.wlu.edu/kalman-tutorial/
 
 ### [Optical Flow](https://docs.opencv.org/4.1.2/d4/dee/tutorial_optical_flow.html)
-https://nanonets.com/blog/optical-flow/ 
+https://nanonets.com/blog/optical-flow/
 
 Based on two assumptions:1.The pixel intensities of an object do not change between consecutive frames.
 2.Neighbouring pixels have similar motion.
@@ -1076,7 +1114,7 @@ LIDAR: Light; RADAR: ratio/millimeter wave
 https://www.freecodecamp.org/chinese/news/compiled-versus-interpreted-languages/
 
 ### pyhon值传递和引用传递
-https://cloud.tencent.com/developer/news/709436 
+https://cloud.tencent.com/developer/news/709436
 
 在python中也取决于是否变量[可变](https://www.cnblogs.com/blackmatrix/p/5614086.html), so字典还有列表是引用传递
 
@@ -1106,7 +1144,7 @@ https://karelics.fi/ros-2-common-issues-and-mistakes/
 `rostopic list`
 
 ### Insttall packages
-update the apt at first `sudo apt update` 
+update the apt at first `sudo apt update`
 
 then `sudo apt-get install ros-noetic-rviz`
 
@@ -1114,9 +1152,9 @@ then `sudo apt-get install ros-noetic-rviz`
 
 ## Python
 ### [Python常用运算符](https://www.runoob.com/python/python-operators.html)
-简单也是最有效的`0^1=1`; `1^1=0` 
+简单也是最有效的`0^1=1`; `1^1=0`
 
-`cv2.waitKey(1) == ord("q")` 
+`cv2.waitKey(1) == ord("q")`
 
 `1 << n` move to the left n bits, like the x 2^n
 `1 >> n` move to the right n bits, like the % 2^n
@@ -1128,20 +1166,20 @@ https://www.tutorialsteacher.com/python/public-private-protected-modifiers
 https://docs.python.org/zh-cn/3/howto/argparse.html
 
 ### Breakpoint()
-[breakpoint()](https://www.biye5u.com/article/python/2021/6536.html) 
+[breakpoint()](https://www.biye5u.com/article/python/2021/6536.html)
 
 `p variable` -> print; `c` -> next breakpoint; `q + ctrl c` -> quit
 
 ### Assert的用法
 https://www.cnblogs.com/sewain/p/14456311.html
 
-### args 
+### args
 `args` is useful for the python development
 ```
 from argparse import ArgumentParser
 
 parser = ArgumentParser(description='test')
-parser.add_argument('--input', default=, type=, help = '')  
+parser.add_argument('--input', default=, type=, help = '')
 parser.add_argument('--input', default=, action="store_true", help = '')
 args = parser.parse_args()
 ```
@@ -1235,7 +1273,7 @@ ex:
       message
 
 #### "{}".format
-https://www.runoob.com/python/att-string-format.htmlhttps://www.runoob.com/python/att-string-format.html 
+https://www.runoob.com/python/att-string-format.htmlhttps://www.runoob.com/python/att-string-format.html
 
 """
 The {:05d} is a format specification for integer types in Python. It works as follows:
@@ -1399,7 +1437,7 @@ https://zhuanlan.zhihu.com/p/340770847 Pandas的`apply`用法。
         for c in s:
             dic[c] = not c in dic
 ```
-`not c in dic` return the bool 
+`not c in dic` return the bool
 
 After the python 3.6, the dict is ordered based on the insert order
 
@@ -1444,7 +1482,7 @@ pip install opencv-contrib-python==3.4.2.16
 surf = cv2.xfeatures2d.SURF_create()
 `
 #### COLOR_GRAY2BGR
-Not so sure about this part, but seems the CV2 only could save the color video not the gray 
+Not so sure about this part, but seems the CV2 only could save the color video not the gray
 
 ```
     gmap_render = plot_traj(gmap_render, odometry.trajectory)
