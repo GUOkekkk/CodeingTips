@@ -1192,6 +1192,20 @@ parser.add_argument('--input', default=, action="store_true", help = '')
 args = parser.parse_args()
 ```
 
+### the product of the list
+```
+from functools import reduce
+list1 = [1, 2, 3]
+list2 = [3, 2, 4]
+ 
+ # the reduce is used to return a new reduced list
+result1 = reduce((lambda x, y: x * y), list1)
+result2 = reduce((lambda x, y: x * y), list2)
+print(result1)
+print(result2)
+```
+or `np.prod()`
+
 ### 阶乘
 `reduce(lambda x, y: x*y, [1] + list(range(1, n+1)))`
 
