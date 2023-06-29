@@ -365,6 +365,9 @@ Go to 'Multitask', using multi-workspace makes the life easier
 
 ### [zsh美化终端，但是会有点慢](https://blog.imfing.com/2020/06/ubuntu-18-04-theme-terminal-setup/#%E5%AE%89%E8%A3%85-zsh)
 
+### tmux
+[tmux](https://www.ruanyifeng.com/blog/2019/10/tmux.html)分离session
+
 ### history ｜ grep
 按条件搜索历史
 
