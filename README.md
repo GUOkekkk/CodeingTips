@@ -366,7 +366,17 @@ Go to 'Multitask', using multi-workspace makes the life easier
 ### [zsh美化终端，但是会有点慢](https://blog.imfing.com/2020/06/ubuntu-18-04-theme-terminal-setup/#%E5%AE%89%E8%A3%85-zsh)
 
 ### tmux
-[tmux](https://www.ruanyifeng.com/blog/2019/10/tmux.html)分离session
+[tmux](https://www.ruanyifeng.com/blog/2019/10/tmux.html)分离session 
+
+Modify the prefix 
+
+```
+# Set prefix to Ctrl-Space instead of Ctrl-b
+unbind C-b
+set -g prefix C-Space
+bind Space send-prefix
+```
+but seems the `prefix+d` has the conflict with the terminal, use the `tmux detach` is better.
 
 ### history ｜ grep
 按条件搜索历史
