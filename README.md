@@ -457,6 +457,9 @@ or scp(安全copy) 复制一个文件到另一个文件，需要给要复制的�
 ### rm
 rm -r 删除整个文件夹
 
+### du -hs *
+check the memory
+
 ### pwd
 输出当前路径
 
