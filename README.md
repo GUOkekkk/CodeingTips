@@ -514,7 +514,7 @@ The Linux and Windows is different, take care!
 
 `ctrl+G`, find line
 
-[some useful keypoints](https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/)
+[some useful shortcuts](https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/)
 
 ### Server error
 Error: `error loading webview: error: could not register service worker: invalidstateerror: failed to register a serviceworker: the document is in an invalid state..`
