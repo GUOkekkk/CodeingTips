@@ -1109,6 +1109,7 @@ Mainly implemented by using Lucas-Kanade method
 Color represents the direction and the intensity denotes length of displacement vector. It shows the vector information of two continuous frames in one picture
 
 ### 常见的Feature（具体看笔记）
+https://medium.com/data-breach/introduction-to-orb-oriented-fast-and-rotated-brief-4220e8ec40cf
 #### Harris
 https://simondlevy.academic.wlu.edu/kalman-tutorial/
 #### FAST
