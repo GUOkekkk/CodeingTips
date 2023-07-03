@@ -826,6 +826,10 @@ rescales data to have a mean (μ) of 0 and standard deviation (σ) of 1 (unit va
 
 $$ \frac{x - u}{\delta} $$
 
+
+### 有偏估计和无偏估计（方差）
+https://kexue.fm/archives/6747
+
 ### Convex & Concave
 https://learnopencv.com/convex-hull-using-opencv-in-python-and-c/
 
