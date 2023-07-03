@@ -1045,7 +1045,7 @@ Optimize:
 ### PnP问题
 已知3D点和对应2d点来求解T，可以用三对点就解决，外加一对点验证.
 
-具体方法有[EPnP](http://t.csdn.cn/Bn1MG)，DLT等
+具体方法有EPnP，DLT等
 
 在opencv里面需要知道相机内参和畸变系数，一种随机方法，非线性最小二乘
 得到iPi+1使用`solvePnPRansac(pc3d_i+1, image_i)`
