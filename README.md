@@ -514,7 +514,7 @@ The Linux and Windows is different, take care!
 
 `ctrl+G`, find line 
 
-modify the 'go back in navigation locations' to `space + b` 
+modify the 'go back in navigation locations' to `ctrl + alt + q` 
 
 [some useful shortcuts](https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/)
 
