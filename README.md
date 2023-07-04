@@ -512,7 +512,9 @@ VScode YYDS🏄🏼
 ### [Keyshot in Linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf)
 The Linux and Windows is different, take care!
 
-`ctrl+G`, find line
+`ctrl+G`, find line 
+
+modify the 'go back in navigation locations' to `space + b` 
 
 [some useful shortcuts](https://cult.honeypot.io/reads/20-vs-code-shortcuts-developers/)
 
