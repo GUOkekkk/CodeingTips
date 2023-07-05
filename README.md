@@ -1134,6 +1134,9 @@ LIDAR: Light; RADAR: ratio/millimeter wave
 ### SLAM on ROS Comparison
 [RTAB-Map as an Open-Source Lidar and Visual SLAM Library for Large-Scale and Long-Term Online Operation](https://introlab.3it.usherbrooke.ca/mediawiki-introlab/images/7/7a/Labbe18JFR_preprint.pdf)
 
+### Exteroceptive & Proprioceptive
+https://www.innowtech.com/2019/09/23/exteroceptive-and-proprioceptive-sensors-for-robotics/#:~:text=Proprioception%20refers%20to%20the%20perception,%2C%20hearing%2C%20etc.).
+
 ## 计算机基础
 ### 解释型语言和编译型语言
 https://www.freecodecamp.org/chinese/news/compiled-versus-interpreted-languages/
