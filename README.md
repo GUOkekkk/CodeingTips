@@ -381,6 +381,9 @@ but seems the `prefix+d` has the conflict with the terminal, use the `tmux detac
 ### history ｜ grep
 按条件搜索历史
 
+### draw.io
+The best tool I knew since now to draw the flowchart
+
 ### 登陆进去黑屏但是cursor可以用
 今天以为把公司电脑搞坏了，吓傻了，原来是是google-pinyin和ubuntu20之后的有冲突
 ```
