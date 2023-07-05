@@ -1131,6 +1131,8 @@ LIDAR: Light; RADAR: ratio/millimeter wave
 - 4d lidar(3d positions & velocity)
 [example](https://www.aeva.com/aeries-ii/)
 
+### SLAM on ROS Comparison
+[RTAB-Map as an Open-Source Lidar and Visual SLAM Library for Large-Scale and Long-Term Online Operation](https://introlab.3it.usherbrooke.ca/mediawiki-introlab/images/7/7a/Labbe18JFR_preprint.pdf)
 
 ## 计算机基础
 ### 解释型语言和编译型语言
