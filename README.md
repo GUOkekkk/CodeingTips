@@ -1604,6 +1604,20 @@ Not so sure about this part, but seems the CV2 only could save the color video n
     )`
 `
 
+### Python Debug mode
+```
+ # define a function to check the quat is zero or not
+def check_zero_quat(quat_data: torch.tensor):
+    try:
+        assert torch.norm(quat_data) > 1e-3
+    except AssertionError:
+        print("quaternion has zero quaternion problem after normalization")
+        print("quaternion:", quat_data)
+        breakpoint()
+    return
+
+```
+
 ### PyTorch
 ### [循环生成网络的层](https://zhuanlan.zhihu.com/p/119280719)
 ex:
