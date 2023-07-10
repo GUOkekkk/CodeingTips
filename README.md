@@ -440,6 +440,13 @@ Need Reboot
 ### mv
 移动文件，文件夹/rename
 
+### import bashrc to zshrc
+```
+vim ~/.zshrc
+source ~/.bashrc
+source ~/.zshrc
+
+```
 ### check code lines
 
 `wc -l `find . -name '*.py'``
