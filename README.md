@@ -1619,6 +1619,20 @@ Not so sure about this part, but seems the CV2 only could save the color video n
     )`
 `
 
+### Python Union
+TO classify that the input could be multi-type
+```
+from typing import List, Union
+
+def process_data(x: Union[List[int], int]):
+    if isinstance(x, int):
+        # If x is an integer, do something
+        pass
+    elif isinstance(x, list):
+        # If x is a list, do something else
+        pass
+```
+
 ### Python Debug mode
 ```
  # define a function to check the quat is zero or not
