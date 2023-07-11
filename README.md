@@ -435,6 +435,8 @@ b:6
 The b:2 is already = ctrl+b:1
 
 Need Reboot
+### python and python3
+Typically the 'python' defaults to 'python3', but in some operation systems, it is not like this. So it is better we use it clearly!
 ### ln
 复制一个链接到另一个地址 ln -s（软复制）用ls查看时有～标志
 ### mv
