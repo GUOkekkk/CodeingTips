@@ -447,6 +447,10 @@ source ~/.bashrc
 source ~/.zshrc
 
 ```
+
+### check python env
+`which python` or `which python3`
+
 ### check code lines
 
 `wc -l `find . -name '*.py'``
@@ -512,6 +516,8 @@ let mapleader = ","
 
 call plug#end()
 ```
+#### use '?' to search and 'n' for the next
+
 
 ## VScode
 VScode YYDS🏄🏼
