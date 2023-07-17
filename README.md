@@ -1008,6 +1008,8 @@ http://t.csdn.cn/a4O8C
 ### Using a fixed conv1D to replace the avg_pool1D could reduce the time
 `avg_pool1d(kernel=2, stride=2) = conv1d(kernel=2, stride=2)`
 
+### Variational Autoencoders
+https://www.jeremyjordan.me/variational-autoencoders/
 ### Transformer
 https://zhuanlan.zhihu.com/p/48508221
 
