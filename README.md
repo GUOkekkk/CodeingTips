@@ -1539,7 +1539,10 @@ note:
 
 all(x)如果all(x)参数x对象的所有元素不为0、’’、False或者x为空对象，则返回True，否则返回False
 
-
+### A better way to get the attribute from the class
+```
+previous_kp0 = getattr(self, "previous_kp0", None)
+```
 ### Python map
 `map(function, iterable)` ex: `nums = list(map(str, nums))`converting every item in the `nums` list to a string
 ### Opencv
