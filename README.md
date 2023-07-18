@@ -599,6 +599,9 @@ Not use the `attach`
 ### Git push时，远端和本地同时修改
 先git pull再进行add, commit再git push
 
+### Git修改commit
+https://cloud.tencent.com/developer/article/1730774
+
 ### git pull does not work
 
     git fetch --all
