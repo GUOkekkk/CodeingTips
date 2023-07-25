@@ -1210,6 +1210,12 @@ then `sudo apt-get install ros-noetic-rviz`
 
 
 ## Python
+### PEP 8 Coding Style
+https://peps.python.org/pep-0008/ 
+
+- When slicing the array, use the same space before/after the colons, ex: [0:2:10]
+
+
 ### [Python常用运算符](https://www.runoob.com/python/python-operators.html)
 简单也是最有效的`0^1=1`; `1^1=0`
 
