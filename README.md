@@ -541,6 +541,9 @@ Error: `error loading webview: error: could not register service worker: invalid
 
 Solution: close all VScode window and run `killall code`
 
+### Pylint to check Python code form
+https://blog.csdn.net/jiang_huixin/article/details/125251037
+
 ### Debug
 https://code.visualstudio.com/docs/editor/debugging
 
