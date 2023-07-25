@@ -596,6 +596,8 @@ Not use the `attach`
 ## [ChatGPT Prompts](https://writesonic.com/blog/how-to-write-chatgpt-prompts/)
 
 ## Git
+### Atomic Git Commit
+https://sparkbox.com/foundry/atomic_commits_with_git
 ### Git push时，远端和本地同时修改
 先git pull再进行add, commit再git push
 
