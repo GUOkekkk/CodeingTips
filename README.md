@@ -633,6 +633,7 @@ git push origin --delete bad_branch
 ## Markdown语法Tips
 ### [Emojipeida](https://emojipedia.org/)
 ### [Cheatsheet](https://www.markdownguide.org/cheat-sheet/)
+### md标题没办法引到外部连接
 ### 生成requirement和项目结构
 `pip intsall pipreqs`
 
