@@ -1051,6 +1051,17 @@ From the ResNet, https://www.cnblogs.com/linzzz98/articles/13454369.html
 #### Laplace 二阶微分
 #### LOG 先Gauss滤波再Laplace算子
 
+### SLAM十四讲
+面试笔试的重点，好好复习。 
+
+#### 面试题：
+- https://visionary.blog.csdn.net/article/details/115566100?ydreferer=aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM4NTg4ODA2L2FydGljbGUvZGV0YWlscy84ODExOTg5Ng%3D%3D
+- https://blog.csdn.net/qq_38588806/article/details/88119896
+
+#### 笔记
+- https://www.cnblogs.com/ivan-chen/p/9496868.html
+
+
 ### ICP
 3D和3D来求解T，2dto2d应该也可以，比较困难知道匹配关系.
 
