@@ -442,6 +442,9 @@ Typically the 'python' defaults to 'python3', but in some operation systems, it 
 ### mv
 移动文件，文件夹/rename
 
+### 删除目录下特定文件名文件
+`find . -type f -name "*something*" -delete`
+
 ### import bashrc to zshrc
 ```
 vim ~/.zshrc
