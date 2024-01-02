@@ -335,6 +335,7 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - Move the tab: `Alt + direction'
 - how to scroll -> `shift+page up/page down`
 - freeze/unfrezze the terminal -> `ctrl+s / ctrl + q`
+- Windows上 fn+scrlk关闭键盘背光
 
 ### set up
 - [ ] [zotero](https://www.zotero.org/download/)
