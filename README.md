@@ -336,6 +336,7 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - how to scroll -> `shift+page up/page down`
 - freeze/unfrezze the terminal -> `ctrl+s / ctrl + q`
 - Windows上 fn+scrlk关闭键盘背光
+- Windows上 win+x u u （英文键盘） 关机
 
 ### set up
 - [ ] [zotero](https://www.zotero.org/download/)
