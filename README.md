@@ -357,6 +357,7 @@ https://zhuanlan.zhihu.com/p/367866550
 - Windows上 powershell中 `New-Item test.txt` 新建文件
 - `winget install` powershell安装
 - `del`删除文件
+- `Rename-Item -Path "qifei.pw1" -NewName ".\qifei.ps1"` 修改文件名
 
 ## Ubuntu
 常见命令：https://zhuanlan.zhihu.com/p/392986700
