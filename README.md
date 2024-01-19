@@ -317,6 +317,12 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - reviewer给出thread -> push commit解决thread，关闭thread
 - re-request view
 
+## Windows11
+### Don't use mouse!!! ⌨️
+- Windows上 fn+scrlk关闭键盘背光
+- Windows上 win+x u u （英文键盘） 关机
+- Windows上 cmd中 `New-Item test.txt` 新建文件
+
 ## Ubuntu
 常见命令：https://zhuanlan.zhihu.com/p/392986700
 ### Don't use mouse!!! ⌨️
@@ -335,9 +341,6 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - Move the tab: `Alt + direction'
 - how to scroll -> `shift+page up/page down`
 - freeze/unfrezze the terminal -> `ctrl+s / ctrl + q`
-- Windows上 fn+scrlk关闭键盘背光
-- Windows上 win+x u u （英文键盘） 关机
-- Windows上 cmd中 `New-Item test.txt` 新建文件
 
 ### set up
 - [ ] [zotero](https://www.zotero.org/download/)
