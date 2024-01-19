@@ -321,7 +321,8 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 ### Don't use mouse!!! ⌨️
 - Windows上 fn+scrlk关闭键盘背光
 - Windows上 win+x u u （英文键盘） 关机
-- Windows上 cmd中 `New-Item test.txt` 新建文件
+- Windows上 powershell中 `New-Item test.txt` 新建文件
+- `winget install` powershell安装
 
 ## Ubuntu
 常见命令：https://zhuanlan.zhihu.com/p/392986700
