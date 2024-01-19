@@ -318,6 +318,8 @@ https://ai.facebook.com/blog/robots-learning-video-simulation-artificial-visual-
 - re-request view
 
 ## Windows11
+### Make Win11 like Linux
+https://zhuanlan.zhihu.com/p/367866550
 ### Don't use mouse!!! ⌨️
 - Windows上 fn+scrlk关闭键盘背光
 - Windows上 win+x u u （英文键盘） 关机
