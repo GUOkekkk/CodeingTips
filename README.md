@@ -337,6 +337,7 @@ https://help.ubuntu.com/stable/ubuntu-help/keyboard-nav.html.zh-CN
 - freeze/unfrezze the terminal -> `ctrl+s / ctrl + q`
 - Windows上 fn+scrlk关闭键盘背光
 - Windows上 win+x u u （英文键盘） 关机
+- Windows上 cmd中 `New-Item test.txt` 新建文件
 
 ### set up
 - [ ] [zotero](https://www.zotero.org/download/)
