@@ -589,6 +589,9 @@ Solution: close all VScode window and run `killall code`
 ### Pylint to check Python code form
 https://blog.csdn.net/jiang_huixin/article/details/125251037
 
+### local history恢复被删除的文件
+`ctrl+shift+p`打开command panel搜索`lcoal history entry`
+
 ### Debug
 https://code.visualstudio.com/docs/editor/debugging
 
