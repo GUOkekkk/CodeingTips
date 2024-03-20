@@ -498,6 +498,9 @@ source ~/.zshrc
 ### check python env
 `which python` or `which python3`
 
+### 清空命令行输入
+`ctrl + u`
+
 ### check code lines
 
 `wc -l `find . -name '*.py'``
